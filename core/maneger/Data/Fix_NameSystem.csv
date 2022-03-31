@@ -11,6 +11,7 @@ _temp;_temp
 ' - Conf ?Settings';- Conf - Settings
 '- Conf ?Settings';- Conf - Settings
 Z SETTINGS;- Conf - Settings
+Z SHUTDOWN;- Conf - Shutdown
 Zettings;- Conf - Settings
 ZZZ Settings;- Conf - Settings
 -Conf-Sub- Atlas;- Conf - Sub System - Atlas
@@ -509,8 +510,10 @@ Adventure;- Menu - Sub_Genres - Adventure
 '- SubMenu_G ?  Beat em Ups';- Menu - Sub_Genres - Beat em Ups
 2 Beat em Ups;- Menu - Sub_Genres - Beat em Ups
 Beat-'Em-Up;- Menu - Sub_Genres - Beat em Ups
+Beat-'Em-Up;- Menu - Sub_Genres - Beat em Ups
 Beat-Em-Up Collection;- Menu - Sub_Genres - Beat em Ups
 - SubMenu_G -  Fighting;- Menu - Sub_Genres - Fighting
+Fighting;- Menu - Sub_Genres - Fighting
 - SubMenu_G - Fighting;- Menu - Sub_Genres - Fighting
 -SubMenu_G?  Fighting;- Menu - Sub_Genres - Fighting
 '- SubMenu_G ?  Fighting';- Menu - Sub_Genres - Fighting
@@ -688,6 +691,7 @@ auto-favorites;- Sub_Systems - favorites
 -Sub-Gaelco;- Sub_Systems - Gaelco
 '- Sub ?Gaelco';- Sub_Systems - Gaelco
 gaelco;- Sub_Systems - Gaelco
+Gaelco;- Sub_Systems - Gaelco
 Gaelco;- Sub_Systems - Gaelco
 - Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Irem Classics Classics Classics Classics Classics Classics;- Sub_Systems - Irem Classics
 - Sub ?  - Sub ?  Irem Classics;- Sub_Systems - Irem Classics
@@ -2065,8 +2069,10 @@ WoW - Action - Max;WoW Action Max
 - SubMenu_Genres - Light Gun Games;- Menu - Sub_Genres - Light Gun Games
 - SubMenu_Genres - Old School;- Menu - Sub_Genres - Old School
 - SubMenu_Genres - Platform;- Menu - Sub_Genres - Platform
+Platform;- Menu - Sub_Genres - Platform
 - SubMenu_Genres - Ports;- Menu - Sub_Genres - Ports
 - SubMenu_Genres - Puzzle;- Menu - Sub_Genres - Puzzle
+Puzzle;- Menu - Sub_Genres - Puzzle
 - SubMenu_Genres - Racing;- Menu - Sub_Genres - Racing
 - SubMenu_Genres - Role-Playing;- Menu - Sub_Genres - Role-Playing
 - SubMenu_Genres - Run and Gun;- Menu - Sub_Genres - Run and Gun

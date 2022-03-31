@@ -4,6 +4,7 @@
 import os
 import shutil
 import shutil, tempfile
+from shutil import move
 from tqdm import tqdm
 from tkinter import Label
 from turtle import clear, goto
@@ -203,8 +204,12 @@ def renameDir(caminho):
 
                                     if old_file != new_file:
                                         try:
-                                            os.rename(old_file, new_file)
-                                            print(f'folder index {indice} = {old_file}  >> name index = {official_indice} | {new_file}')
+                                            if not os.path.exists(new_file):
+                                                os.rename(old_file, new_file)
+                                                print(f'folder index {indice} = {old_file}  >> name index = {official_indice} | {new_file}')
+                                            if os.path.exists(new_file):
+                                                move(old_file, new_file)
+                                                print(f'folder index {indice} = {old_file}  >SOBREPONDO> name index = {official_indice} | {new_file}')
                                         except:
                                             pass
                                     print((str(Path)), '>old',old_file , '>new', new_file)    
