@@ -1,0 +1,2145 @@
+wrong_name;official_name
+_common;_common
+'_common';_common
+_manufacturer;_manufacturer
+_temp;_temp
+- Conf -  - Conf -'- Conf -Settings'  - Conf -  - Conf -'- Conf -Settings';- Conf - Settings
+- Conf - Settings;- Conf - Settings
+- Conf ?   - Conf ?  Settings;- Conf - Settings
+- Conf ?  - Conf ?  Settings;- Conf - Settings
+- Conf ?'- Conf ?Settings';- Conf - Settings
+' - Conf ?Settings';- Conf - Settings
+'- Conf ?Settings';- Conf - Settings
+Z SETTINGS;- Conf - Settings
+Z SHUTDOWN;- Conf - Shutdown
+Zettings;- Conf - Settings
+ZZZ Settings;- Conf - Settings
+-Conf-Sub- Atlas;- Conf - Sub System - Atlas
+'- ConfSub ?Atlas';- Conf - Sub System - Atlas
+Z ATLAS Settings;- Conf - Sub System - Atlas
+-Conf-Sub- Atlas 2;- Conf - Sub System - Atlas 2
+'- ConfSub ?Atlas 2';- Conf - Sub System - Atlas 2
+Z ATLAS 2 Settings;- Conf - Sub System - Atlas 2
+- ConfSub ?  Boxart;- Conf - Sub System - Boxart
+-Conf-Sub- Boxart;- Conf - Sub System - Boxart
+'- ConfSub ?  Boxart';- Conf - Sub System - Boxart
+ZZZ BOXART;- Conf - Sub System - Boxart
+LUNA;- Conf - Sub System - Luna
+- ConfSub -  Themes;- Conf - Sub System - Themes
+- ConfSub ?  Themes;- Conf - Sub System - Themes
+-Conf-Sub- Themes;- Conf - Sub System - Themes
+'- ConfSub ?Themes';- Conf - Sub System - Themes
+THEMES;- Conf - Sub System - Themes
+- ConfSub -  Titan;- Conf - Sub System - Titan
+-Conf-Sub- Titan;- Conf - Sub System - Titan
+'- ConfSub ?Titan';- Conf - Sub System - Titan
+Z TITAN;- Conf - Sub System - Titan
+Z TITAN - Conf ?  Settings;- Conf - Sub System - Titan
+Z TITAN Settings;- Conf - Sub System - Titan
+_Menu -Arcade;- Menu - Arcade
+-Menu -Arcade;- Menu - Arcade
+'_Menu - Arcade';- Menu - Arcade
+1 ARCADES;- Menu - Arcade
+_Menu -Collections;- Menu - Collections
+-Menu -Collections;- Menu - Collections
+'_Menu - Collections';- Menu - Collections
+1 COLLECTIONS;- Menu - Collections
+_collections;- Menu - Collections
+_Menu -Computers;- Menu - Computers
+-Menu -Computers;- Menu - Computers
+'_Menu - Computers';- Menu - Computers
+1 COMPUTERS;- Menu - Computers
+_Menu -Consoles;- Menu - Consoles
+-Menu -Consoles;- Menu - Consoles
+'_Menu -Consoles';- Menu - Consoles
+1 CONSOLES;- Menu - Consoles
+_Menu -Genres;- Menu - Genres
+-Menu- Genres;- Menu - Genres
+'_Menu -Genres';- Menu - Genres
+1 GENRES;- Menu - Genres
+_Menu -Handheld Consoles;- Menu - Handheld Consoles
+-Menu -Handheld Consoles;- Menu - Handheld Consoles
+'_Menu - Handheld Consoles';- Menu - Handheld Consoles
+1 HANDHELDS;- Menu - Handheld Consoles
+_Menu -Manufacturer;- Menu - Manufacturer
+-Menu- Manufacturer;- Menu - Manufacturer
+'_Menu -Manufacturer';- Menu - Manufacturer
+1 MANUFACTURER;- Menu - Manufacturer
+_Menu -Pinball;- Menu - Pinball
+- Menu ? Pinball;- Menu - Pinball
+-Menu- Pinball;- Menu - Pinball
+'_Menu -Pinball';- Menu - Pinball
+1 PINBALL;- Menu - Pinball
+- SubMenu -  Arcade All;- MenuSub - Arcade All
+- SubMenu - Arcade All;- MenuSub - Arcade All
+"- SubMenu - Arcade All""";- MenuSub - Arcade All
+- SubMenu ? Arcade All?;- MenuSub - Arcade All
+'- SubMenu ? Arcade All?';- MenuSub - Arcade All
+02 ARCADE ALL;- MenuSub - Arcade All
+- SubMenu - Arcade Collections;- SubMenu - Arcade Collections
+- SubMenu – Arcade Collections;- SubMenu - Arcade Collections
+- SubMenu ? Arcade Collections;- SubMenu - Arcade Collections
+'- SubMenu ? Arcade Collections';- SubMenu - Arcade Collections
+2 ARCADE COLLECTIONS;- SubMenu - Arcade Collections
+- SubMenu - Arcade Genres;- MenuSub - Arcade Genres
+"- SubMenu - Arcade Genres""";- MenuSub - Arcade Genres
+- SubMenu ? Arcade Genres;- MenuSub - Arcade Genres
+- SubMenu ? Arcade Genres?;- MenuSub - Arcade Genres
+'- SubMenu ? Arcade Genres?';- MenuSub - Arcade Genres
+2 ARCADE GENRES;- MenuSub - Arcade Genres
+- ArcadeFavs Official SUB;- MenuSub - Arcade Select
+- SubMenu - Arcade Select;- MenuSub - Arcade Select
+'- SubMenu ? Arcade Select';- MenuSub - Arcade Select
+- SubMenu - Arcade Systems;- MenuSub - Arcade Systems
+"- SubMenu - Arcade Systems""";- MenuSub - Arcade Systems
+- SubMenu ? Arcade Systems;- MenuSub - Arcade Systems
+- SubMenu ? Arcade Systems?;- MenuSub - Arcade Systems
+'- SubMenu ? Arcade Systems?';- MenuSub - Arcade Systems
+2 ARCADE SYSTEMS;- MenuSub - Arcade Systems
+- SubMenu - Consoles 16 bits;- MenuSub - Consoles 16 bits
+'- SubMenu ? Consoles 16 bits';- MenuSub - Consoles 16 bits
+CONSOLE 16 BITS;- MenuSub - Consoles 16 bits
+- SubMenu - Consoles 32 bits;- MenuSub - Consoles 32 bits
+'- SubMenu ? Consoles 32 bits';- MenuSub - Consoles 32 bits
+CONSOLE 32 BITS;- MenuSub - Consoles 32 bits
+- SubMenu - Consoles 64 bits;- MenuSub - Consoles 64 bits
+'- SubMenu ? Consoles 64 bits';- MenuSub - Consoles 64 bits
+CONSOLE 64 BITS;- MenuSub - Consoles 64 bits
+- SubMenu - Consoles 8 bits;- MenuSub - Consoles 8 bits
+'- SubMenu ? Consoles 8 bits';- MenuSub - Consoles 8 bits
+CONSOLE 8 BITS;- MenuSub - Consoles 8 bits
+- SubMenu - Consoles All;- MenuSub - Consoles All
+- SubMenu ? Consoles All;- MenuSub - Consoles All
+'- SubMenu ? Consoles All';- MenuSub - Consoles All
+02 CONSOLE ALL;- MenuSub - Consoles All
+- SubMenu - Consoles Modern;- MenuSub - Consoles Modern
+'- SubMenu ? Consoles Modern';- MenuSub - Consoles Modern
+CONSOLES MODERN;- MenuSub - Consoles Modern
+- Sub ?  2Players;- Sub_Selection - 2Players
+-Sub-2Players;- Sub_Selection - 2Players
+-SubCol- 2Players;- Sub_Selection - 2Players
+'- SubCol ?  2Players';- Sub_Selection - 2Players
+auto-at2players;- Sub_Selection - 2Players
+- Sub ?  4Players;- Sub_Selection - 4Players
+-Sub-4Players;- Sub_Selection - 4Players
+-SubCol- 4Players;- Sub_Selection - 4Players
+'- SubCol ?  4Players';- Sub_Selection - 4Players
+auto-at4players;- Sub_Selection - 4Players
+- Sub ?  Alphabet of Horror;- Sub_Selection - Alphabet of Horror
+-Sub-Alphabet of Horror;- Sub_Selection - Alphabet of Horror
+-SubCol- Alphabet of Horror;- Sub_Selection - Alphabet of Horror
+'- SubCol ?  Alphabet of Horror';- Sub_Selection - Alphabet of Horror
+Alphabet of Horror;- Sub_Selection - Alphabet of Horror
+- Sub ?  Art Of Fighting Collection;- Sub_Selection - Art Of Fighting Collection
+-Sub-Art Of Fighting Collection;- Sub_Selection - Art Of Fighting Collection
+-SubCol- Art Of Fighting Collection;- Sub_Selection - Art Of Fighting Collection
+'- SubCol ?  Art Of Fighting Collection';- Sub_Selection - Art Of Fighting Collection
+artoffighting;- Sub_Selection - Art Of Fighting Collection
+- Sub ?  Assassins Creed Collection;- Sub_Selection - Assassins Creed Collection
+-Sub-Assassins Creed Collection;- Sub_Selection - Assassins Creed Collection
+-SubCol- Assassins Creed Collection;- Sub_Selection - Assassins Creed Collection
+'- SubCol ?  Assassins Creed Collection';- Sub_Selection - Assassins Creed Collection
+Assassins Creed Collection;- Sub_Selection - Assassins Creed Collection
+- Sub ?  Batman Collection;- Sub_Selection - Batman Collection
+-Sub-Batman Collection;- Sub_Selection - Batman Collection
+-SubCol-  -SubCol-  -SubCol-Batman Collection';- Sub_Selection - Batman Collection
+-SubCol- Batman Collection;- Sub_Selection - Batman Collection
+'- SubCol ?  Batman Collection';- Sub_Selection - Batman Collection
+batman;- Sub_Selection - Batman Collection
+Batman Collection;- Sub_Selection - Batman Collection
+- Sub ?  Battlefield The Collection;- Sub_Selection - Battlefield The Collection
+-Sub-Battlefield The Collection;- Sub_Selection - Battlefield The Collection
+-SubCol- Battlefield The Collection;- Sub_Selection - Battlefield The Collection
+'- SubCol ?  Battlefield The Collection';- Sub_Selection - Battlefield The Collection
+Battlefield The Collection;- Sub_Selection - Battlefield The Collection
+- Sub ?  Bomberman Collection;- Sub_Selection - Bomberman Collection
+-Sub-Bomberman Collection;- Sub_Selection - Bomberman Collection
+-SubCol- Bomberman Collection;- Sub_Selection - Bomberman Collection
+'- SubCol ?  Bomberman Collection';- Sub_Selection - Bomberman Collection
+mrboom;- Sub_Selection - Bomberman Collection
+- Sub ?  Borderlands Collection;- Sub_Selection - Borderlands Collection
+-Sub-Borderlands Collection;- Sub_Selection - Borderlands Collection
+-SubCol- Borderlands Collection;- Sub_Selection - Borderlands Collection
+'- SubCol ?  Borderlands Collection';- Sub_Selection - Borderlands Collection
+Borderlands Collection;- Sub_Selection - Borderlands Collection
+- Sub ?  Bubble Bobble Collection;- Sub_Selection - Bubble Bobble Collection
+-Sub-Bubble Bobble Collection;- Sub_Selection - Bubble Bobble Collection
+-SubCol- Bubble Bobble Collection;- Sub_Selection - Bubble Bobble Collection
+'- SubCol ?  Bubble Bobble Collection';- Sub_Selection - Bubble Bobble Collection
+BUBBLE BOBBLE COLLECTION;- Sub_Selection - Bubble Bobble Collection
+- Sub ?  Castlevania Collection;- Sub_Selection - Castlevania Collection
+-Sub-Castlevania Collection;- Sub_Selection - Castlevania Collection
+-SubCol-  -SubCol-  -SubCol-Castlevania Collection';- Sub_Selection - Castlevania Collection
+-SubCol- Castlevania Collection;- Sub_Selection - Castlevania Collection
+-SubCol-Castlevania Collection';- Sub_Selection - Castlevania Collection
+'- SubCol ?  Castlevania Collection';- Sub_Selection - Castlevania Collection
+castlevania;- Sub_Selection - Castlevania Collection
+Castlevania Collection;- Sub_Selection - Castlevania Collection
+- Sub ?  Cavestory Collection;- Sub_Selection - Cavestory Collection
+-Sub-Cavestory Collection;- Sub_Selection - Cavestory Collection
+-SubCol- Cavestory Collection;- Sub_Selection - Cavestory Collection
+'- SubCol ?  Cavestory Collection';- Sub_Selection - Cavestory Collection
+Cave Story;- Sub_Selection - Cavestory Collection
+cavestory;- Sub_Selection - Cavestory Collection
+-SubCol- Clone Hero;- Sub_Selection - Clone Hero
+'- SubCol ? Clone Hero';- Sub_Selection - Clone Hero
+Clone Hero;- Sub_Selection - Clone Hero
+- Sub ?  Contra Collection;- Sub_Selection - Contra Collection
+-Sub-Contra Collection;- Sub_Selection - Contra Collection
+-SubCol-  -SubCol-  -SubCol-Contra Collection';- Sub_Selection - Contra Collection
+-SubCol- Contra Collection;- Sub_Selection - Contra Collection
+'- SubCol ?  Contra Collection';- Sub_Selection - Contra Collection
+Contra Collection;- Sub_Selection - Contra Collection
+- Sub ?  Crash Bandicoot Collection;- Sub_Selection - Crash Bandicoot Collection
+-Sub-Crash Bandicoot Collection;- Sub_Selection - Crash Bandicoot Collection
+-SubCol- Crash Bandicoot Collection;- Sub_Selection - Crash Bandicoot Collection
+'- SubCol ?  Crash Bandicoot Collection';- Sub_Selection - Crash Bandicoot Collection
+Crash Bandicoot Collection;- Sub_Selection - Crash Bandicoot Collection
+- Sub ?  Disney Collection;- Sub_Selection - Disney Collection
+-Sub-Disney Collection;- Sub_Selection - Disney Collection
+-SubCol- Disney Collection;- Sub_Selection - Disney Collection
+'- SubCol ?  Disney Collection';- Sub_Selection - Disney Collection
+Disney Collection;- Sub_Selection - Disney Collection
+- Sub ?  Donkey kong Collection;- Sub_Selection - Donkey kong Collection
+-Sub-Donkey kong Collection;- Sub_Selection - Donkey kong Collection
+-SubCol-  Donkey kong Collection;- Sub_Selection - Donkey kong Collection
+-SubCol- Donkey kong Collection;- Sub_Selection - Donkey kong Collection
+'- SubCol ?  Donkey kong Collection';- Sub_Selection - Donkey kong Collection
+Donkey Kong Collection;- Sub_Selection - Donkey kong Collection
+donkeykong;- Sub_Selection - Donkey kong Collection
+- Sub ?  Doom;- Sub_Selection - Doom Collection
+- SubCol ?  Doom Collection;- Sub_Selection - Doom Collection
+-Sub-Doom;- Sub_Selection - Doom Collection
+-SubCol- Doom;- Sub_Selection - Doom Collection
+-SubCol-Doom Collection;- Sub_Selection - Doom Collection
+'- SubCol ?  Doom';- Sub_Selection - Doom Collection
+prboom;- Sub_Selection - Doom Collection
+- Sub ?  Doom Collection;- Sub_Selection - Doom Collection
+-Sub-Doom Collection;- Sub_Selection - Doom Collection
+-SubCol-  Doom Collection;- Sub_Selection - Doom Collection
+-SubCol- Doom Collection;- Sub_Selection - Doom Collection
+'- SubCol ?  Doom Collection';- Sub_Selection - Doom Collection
+Doom;- Sub_Selection - Doom Collection
+Doom II Official;- Sub_Selection - Doom Collection
+Doom Slayers Collection;- Sub_Selection - Doom Collection
+- Sub ?  Double Dragon Collection;- Sub_Selection - Double Dragon Collection
+-Sub-Double Dragon Collection;- Sub_Selection - Double Dragon Collection
+-SubCol- Double Dragon Collection;- Sub_Selection - Double Dragon Collection
+'- SubCol ?  Double Dragon Collection';- Sub_Selection - Double Dragon Collection
+doubledragon;- Sub_Selection - Double Dragon Collection
+- Sub ?  Dragon Ball Z Collection;- Sub_Selection - Dragon Ball Z Collection
+-Sub-Dragon Ball Z Collection;- Sub_Selection - Dragon Ball Z Collection
+-SubCol- Dragon Ball Z Collection;- Sub_Selection - Dragon Ball Z Collection
+'- SubCol ?  Dragon Ball Z Collection';- Sub_Selection - Dragon Ball Z Collection
+Dragon Ball Z Collection;- Sub_Selection - Dragon Ball Z Collection
+- Sub ?  F-Zero Collection;- Sub_Selection - F-Zero Collection
+-Sub-F-Zero Collection;- Sub_Selection - F-Zero Collection
+-SubCol- F-Zero Collection;- Sub_Selection - F-Zero Collection
+'- SubCol ?  F-Zero Collection';- Sub_Selection - F-Zero Collection
+F-Zero Collection;- Sub_Selection - F-Zero Collection
+- Sub ?  Far Cry Collection;- Sub_Selection - Far Cry Collection
+-Sub-Far Cry Collection;- Sub_Selection - Far Cry Collection
+-SubCol- Far Cry Collection;- Sub_Selection - Far Cry Collection
+-SubCol-Far Cry Collection';- Sub_Selection - Far Cry Collection
+'- SubCol ?  Far Cry Collection';- Sub_Selection - Far Cry Collection
+Far Cry Collection;- Sub_Selection - Far Cry Collection
+- Sub ?  Fatal Fury Collection;- Sub_Selection - Fatal Fury Collection
+-Sub-Fatal Fury Collection;- Sub_Selection - Fatal Fury Collection
+-SubCol- Fatal Fury Collection;- Sub_Selection - Fatal Fury Collection
+'- SubCol ?  Fatal Fury Collection';- Sub_Selection - Fatal Fury Collection
+fatalfury;- Sub_Selection - Fatal Fury Collection
+- Sub ?  Final Fantasy Collection;- Sub_Selection - Final Fantasy Collection
+-Sub-Final Fantasy Collection;- Sub_Selection - Final Fantasy Collection
+-SubCol- Final Fantasy Collection;- Sub_Selection - Final Fantasy Collection
+'- SubCol ?  Final Fantasy Collection';- Sub_Selection - Final Fantasy Collection
+Final Fantasy Collection;- Sub_Selection - Final Fantasy Collection
+finalfantasy;- Sub_Selection - Final Fantasy Collection
+- Sub ?  Final Figth Collection;- Sub_Selection - Final Figth Collection
+-Sub-Final Figth Collection;- Sub_Selection - Final Figth Collection
+-SubCol- Final Figth Collection;- Sub_Selection - Final Figth Collection
+'- SubCol ?  Final Figth Collection';- Sub_Selection - Final Figth Collection
+finalfight;- Sub_Selection - Final Figth Collection
+- Sub ?  Hitman Collection;- Sub_Selection - Hitman Collection
+-Sub-Hitman Collection;- Sub_Selection - Hitman Collection
+-SubCol- Hitman Collection;- Sub_Selection - Hitman Collection
+'- SubCol ?  Hitman Collection';- Sub_Selection - Hitman Collection
+Hitman Collection;- Sub_Selection - Hitman Collection
+- Sub ?  Kids Platform Games Collection;- Sub_Selection - Kids Platform Games Collection
+-Sub-Kids Platform Games Collection;- Sub_Selection - Kids Platform Games Collection
+-SubCol- Kids Platform Games Collection;- Sub_Selection - Kids Platform Games Collection
+'- SubCol ?  Kids Platform Games Collection';- Sub_Selection - Kids Platform Games Collection
+Kids Platform Games Collection;- Sub_Selection - Kids Platform Games Collection
+- Sub ?  - SubCol ?  - SubCol ?  - SubCol ?  - SubCol ?  Killer Instinct Collection Collection Collection Collection Collection;- Sub_Selection - Killer Instinct Collection
+- Sub ?  Killer Instinct Collection;- Sub_Selection - Killer Instinct Collection
+-Sub-Killer Instinct Collection;- Sub_Selection - Killer Instinct Collection
+-SubCol-  -SubCol-  -SubCol-Killer Instinct Collection' Collection Collection Collection;- Sub_Selection - Killer Instinct Collection
+-SubCol- Killer Instinct Collection;- Sub_Selection - Killer Instinct Collection
+'- SubCol ?  Killer Instinct Collection';- Sub_Selection - Killer Instinct Collection
+Killer Instinct;- Sub_Selection - Killer Instinct Collection
+- Sub ?  Kirby Collection;- Sub_Selection - Kirby Collection
+-Sub-Kirby Collection;- Sub_Selection - Kirby Collection
+-SubCol- Kirby Collection;- Sub_Selection - Kirby Collection
+'- SubCol ?  Kirby Collection';- Sub_Selection - Kirby Collection
+Kirby Collection;- Sub_Selection - Kirby Collection
+- Sub ?  Lego Collection;- Sub_Selection - Lego Collection
+-Sub-Lego Collection;- Sub_Selection - Lego Collection
+-SubCol- Lego Collection;- Sub_Selection - Lego Collection
+'- SubCol ?  Lego Collection';- Sub_Selection - Lego Collection
+Lego Collection;- Sub_Selection - Lego Collection
+- Sub ?  Locomalito Collection;- Sub_Selection - Locomalito Collection
+-Sub-Locomalito Collection;- Sub_Selection - Locomalito Collection
+-SubCol- Locomalito Collection;- Sub_Selection - Locomalito Collection
+'- SubCol ?  Locomalito Collection';- Sub_Selection - Locomalito Collection
+LocoMalito Games;- Sub_Selection - Locomalito Collection
+- Sub ?  Looney Tunes Collection;- Sub_Selection - Looney Tunes Collection
+-Sub-Looney Tunes Collection;- Sub_Selection - Looney Tunes Collection
+-SubCol- Looney Tunes Collection;- Sub_Selection - Looney Tunes Collection
+'- SubCol ?  Looney Tunes Collection';- Sub_Selection - Looney Tunes Collection
+Looney Tunes Collection;- Sub_Selection - Looney Tunes Collection
+- Sub ?  Medal of Honor Collection;- Sub_Selection - Medal of Honor Collection
+-Sub-Medal of Honor Collection;- Sub_Selection - Medal of Honor Collection
+-SubCol- Medal of Honor Collection;- Sub_Selection - Medal of Honor Collection
+'- SubCol ?  Medal of Honor Collection';- Sub_Selection - Medal of Honor Collection
+Medal of Honor Collection;- Sub_Selection - Medal of Honor Collection
+- Sub ?  Mega  Man Collection;- Sub_Selection - Mega Man Collection
+-Sub-Mega  Man Collection;- Sub_Selection - Mega Man Collection
+-SubCol-  Mega  Man Collection;- Sub_Selection - Mega Man Collection
+-SubCol- Mega Man Collection;- Sub_Selection - Mega Man Collection
+'- SubCol ?  Mega  Man Collection';- Sub_Selection - Mega Man Collection
+Mega Man Collection;- Sub_Selection - Mega Man Collection
+megaman;- Sub_Selection - Mega Man Collection
+- Sub ?  Metal Slug Collection;- Sub_Selection - Metal Slug Collection
+-Sub-Metal Slug Collection;- Sub_Selection - Metal Slug Collection
+-SubCol-  -SubCol-  -SubCol-Metal Slug Collection';- Sub_Selection - Metal Slug Collection
+-SubCol- Metal Slug Collection;- Sub_Selection - Metal Slug Collection
+'- SubCol ?  Metal Slug Collection';- Sub_Selection - Metal Slug Collection
+Metal Slug Collection;- Sub_Selection - Metal Slug Collection
+metalslug;- Sub_Selection - Metal Slug Collection
+- Sub ?  Metroid Collection;- Sub_Selection - Metroid Collection
+-Sub-Metroid Collection;- Sub_Selection - Metroid Collection
+-SubCol-  -SubCol-  -SubCol-Metroid Collection';- Sub_Selection - Metroid Collection
+-SubCol- Metroid Collection;- Sub_Selection - Metroid Collection
+'- SubCol ?  Metroid Collection';- Sub_Selection - Metroid Collection
+metroid;- Sub_Selection - Metroid Collection
+Metroid Collection;- Sub_Selection - Metroid Collection
+Minecraft;- Sub_Selection - Minecraft
+- Sub ?  - Sub ?  - SubCol ?  - SubCol ?  - SubCol ?  - SubCol ?  Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+- Sub ?  Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+- SubCol ?  - SubCol ?  -SubCol-Mortal Kombat Collection';- Sub_Selection - Mortal Kombat Collection
+-Sub-Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+-SubCol-  -SubCol-  -SubCol-  -SubCol-Mortal Kombat Collection';- Sub_Selection - Mortal Kombat Collection
+-SubCol-  -SubCol-  -SubCol-Mortal Kombat Collection';- Sub_Selection - Mortal Kombat Collection
+-SubCol- Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+'- SubCol ?  Mortal Kombat Collection';- Sub_Selection - Mortal Kombat Collection
+MK;- Sub_Selection - Mortal Kombat Collection
+Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+- Sub ?  Need For Speed Collection;- Sub_Selection - Need For Speed Collection
+-Sub-Need For Speed Collection;- Sub_Selection - Need For Speed Collection
+-SubCol- Need For Speed Collection;- Sub_Selection - Need For Speed Collection
+'- SubCol ?  Need For Speed Collection';- Sub_Selection - Need For Speed Collection
+needforspeed;- Sub_Selection - Need For Speed Collection
+-SubCol- Outrun Collection;- Sub_Selection - Outrun Collection
+Outrun Collection;- Sub_Selection - Outrun Collection
+- Sub ?  PacMan Collection;- Sub_Selection - PacMan Collection
+-Sub-PacMan Collection;- Sub_Selection - PacMan Collection
+-SubCol- PacMan Collection;- Sub_Selection - PacMan Collection
+'- SubCol ?  PacMan Collection';- Sub_Selection - PacMan Collection
+PacMan Collection;- Sub_Selection - PacMan Collection
+- Sub ?  Pokemon Collection;- Sub_Selection - Pokemon Collection
+-Sub-Pokemon Collection;- Sub_Selection - Pokemon Collection
+-SubCol- Pokemon Collection;- Sub_Selection - Pokemon Collection
+'- SubCol ?  Pokemon Collection';- Sub_Selection - Pokemon Collection
+Pokemon Collection;- Sub_Selection - Pokemon Collection
+- Sub ?  Prince of Persia Collection;- Sub_Selection - Prince of Persia Collection
+-Sub-Prince of Persia Collection;- Sub_Selection - Prince of Persia Collection
+-SubCol- Prince of Persia Collection;- Sub_Selection - Prince of Persia Collection
+'- SubCol ?  Prince of Persia Collection';- Sub_Selection - Prince of Persia Collection
+Prince of Persia Collection;- Sub_Selection - Prince of Persia Collection
+- Sub ?  Raiden Collection;- Sub_Selection - Raiden Collection
+-Sub-Raiden Collection;- Sub_Selection - Raiden Collection
+-SubCol- Raiden Collection;- Sub_Selection - Raiden Collection
+'- SubCol ?  Raiden Collection';- Sub_Selection - Raiden Collection
+Raiden Collection;- Sub_Selection - Raiden Collection
+- Sub ?  Rayman Collection;- Sub_Selection - Rayman Collection
+-Sub-Rayman Collection;- Sub_Selection - Rayman Collection
+-SubCol- Rayman Collection;- Sub_Selection - Rayman Collection
+'- SubCol ?  Rayman Collection';- Sub_Selection - Rayman Collection
+Rayman Collection;- Sub_Selection - Rayman Collection
+- Sub ?  Resident Evil Collection;- Sub_Selection - Resident Evil Collection
+-Sub-Resident Evil Collection;- Sub_Selection - Resident Evil Collection
+-SubCol- Resident Evil Collection;- Sub_Selection - Resident Evil Collection
+'- SubCol ?  Resident Evil Collection';- Sub_Selection - Resident Evil Collection
+Resident Evil Collection;- Sub_Selection - Resident Evil Collection
+residentevil;- Sub_Selection - Resident Evil Collection
+- Sub ?  Samurai Shodown Collection;- Sub_Selection - Samurai Shodown Collection
+-Sub-Samurai Shodown Collection;- Sub_Selection - Samurai Shodown Collection
+-SubCol- Samurai Shodown Collection;- Sub_Selection - Samurai Shodown Collection
+'- SubCol ?  Samurai Shodown Collection';- Sub_Selection - Samurai Shodown Collection
+samuraishodown;- Sub_Selection - Samurai Shodown Collection
+- Sub ?  Scooby-Doo Collection;- Sub_Selection - Scooby-Doo Collection
+-Sub-Scooby-Doo Collection;- Sub_Selection - Scooby-Doo Collection
+-SubCol- Scooby-Doo Collection;- Sub_Selection - Scooby-Doo Collection
+'- SubCol ?  Scooby-Doo Collection';- Sub_Selection - Scooby-Doo Collection
+Scooby-Doo Collection;- Sub_Selection - Scooby-Doo Collection
+- Sub ?  Sega Ages 2500;- Sub_Selection - Sega Ages 2500
+-Sub-Sega Ages 2500;- Sub_Selection - Sega Ages 2500
+-SubCol- Sega Ages 2500;- Sub_Selection - Sega Ages 2500
+'- SubCol ?  Sega Ages 2500';- Sub_Selection - Sega Ages 2500
+Sega Ages 2500;- Sub_Selection - Sega Ages 2500
+- Sub ?  Silent Hill Collection;- Sub_Selection - Silent Hill Collection
+-Sub-Silent Hill Collection;- Sub_Selection - Silent Hill Collection
+-SubCol- Silent Hill Collection;- Sub_Selection - Silent Hill Collection
+'- SubCol ?  Silent Hill Collection';- Sub_Selection - Silent Hill Collection
+silenthill;- Sub_Selection - Silent Hill Collection
+-SubCol- Simpsons Collection;- Sub_Selection - Simpsons Collection
+Simpsons Collection;- Sub_Selection - Simpsons Collection
+- Sub ?  Solarus Collection;- Sub_Selection - Solarus Collection
+-Sub-Solarus Collection;- Sub_Selection - Solarus Collection
+-SubCol- Solarus Collection;- Sub_Selection - Solarus Collection
+'- SubCol ?  Solarus Collection';- Sub_Selection - Solarus Collection
+solarus;- Sub_Selection - Solarus Collection
+Solarus Collection;- Sub_Selection - Solarus Collection
+- Sub ?  - SubCol ?  - SubCol ?  - SubCol ?  - SubCol ?  Sonic Collection;- Sub_Selection - Sonic Collection
+- Sub ?  Sonic Collection;- Sub_Selection - Sonic Collection
+-Sub-Sonic Collection;- Sub_Selection - Sonic Collection
+-SubCol-  -SubCol-  -SubCol-Sonic Collection';- Sub_Selection - Sonic Collection
+-SubCol- Sonic Collection;- Sub_Selection - Sonic Collection
+'- SubCol ?  Sonic Collection';- Sub_Selection - Sonic Collection
+Pana-SubCol-  -SubCol-  -SubCol-  -SubCol-Sonic Collection' 3DO;- Sub_Selection - Sonic Collection
+sonic;- Sub_Selection - Sonic Collection
+Sonic Collection;- Sub_Selection - Sonic Collection
+- Sub ?  Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
+-Sub-Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
+-SubCol- Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
+'- SubCol ?  Soul Calibur Collection';- Sub_Selection - Soul Calibur Collection
+Soul Caliber Collection;- Sub_Selection - Soul Calibur Collection
+Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
+-SubCol- Spider-Man Collectio;- Sub_Selection - Spider-Man Collectio
+'- SubCol ?  Spider-Man Collectio';- Sub_Selection - Spider-Man Collectio
+- Sub ?  Spider-Man Collectio;- Sub_Selection - Spider-Man Collection
+-Sub-Spider-Man Collection;- Sub_Selection - Spider-Man Collection
+-SubCol- Spider-Man Collection;- Sub_Selection - Spider-Man Collection
+Spider-Man Collection;- Sub_Selection - Spider-Man Collection
+- Sub ?  Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
+-Sub-Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
+-SubCol- Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
+'- SubCol ?  Spongebob Squarepants Collection';- Sub_Selection - Spongebob Squarepants Collection
+Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
+- Sub ?  Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
+-Sub-Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
+-SubCol- Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
+'- SubCol ?  Spyro the Dragon Collection';- Sub_Selection - Spyro the Dragon Collection
+Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
+- Sub ?  Star Wars Collection;- Sub_Selection - Star Wars Collection
+-Sub-Star Wars Collection;- Sub_Selection - Star Wars Collection
+-Sub-Starwars;- Sub_Selection - Star Wars Collection
+-Sub-Starwars Collection;- Sub_Selection - Star Wars Collection
+-SubCol-  -SubCol-  -SubCol-Star Wars Collection';- Sub_Selection - Star Wars Collection
+-SubCol- Star Wars Collection;- Sub_Selection - Star Wars Collection
+'- SubCol ?  Star Wars Collection';- Sub_Selection - Star Wars Collection
+Star Wars Collection;- Sub_Selection - Star Wars Collection
+starwars;- Sub_Selection - Star Wars Collection
+- Sub ?  Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+-Sub-Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+-SubCol-  -SubCol-  -SubCol-Street Fighter Collection';- Sub_Selection - Street Fighter Collection
+-SubCol- Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+'- SubCol ?  Street Fighter Collection';- Sub_Selection - Street Fighter Collection
+Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+streetfighter;- Sub_Selection - Street Fighter Collection
+- Sub ?  Streets of Rage Collection;- Sub_Selection - Streets of Rage Collection
+-Sub-Streets of Rage Collection;- Sub_Selection - Streets of Rage Collection
+-SubCol-  -SubCol-  -SubCol-Streets of Rage Collection';- Sub_Selection - Streets of Rage Collection
+-SubCol- Streets of Rage Collection;- Sub_Selection - Streets of Rage Collection
+'- SubCol ?  Streets of Rage Collection';- Sub_Selection - Streets of Rage Collection
+Streets of Rage Collection;- Sub_Selection - Streets of Rage Collection
+- Sub ?  Super mario bros Collection;- Sub_Selection - Super mario bros Collection
+-Sub-Super mario bros Collection;- Sub_Selection - Super mario bros Collection
+-SubCol- Super mario bros Collection;- Sub_Selection - Super mario bros Collection
+'- SubCol ?  Super mario bros Collection';- Sub_Selection - Super mario bros Collection
+mario;- Sub_Selection - Super mario bros Collection
+Mario Collection;- Sub_Selection - Super mario bros Collection
+- Sub ?  Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+- SubCol ?  Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+-Sub-Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+-SubCol-  Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+-SubCol- Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+'- SubCol ?  Teenage Mutant Ninja Turtles Collection';- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+TMNT Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+- Sub ?  Tekken Collection;- Sub_Selection - Tekken Collection
+-Sub-Tekken Collection;- Sub_Selection - Tekken Collection
+-SubCol- Tekken Collection;- Sub_Selection - Tekken Collection
+'- SubCol ?  Tekken Collection';- Sub_Selection - Tekken Collection
+Tekken Collection;- Sub_Selection - Tekken Collection
+- Sub ?  Telltale Games Collection;- Sub_Selection - Telltale Games Collection
+-Sub-Telltale Games Collection;- Sub_Selection - Telltale Games Collection
+-SubCol- Telltale Games Collection;- Sub_Selection - Telltale Games Collection
+'- SubCol ?  Telltale Games Collection';- Sub_Selection - Telltale Games Collection
+Telltale Games Collection;- Sub_Selection - Telltale Games Collection
+- Sub ?  The King of Fighters Collection;- Sub_Selection - The King of Fighters Collection
+-Sub-The King of Fighters Collection;- Sub_Selection - The King of Fighters Collection
+-SubCol- The King of Fighters Collection;- Sub_Selection - The King of Fighters Collection
+'- SubCol ?  The King of Fighters Collection';- Sub_Selection - The King of Fighters Collection
+kof;- Sub_Selection - The King of Fighters Collection
+- Sub ?  Tomb Raider Collection;- Sub_Selection - Tomb Raider Collection
+-Sub-Tomb Raider Collection;- Sub_Selection - Tomb Raider Collection
+-SubCol- Tomb Raider Collection;- Sub_Selection - Tomb Raider Collection
+'- SubCol ?  Tomb Raider Collection';- Sub_Selection - Tomb Raider Collection
+Tomb Raider Collection;- Sub_Selection - Tomb Raider Collection
+tombraider;- Sub_Selection - Tomb Raider Collection
+- Sub ?  Wolfenstein Collection;- Sub_Selection - Wolfenstein Collection
+-Sub-Wolfenstein Collection;- Sub_Selection - Wolfenstein Collection
+-SubCol- Wolfenstein Collection;- Sub_Selection - Wolfenstein Collection
+'- SubCol ?  Wolfenstein Collection';- Sub_Selection - Wolfenstein Collection
+Wolfenstein Collection;- Sub_Selection - Wolfenstein Collection
+- Sub ?  - Sub ?  - SubCol ?  - SubCol ?  - SubCol ?  - SubCol ?  Zelda Collection;- Sub_Selection - Zelda Collection
+- Sub ?  Zelda Collection;- Sub_Selection - Zelda Collection
+-Sub-Zelda Collection;- Sub_Selection - Zelda Collection
+-SubCol-  -SubCol-  -SubCol-  -SubCol-Zelda Collection';- Sub_Selection - Zelda Collection
+-SubCol- Zelda Collection;- Sub_Selection - Zelda Collection
+-SubCol-Zelda Collection';- Sub_Selection - Zelda Collection
+'- SubCol ?  Zelda Collection';- Sub_Selection - Zelda Collection
+ZELDA;- Sub_Selection - Zelda Collection
+Zelda Collection;- Sub_Selection - Zelda Collection
+- SubMenu_G - Action;- Menu - Sub_Genres - Action
+Action;- Menu - Sub_Genres - Action
+- SubMenu_G - Adventure;- Menu - Sub_Genres - Adventure
+Adventure;- Menu - Sub_Genres - Adventure
+- SubMenu_G -  Beat em Ups;- Menu - Sub_Genres - Beat em Ups
+- SubMenu_G - Beat em Ups;- Menu - Sub_Genres - Beat em Ups
+-SubMenu_G?  Beat em Ups;- Menu - Sub_Genres - Beat em Ups
+'- SubMenu_G ?  Beat em Ups';- Menu - Sub_Genres - Beat em Ups
+2 Beat em Ups;- Menu - Sub_Genres - Beat em Ups
+Beat-'Em-Up;- Menu - Sub_Genres - Beat em Ups
+Beat-'Em-Up;- Menu - Sub_Genres - Beat em Ups
+Beat-Em-Up Collection;- Menu - Sub_Genres - Beat em Ups
+- SubMenu_G -  Fighting;- Menu - Sub_Genres - Fighting
+Fighting;- Menu - Sub_Genres - Fighting
+- SubMenu_G - Fighting;- Menu - Sub_Genres - Fighting
+-SubMenu_G?  Fighting;- Menu - Sub_Genres - Fighting
+'- SubMenu_G ?  Fighting';- Menu - Sub_Genres - Fighting
+1 Fighting;- Menu - Sub_Genres - Fighting
+4 Fight Club;- Menu - Sub_Genres - Fighting
+Fighting;- Menu - Sub_Genres - Fighting
+- SubMenu_G - Flying;- Menu - Sub_Genres - Flying
+Flying;- Menu - Sub_Genres - Flying
+Gun Games;- Menu - Sub_Genres - Light Gun Games
+Lightgun Collection;- Menu - Sub_Genres - Light Gun Games
+- SubMenu_G - Old School;- Menu - Sub_Genres - Old School
+'- SubMenu_G ?  Old School';- Menu - Sub_Genres - Old School
+1 Old School;- Menu - Sub_Genres - Old School
+auto-allgames;- Menu - Sub_Genres - Old School
+- SubMenu_G -  Platform;- Menu - Sub_Genres - Platform
+- SubMenu_G - Platform;- Menu - Sub_Genres - Platform
+-SubMenu_G?  Platform;- Menu - Sub_Genres - Platform
+'- SubMenu_G ?  Platform';- Menu - Sub_Genres - Platform
+3 Platform;- Menu - Sub_Genres - Platform
+Platform;- Menu - Sub_Genres - Platform
+- SubMenu_G - Ports;- Menu - Sub_Genres - Ports
+-SubMenu_G?  Ports;- Menu - Sub_Genres - Ports
+-SubMenu_G?  S-SubMenu_G?  Ports;- Menu - Sub_Genres - Ports
+'- SubMenu_G ?  Ports';- Menu - Sub_Genres - Ports
+8 S- SubMenu_G -  Ports;- Menu - Sub_Genres - Ports
+ports;- Menu - Sub_Genres - Ports
+S- SubMenu_G -  Ports;- Menu - Sub_Genres - Ports
+S-SubMenu_G?  Ports;- Menu - Sub_Genres - Ports
+- SubMenu_G -  Puzzle;- Menu - Sub_Genres - Puzzle
+- SubMenu_G - Puzzle;- Menu - Sub_Genres - Puzzle
+-SubMenu_G?  Puzzle;- Menu - Sub_Genres - Puzzle
+'- SubMenu_G ?  Puzzle';- Menu - Sub_Genres - Puzzle
+4 Puzzle;- Menu - Sub_Genres - Puzzle
+8 Puzzler;- Menu - Sub_Genres - Puzzle
+Puzzle;- Menu - Sub_Genres - Puzzle
+Quiz MachiNintendo Entertainment System;- Menu - Sub_Genres - Quiz
+- SubMenu_G -  Racing;- Menu - Sub_Genres - Racing
+- SubMenu_G - Racing;- Menu - Sub_Genres - Racing
+-SubMenu_G?  Racing;- Menu - Sub_Genres - Racing
+'- SubMenu_G ?  Racing';- Menu - Sub_Genres - Racing
+5 Racing;- Menu - Sub_Genres - Racing
+6 Racer;- Menu - Sub_Genres - Racing
+Racing;- Menu - Sub_Genres - Racing
+Racing Games Collection;- Menu - Sub_Genres - Racing
+- SubMenu_G - Role-Playing;- Menu - Sub_Genres - Role-Playing
+Role-Playing;- Menu - Sub_Genres - Role-Playing
+- SubMenu_G -  Run and Gun;- Menu - Sub_Genres - Run and Gun
+- SubMenu_G - Run and Gun;- Menu - Sub_Genres - Run and Gun
+-SubMenu_G?  Run and Gun;- Menu - Sub_Genres - Run and Gun
+'- SubMenu_G ?  Run and Gun';- Menu - Sub_Genres - Run and Gun
+3 Run n Gun;- Menu - Sub_Genres - Run and Gun
+6 Run and Gun;- Menu - Sub_Genres - Run and Gun
+- SubMenu_G -  Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+- SubMenu_G - Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+-SubMenu_G?  Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+'- SubMenu_G ?  Shoot em Ups';- Menu - Sub_Genres - Shoot em Ups
+5 Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+7 Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+Shoot-'Em-Up;- Menu - Sub_Genres - Shoot em Ups
+- SubMenu_G - Shooter;- Menu - Sub_Genres - Shooter
+Shooter;- Menu - Sub_Genres - Shooter
+- SubMenu_G - Sports;- Menu - Sub_Genres - Sports
+'- SubMenu_G ?  Sports';- Menu - Sub_Genres - Sports
+7 Sports;- Menu - Sub_Genres - Sports
+8 Sports;- Menu - Sub_Genres - Sports
+- SubMenu_M -  Atari;- Menu - Sub_Manufacturer - Atari
+- SubMenu_M - Atari;- Menu - Sub_Manufacturer - Atari
+-SubMenu_M?  Atari;- Menu - Sub_Manufacturer - Atari
+'- SubMenu_M ?  Atari';- Menu - Sub_Manufacturer - Atari
+2 ATARI;- Menu - Sub_Manufacturer - Atari
+9 Atari;- Menu - Sub_Manufacturer - Atari
+atari;- Menu - Sub_Manufacturer - Atari
+- SubMenu_M -  Commodore;- Menu - Sub_Manufacturer - Commodore
+- SubMenu_M - Commodore;- Menu - Sub_Manufacturer - Commodore
+-SubMenu_M?  Commodore;- Menu - Sub_Manufacturer - Commodore
+'- SubMenu_M ?  Commodore';- Menu - Sub_Manufacturer - Commodore
+2 COMMODORE;- Menu - Sub_Manufacturer - Commodore
+- SubMenu_M -  Microsoft;- Menu - Sub_Manufacturer - Microsoft
+- SubMenu_M - Microsoft;- Menu - Sub_Manufacturer - Microsoft
+-SubMenu_M?  Microsoft;- Menu - Sub_Manufacturer - Microsoft
+'- SubMenu_M ?  Microsoft';- Menu - Sub_Manufacturer - Microsoft
+2 MICROSOFT;- Menu - Sub_Manufacturer - Microsoft
+- SubMenu_M -  Nec;- Menu - Sub_Manufacturer - Nec
+- SubMenu_M - Nec;- Menu - Sub_Manufacturer - Nec
+-SubMenu_M?  Nec;- Menu - Sub_Manufacturer - Nec
+'- SubMenu_M ?  Nec';- Menu - Sub_Manufacturer - Nec
+2 NEC;- Menu - Sub_Manufacturer - Nec
+- SubMenu_M -  Nintendo;- Menu - Sub_Manufacturer - Nintendo
+- SubMenu_M - Nintendo;- Menu - Sub_Manufacturer - Nintendo
+-SubMenu_M?  Nintendo;- Menu - Sub_Manufacturer - Nintendo
+'- SubMenu_M ?  Nintendo';- Menu - Sub_Manufacturer - Nintendo
+2 NINTENDO;- Menu - Sub_Manufacturer - Nintendo
+9 Nintendo;- Menu - Sub_Manufacturer - Nintendo
+- SubMenu -  Sega;- Menu - Sub_Manufacturer - Sega
+- SubMenu_M -  Sega;- Menu - Sub_Manufacturer - Sega
+- SubMenu_M - Sega;- Menu - Sub_Manufacturer - Sega
+-SubMenu_M?  Sega;- Menu - Sub_Manufacturer - Sega
+'- SubMenu_M ?  Sega';- Menu - Sub_Manufacturer - Sega
+2 SEGA;- Menu - Sub_Manufacturer - Sega
+9 Sega;- Menu - Sub_Manufacturer - Sega
+sega;- Menu - Sub_Manufacturer - Sega
+- SubMenu_M -  Snk;- Menu - Sub_Manufacturer - Snk
+- SubMenu_M - Snk;- Menu - Sub_Manufacturer - Snk
+-SubMenu_M?  Snk;- Menu - Sub_Manufacturer - Snk
+'- SubMenu_M ?  Snk';- Menu - Sub_Manufacturer - Snk
+2 SNK;- Menu - Sub_Manufacturer - Snk
+9 SNK;- Menu - Sub_Manufacturer - Snk
+- SubMenu_M -  Sony;- Menu - Sub_Manufacturer - Sony
+- SubMenu_M - Sony;- Menu - Sub_Manufacturer - Sony
+-SubMenu_M?  Sony;- Menu - Sub_Manufacturer - Sony
+'- SubMenu_M ?  Sony';- Menu - Sub_Manufacturer - Sony
+2 SONY;- Menu - Sub_Manufacturer - Sony
+- Sub ?  - Sub ?  Arcade Classics;- Sub_Systems - Arcade Classics
+-Sub-Arcade Classics;- Sub_Systems - Arcade Classics
+'- Sub ?Arcade Classics';- Sub_Systems - Arcade Classics
+Arcade Classics;- Sub_Systems - Arcade Classics
+arcade2;- Sub_Systems - Arcade Classics
+-Sub-Atari Classics;- Sub_Systems - Atari Classics
+Atari Classics;- Sub_Systems - Atari Classics
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Banpresto Classics Classics Classics Classics Classics;- Sub_Systems - Banpresto Classics
+- Sub ?  - Sub ? Banpresto Classics;- Sub_Systems - Banpresto Classics
+-Sub--Sub--Sub-Banpresto Classics' Classics Classics Classics;- Sub_Systems - Banpresto Classics
+-Sub-Banpresto Classics;- Sub_Systems - Banpresto Classics
+-Sub?Banpresto Classics' Classics;- Sub_Systems - Banpresto Classics
+'- Sub ?Banpresto Classics';- Sub_Systems - Banpresto Classics
+Banpresto;- Sub_Systems - Banpresto Classics
+- Sub ?  - Sub ?  Capcom Classics;- Sub_Systems - Capcom Classics
+Capcom Classics;- Sub_Systems - Capcom Classics
+-Sub-Capcom Classics;- Sub_Systems - Capcom Classics
+'- Sub ?Capcom Classics';- Sub_Systems - Capcom Classics
+- Sub_Systems - Capcom Home Arcade;- Sub_Systems - Capcom Classics
+9 Capcom;- Sub_Systems - Capcom Classics
+Ca'PC Games'om Classics;- Sub_Systems - Capcom Classics
+CaPC Gamesom Classics;- Sub_Systems - Capcom Classics
+capcom;- Sub_Systems - Capcom Classics
+cps;- Sub_Systems - Capcom Classics
+- Sub ?  - Sub ?  Capcom Play System;- Sub_Systems - Capcom Play System
+-Sub-Capcom Play System;- Sub_Systems - Capcom Play System
+'- Sub ?Capcom Play System';- Sub_Systems - Capcom Play System
+Ca'PC Games'om Play System I;- Sub_Systems - Capcom Play System
+cps1;- Sub_Systems - Capcom Play System
+CPS1;- Sub_Systems - Capcom Play System
+- Sub ?  - Sub ?  Capcom Play System II;- Sub_Systems - Capcom Play System II
+-Sub-Capcom Play System II;- Sub_Systems - Capcom Play System II
+'- Sub ?Capcom Play System II';- Sub_Systems - Capcom Play System II
+Ca'PC Games'om Play System II;- Sub_Systems - Capcom Play System II
+CPS 2;- Sub_Systems - Capcom Play System II
+cps2;- Sub_Systems - Capcom Play System II
+- Sub ?  - Sub ?  Capcom Play System III;- Sub_Systems - Capcom Play System III
+-Sub-Capcom Play System III;- Sub_Systems - Capcom Play System III
+'- Sub ?Capcom Play System III';- Sub_Systems - Capcom Play System III
+Ca'PC Games'om Play System III;- Sub_Systems - Capcom Play System III
+cps3;- Sub_Systems - Capcom Play System III
+emulador cps3;- Sub_Systems - Capcom Play System III
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Cave Classics Classics Classics Classics Classics;- Sub_Systems - Cave Classics
+- Sub ?  - Sub ?  Cave Classics;- Sub_Systems - Cave Classics
+-Sub--Sub--Sub-Cave Classics' Classics Classics Classics;- Sub_Systems - Cave Classics
+-Sub-Cave Classics;- Sub_Systems - Cave Classics
+-Sub?Banpresto Classics' Classics;- Sub_Systems - Cave Classics
+-Sub?Cave Classics' Classics;- Sub_Systems - Cave Classics
+'- Sub ?Cave Classics';- Sub_Systems - Cave Classics
+9 Cave;- Sub_Systems - Cave Classics
+Cave;- Sub_Systems - Cave Classics
+- Sub ?  - Sub ?  Data East Classics;- Sub_Systems - Data East Classics
+-Sub-Data East Classics;- Sub_Systems - Data East Classics
+'- Sub ?Data East Classics';- Sub_Systems - Data East Classics
+9 Data East;- Sub_Systems - Data East Classics
+Data East Classics;- Sub_Systems - Data East Classics
+dataeast;- Sub_Systems - Data East Classics
+- Sub ?  - Sub ?  favorites;- Sub_Systems - favorites
+-Sub-favorites;- Sub_Systems - favorites
+'- Sub ?favorites';- Sub_Systems - favorites
+auto-favorites;- Sub_Systems - favorites
+- Sub ?  - Sub ?  Gaelco;- Sub_Systems - Gaelco
+-Sub-Gaelco;- Sub_Systems - Gaelco
+'- Sub ?Gaelco';- Sub_Systems - Gaelco
+gaelco;- Sub_Systems - Gaelco
+Gaelco;- Sub_Systems - Gaelco
+Gaelco;- Sub_Systems - Gaelco
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Irem Classics Classics Classics Classics Classics Classics;- Sub_Systems - Irem Classics
+- Sub ?  - Sub ?  Irem Classics;- Sub_Systems - Irem Classics
+-Sub--Sub--Sub-Irem Classics' Classics Classics Classics Classics;- Sub_Systems - Irem Classics
+-Sub-Irem Classics;- Sub_Systems - Irem Classics
+-Sub?Cave Classics' Classics;- Sub_Systems - Irem Classics
+-Sub?Irem Classics' Classics;- Sub_Systems - Irem Classics
+Irem Classics;- Sub_Systems - Irem Classics
+'- Sub ?Irem Classics';- Sub_Systems - Irem Classics
+9 Irem;- Sub_Systems - Irem Classics
+Irem;- Sub_Systems - Irem Classics
+- Sub ?  - Sub ?  Jaleco Classics;- Sub_Systems - Jaleco Classics
+-Sub-Jaleco Classics;- Sub_Systems - Jaleco Classics
+'- Sub ?Jaleco Classics';- Sub_Systems - Jaleco Classics
+Jaleco;- Sub_Systems - Jaleco Classics
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Kaneko Classics Classics Classics Classics Classics;- Sub_Systems - Kaneko Classics
+Kaneko;- Sub_Systems - Kaneko Classics
+- Sub ?  - Sub ?  Kaneko Classics;- Sub_Systems - Kaneko Classics
+-Sub--Sub--Sub-Kaneko Classics' Classics Classics Classics;- Sub_Systems - Kaneko Classics
+-Sub-Kaneko Classics;- Sub_Systems - Kaneko Classics
+-Sub?Kaneko Classics' Classics;- Sub_Systems - Kaneko Classics
+'- Sub ?Kaneko Classics';- Sub_Systems - Kaneko Classics
+Kaneko;- Sub_Systems - Kaneko Classics
+- Sub ?  - Sub ?  Konami Classics;- Sub_Systems - Konami Classics
+-Sub-Konami Classics;- Sub_Systems - Konami Classics
+'- Sub ?Konami Classics';- Sub_Systems - Konami Classics
+9 Konami;- Sub_Systems - Konami Classics
+konami;- Sub_Systems - Konami Classics
+Konami Classics;- Sub_Systems - Konami Classics
+- Sub ?  - Sub ?  Microsoft MS-DOS Joystick;- Sub_Systems - Microsoft MS-DOS Joystick
+-Sub-Microsoft MS-DOS Joystick;- Sub_Systems - Microsoft MS-DOS Joystick
+'- Sub ?Microsoft MS-DOS Joystick';- Sub_Systems - Microsoft MS-DOS Joystick
+DOS Joystick Official;- Sub_Systems - Microsoft MS-DOS Joystick
+- Sub ?  - Sub ?  Microsoft MS-DOS Mouse;- Sub_Systems - Microsoft MS-DOS Mouse
+-Sub-Microsoft MS-DOS Mouse;- Sub_Systems - Microsoft MS-DOS Mouse
+'- Sub ?Microsoft MS-DOS Mouse';- Sub_Systems - Microsoft MS-DOS Mouse
+DOS Mouse Official;- Sub_Systems - Microsoft MS-DOS Mouse
+- Sub ?  - Sub ?  Midway Classics;- Sub_Systems - Midway Classics
+-Sub-Midway Classics;- Sub_Systems - Midway Classics
+'- Sub ?Midway Classics';- Sub_Systems - Midway Classics
+9 Midway;- Sub_Systems - Midway Classics
+midway;- Sub_Systems - Midway Classics
+Midway Classics;- Sub_Systems - Midway Classics
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Namco Classics Classics Classics Classics Classics Classics;- Sub_Systems - Namco Classics
+- Sub ?  - Sub ?  Namco Classics;- Sub_Systems - Namco Classics
+Namco Classics;- Sub_Systems - Namco Classics
+-Sub--Sub--Sub-Namco Classics' Classics Classics Classics Classics;- Sub_Systems - Namco Classics
+-Sub-Namco Classics;- Sub_Systems - Namco Classics
+-Sub?Namco Classics' Classics;- Sub_Systems - Namco Classics
+'- Sub ?Namco Classics';- Sub_Systems - Namco Classics
+9 Namco;- Sub_Systems - Namco Classics
+Namco;- Sub_Systems - Namco Classics
+-Sub-Namco NA-1;- Sub_Systems - Namco NA-1
+-Sub?Namco Classics' Classics NA-1;- Sub_Systems - Namco NA-1
+-Sub-Namco NB-1;- Sub_Systems - Namco NB-1
+-Sub?Namco Classics' Classics NB-1;- Sub_Systems - Namco NB-1
+-Sub-Namco System 22;- Sub_Systems - Namco System 22
+-Sub?Namco Classics' Classics System 22;- Sub_Systems - Namco System 22
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Nichibutsu Classics Classics Classics Classics Classics;- Sub_Systems - Nichibutsu Classics
+- Sub ?  - Sub ?  Nichibutsu Classics;- Sub_Systems - Nichibutsu Classics
+-Sub--Sub--Sub-Nichibutsu Classics' Classics Classics Classics;- Sub_Systems - Nichibutsu Classics
+-Sub-Nichibutsu Classics;- Sub_Systems - Nichibutsu Classics
+-Sub?Nichibutsu Classics' Classics;- Sub_Systems - Nichibutsu Classics
+'- Sub ?Nichibutsu Classics';- Sub_Systems - Nichibutsu Classics
+Nichibutsu;- Sub_Systems - Nichibutsu Classics
+-Sub-Nintendo Classics;- Sub_Systems - Nintendo Classics
+Nintendo Classics;- Sub_Systems - Nintendo Classics
+-Sub-Poly Game Master;- Sub_Systems - Poly Game Master
+'PolyGame Master';- Sub_Systems - Poly Game Master
+pgm;- Sub_Systems - Poly Game Master
+PGM;- Sub_Systems - Poly Game Master
+Poly Game Master;- Sub_Systems - Poly Game Master
+PolyGame Master;- Sub_Systems - Poly Game Master
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Psikyo Classics Classics Classics Classics Classics;- Sub_Systems - Psikyo Classics
+- Sub ?  - Sub ?  Psikyo Classics;- Sub_Systems - Psikyo Classics
+-Sub--Sub--Sub-Psikyo Classics' Classics Classics Classics;- Sub_Systems - Psikyo Classics
+-Sub-Psikyo Classics;- Sub_Systems - Psikyo Classics
+-Sub?Psikyo Classics' Classics;- Sub_Systems - Psikyo Classics
+'- Sub ?Psikyo Classics';- Sub_Systems - Psikyo Classics
+Psikyo;- Sub_Systems - Psikyo Classics
+- Sub ?  - Sub ?  - Sub ?  - Sub ?- Sub ?Raizing Classics Classics Classics Classics Classics;- Sub_Systems - Raizing Classics
+- Sub ?  - Sub ?  Raizing Classics;- Sub_Systems - Raizing Classics
+-Sub--Sub--Sub-Raizing Classics' Classics Classics Classics;- Sub_Systems - Raizing Classics
+-Sub-Raizing Classics;- Sub_Systems - Raizing Classics
+-Sub?Raizing Classics' Classics;- Sub_Systems - Raizing Classics
+'- Sub ?Raizing Classics';- Sub_Systems - Raizing Classics
+Raizing;- Sub_Systems - Raizing Classics
+-Sub-Sega Classics;- Sub_Systems - Sega Classics
+Sega Classics;- Sub_Systems - Sega Classics
+- Sub ?  - Sub ?  Sega Naomi 2;- Sub_Systems - Sega Naomi 2
+-Sub-Sega Naomi 2;- Sub_Systems - Sega Naomi 2
+'- Sub ?Sega Naomi 2';- Sub_Systems - Sega Naomi 2
+naomi2;- Sub_Systems - Sega Naomi 2
+- Sub ?  - Sub ?  Seibu Kaihatsu;- Sub_Systems - Seibu Kaihatsu
+-Sub-Seibu Kaihatsu;- Sub_Systems - Seibu Kaihatsu
+'- Sub ?Seibu Kaihatsu';- Sub_Systems - Seibu Kaihatsu
+- Sub ? Seibu Kaihatsu Classics;- Sub_Systems - Seibu Kaihatsu Classics
+-Sub-Seibu Kaihatsu Classics;- Sub_Systems - Seibu Kaihatsu Classics
+'- Sub ? Seibu Kaihatsu Classics';- Sub_Systems - Seibu Kaihatsu Classics
+seibu;- Sub_Systems - Seibu Kaihatsu Classics
+Seibu Kaihatsu;- Sub_Systems - Seibu Kaihatsu Classics
+- Sub ? Seta Classics;- Sub_Systems - Seta Classics
+-Sub-Seta Classics;- Sub_Systems - Seta Classics
+'- Sub ? Seta Classics';- Sub_Systems - Seta Classics
+seta;- Sub_Systems - Seta Classics
+-Sub-SNK Classics;- Sub_Systems - SNK Classics
+SNK Classics;- Sub_Systems - SNK Classics
+- Sub ? SNK Neo Geo AES;SNK Neo Geo AES
+-Sub-SNK Neo Geo AES;SNK Neo Geo AES
+'- Sub ? SNK Neo Geo AES';SNK Neo Geo AES
+'SNK Neo Geo MVS' AES;SNK Neo Geo AES
+Neo-Geo;SNK Neo Geo AES
+neogeo;SNK Neo Geo AES
+- Sub ? Taito Classics;- Sub_Systems - Taito Classics
+-Sub-Taito Classics;- Sub_Systems - Taito Classics
+'- Sub ? Taito Classics';- Sub_Systems - Taito Classics
+9 Taito;- Sub_Systems - Taito Classics
+taito;- Sub_Systems - Taito Classics
+Taito Classics;- Sub_Systems - Taito Classics
+tecmo;- Sub_Systems - Taito Classics
+- Sub ? Technos Classics;- Sub_Systems - Technos Classics
+-Sub-Technos Classics;- Sub_Systems - Technos Classics
+'- Sub ? Technos Classics';- Sub_Systems - Technos Classics
+Technos;- Sub_Systems - Technos Classics
+- Sub ? Toaplan Classics;- Sub_Systems - Toaplan Classics
+-Sub-Toaplan Classics;- Sub_Systems - Toaplan Classics
+'- Sub ? Toaplan Classics';- Sub_Systems - Toaplan Classics
+toaplan;- Sub_Systems - Toaplan Classics
+- Sub ? Unico Classics;- Sub_Systems - Unico Classics
+-Sub-Unico Classics;- Sub_Systems - Unico Classics
+'- Sub ? Unico Classics';- Sub_Systems - Unico Classics
+unico;- Sub_Systems - Unico Classics
+- Sub ? - Sub ? - Sub ? - Sub ? - Sub ? Visco Games Games Games Games Games;- Sub_Systems - Video System Co
+- Sub ? Video System Co;- Sub_Systems - Video System Co
+-Sub-Video System Co;- Sub_Systems - Video System Co
+-Sub-Visco Games;- Sub_Systems - Video System Co
+-Sub?Visco Games;- Sub_Systems - Video System Co
+'- Sub ? Video System Co';- Sub_Systems - Video System Co
+Video System Co;- Sub_Systems - Video System Co
+videosystem;- Sub_Systems - Video System Co
+- Sub ? Visco Games;- Sub_Systems - Visco Games
+-Sub--Sub--Sub-''-Sub-Visco Games'' Games Games Games;- Sub_Systems - Visco Games
+-Sub-Visco Games;- Sub_Systems - Visco Games
+'- Sub ? Visco Games';- Sub_Systems - Visco Games
+Visco;- Sub_Systems - Visco Games
+- Sub ? Williams Classics;- Sub_Systems - Williams Classics
+-Sub-Williams Classics;- Sub_Systems - Williams Classics
+'- Sub ? Williams Classics';- Sub_Systems - Williams Classics
+9 Williams;- Sub_Systems - Williams Classics
+Williams Classics;- Sub_Systems - Williams Classics
+'3DO Interactive Multiplayer';3DO Interactive Multiplayer
+The 3DO Company - 3DO;3DO Interactive Multiplayer
+3do;3DO Interactive Multiplayer
+3DO;3DO Interactive Multiplayer
+3DO Interactive Multiplayer;3DO Interactive Multiplayer
+3DO Official;3DO Interactive Multiplayer
+Pana- Sub ?  - Sub ?  - SubCol ?  - SubCol ?  - SubCol ?  - SubCol ?  Sonic Collection 3DO;3DO Interactive Multiplayer
+Panasonic 3DO;3DO Interactive Multiplayer
+AAE;AAE
+Acorn Archimedes;Acorn Archimedes
+Acorn Atom;Acorn Atom
+'Acorn BBC Micro';Acorn BBC Micro
+Acorn BBC Micro;Acorn BBC Micro
+BBC Micro Official;Acorn BBC Micro
+'Aleck64 Arcade';Aleck64 Arcade
+Aleck64 Arcade;Aleck64 Arcade
+'Amstrad CPC';Amstrad CPC
+Amstrad CPC;Amstrad CPC
+Amstrad CPC Official;Amstrad CPC
+amstradcpc;Amstrad CPC
+cpr;Amstrad CPC
+kcr;Amstrad CPC
+Amstrad - CPC;Amstrad CPC
+'Amstrad GX4000';Amstrad GX4000
+Amstrad - GX4000;Amstrad GX4000
+Amstrad GX4000;Amstrad GX4000
+Amstrad GX4000 Official;Amstrad GX4000
+gx4000;Amstrad GX4000
+'Android';Android
+Android;Android
+Google Android;Android
+APF Imagination Machine;APF Imagination Machine
+APF - Imagination Machine;APF Imagination Machine
+'Apple II';Apple II
+Apple II;Apple II
+apple2;Apple II
+'Apple IIe';Apple IIe
+Apple IIe;Apple IIe
+Apple IIe;Apple IIe
+apple2e;Apple IIe
+'Apple IIGS';Apple IIGS
+Apple - IIgs;Apple IIGS
+Apple IIGS;Apple IIGS
+apple2gs;Apple IIGS
+'Apple IOS';Apple IOS
+Apple IOS;Apple IOS
+'Apple Mac OS';Apple Mac OS
+Apple Mac OS;Apple Mac OS
+macintosh;Apple Mac OS
+arquivo_velho_;arquivo_novo_
+'Atari 2600';Atari 2600
+Atari 2600;Atari 2600
+Atari 2600 Official;Atari 2600
+atari2600;Atari 2600
+Stella;Atari 2600
+5200;Atari 5200
+'Atari 5200';Atari 5200
+Atari 5200;Atari 5200
+Atari 5200 Official;Atari 5200
+atari5200;Atari 5200
+7800;Atari 7800
+'Atari 7800';Atari 7800
+Atari 7800;Atari 7800
+Atari 7800 Official;Atari 7800
+atari7800;Atari 7800
+'Atari 800';Atari 800
+Atari 8-Bit;Atari 800
+Atari 8-bit computers;Atari 800
+Atari 800;Atari 800
+atari800;Atari 800
+'Atari Jaguar';Atari Jaguar
+Atari Jaguar;Atari Jaguar
+atarijaguar;Atari Jaguar
+jaguar;Atari Jaguar
+Jaguar Official;Atari Jaguar
+'Atari Jaguar CD';Atari Jaguar CD
+Atari Jaguar CD;Atari Jaguar CD
+atarijaguarcd;Atari Jaguar CD
+'Atari Lynx';Atari Lynx
+Atari Lynx;Atari Lynx
+AtariLynx;Atari Lynx
+atarilynx;Atari Lynx
+Lynx;Atari Lynx
+lynx;Atari Lynx
+Lynx Official;Atari Lynx
+'Atari ST';Atari ST
+Atari ST;Atari ST
+atarist;Atari ST
+ST/STE/TT/Falcon;Atari ST
+Atari STE;Atari STE
+Atari TT;Atari TT
+Atari XEGS;Atari XEGS
+Bally Astrocade;Bally Astrocade
+'Bandai WonderSwan';Bandai WonderSwan
+Bandai WonderSwan;Bandai WonderSwan
+wonderswan;Bandai WonderSwan
+Wonderswan;Bandai WonderSwan
+WonderSwan Official;Bandai WonderSwan
+wswan;Bandai WonderSwan
+'Bandai WonderSwan Color';Bandai WonderSwan Color
+Bandai - WonderSwan Color;Bandai WonderSwan Color
+'Bandai Wonderswan Color';Bandai Wonderswan Color
+Bandai WonderSwan Color;Bandai WonderSwan Color
+Bandai Wonderswan Color;Bandai Wonderswan Color
+Wonderswan Color;Bandai WonderSwan Color
+WonderSwan Color Official;Bandai WonderSwan Color
+wonderswancolor;Bandai Wonderswan Color
+wswanc;Bandai Wonderswan Color
+'ColecoVision';ColecoVision
+Coleco;ColecoVision
+Coleco - ColecoVision;ColecoVision
+colecovision;ColecoVision
+ColecoVision;ColecoVision
+Colecovision;ColecoVision
+ColecoVision Official;ColecoVision
+'Commodore 128';Commodore 128
+c128;Commodore 128
+Commodore 128;Commodore 128
+Commodore 16 & Plus4;Commodore 16 & Plus4
+'Commodore 20';Commodore 20
+c20;Commodore 20
+Commodore 20;Commodore 20
+'Commodore 64';Commodore 64
+Commodore - 64;Commodore 64
+c16;Commodore 64
+c64;Commodore 64
+Commodore 64;Commodore 64
+Commodore 64 Official;Commodore 64
+'Commodore Amiga';Commodore Amiga
+Commodore - Amiga;Commodore Amiga
+amiga;Commodore Amiga
+Amiga;Commodore Amiga
+Amiga Official;Commodore Amiga
+Commodore Amiga;Commodore Amiga
+'Commodore Amiga 1200';Commodore Amiga 1200
+amiga1200;Commodore Amiga 1200
+Commodore Amiga 1200;Commodore Amiga 1200
+'Commodore Amiga 500';Commodore Amiga 500
+amiga500;Commodore Amiga 500
+Commodore Amiga 500;Commodore Amiga 500
+Commodore Amiga_500;Commodore Amiga 500
+'Commodore Amiga 600';Commodore Amiga 600
+amiga4000;Commodore Amiga 600
+amiga600;Commodore Amiga 600
+Commodore Amiga 600;Commodore Amiga 600
+Commodore Amiga_600;Commodore Amiga 600
+Commodore Amiga600;Commodore Amiga 600
+'Commodore Amiga CD32';Commodore Amiga CD32
+amigacd32;Commodore Amiga CD32
+Commodore - Amiga CD;Commodore Amiga CD32
+Commodore - Amiga CD32;Commodore Amiga CD32
+Commodore Amiga 32;Commodore Amiga CD32
+Commodore Amiga CD;Commodore Amiga CD32
+Commodore Amiga CD32;Commodore Amiga CD32
+Commodore Amiga_CD32;Commodore Amiga CD32
+'Commodore Amiga CDTV';Commodore Amiga CDTV
+amigacdtv;Commodore Amiga CDTV
+Commodore Amiga CDTV;Commodore Amiga CDTV
+Commodore CDTV;Commodore CDTV
+'Commodore PET';Commodore PET
+Commodore PET;Commodore PET
+pet;Commodore PET
+'Commodore VIC-20';Commodore VIC-20
+Commodore VIC-20;Commodore VIC-20
+Commodore VIC-20 Official;Commodore VIC-20
+vic20;Commodore VIC-20
+'daphne';Daphne
+Daphne - Daphne Laser Disc;Daphne
+daphne;Daphne
+DICE;DICE
+EACA EG2000 Colour Genie;EG2000 Colour Genie
+Emerson Arcadia 2001;Emerson Arcadia 2001
+Emerson - Arcadia 2001;Emerson Arcadia 2001
+Entex Adventure Vision;Entex Adventure Vision
+Entex - Adventure Vision;Entex Adventure Vision
+Entech - Adventure Vision;Entech Adventure Vision
+'Fairchild Channel F';Fairchild Channel F
+Fairchild - Channel F;Fairchild Channel F
+channelf;Fairchild Channel F
+Fairchild Channel F;Fairchild Channel F
+Fairchild Channel_F;Fairchild Channel F
+Fairchild ChannelF;Fairchild Channel F
+FairchildChannel F;Fairchild Channel F
+'Fujitsu FM Towns';Fujitsu FM Towns
+Fujitsu - FM Towns;Fujitsu FM Towns
+fmtowns;Fujitsu FM Towns
+Fujitsu FM Towns;Fujitsu FM Towns
+'Future Pinball';Future Pinball
+fpinball ;Future Pinball
+Future Pinball;Future Pinball
+GamePark 32;GamePark GP32
+'GCE Vectrex';GCE Vectrex
+GCE Vectrex;GCE Vectrex
+vectrex;GCE Vectrex
+Vectrex Official;GCE Vectrex
+GG;GOG.com
+GOG;GOG.com
+'Interton VC 4000';Interton VC 4000
+Interton VC 4000;Interton VC 4000
+vc4000;Interton VC 4000
+Java Games;Java Games
+'Magnavox Odyssey';Magnavox Odyssey
+Magnavox Odyssey;Magnavox Odyssey
+odyssey;Magnavox Odyssey
+'Magnavox Odyssey 2';Magnavox Odyssey 2
+Magnavox Odyssey 2;Magnavox Odyssey 2
+Magnavox Odyssey2;Magnavox Odyssey 2
+odyssey2;Magnavox Odyssey 2
+Odyssey2/Videopac+;Magnavox Odyssey 2
+'Magnavox Odyssey2';Magnavox Odyssey2
+Odyssey 2 Official;Magnavox Odyssey2
+'Main';Main
+Main;Main
+main;Main
+- Arcade Official;Mame
+MAME - Arcade;Mame
+'Mame';Mame
+arcade;Mame
+ARCADE;Mame
+Arcade;Mame
+mame;Mame
+MaMe;Mame
+Mame;Mame
+MAME;Mame
+MAME 2000;Mame
+MAME 2003;Mame
+MAME 2010;Mame
+MAME 2014;Mame
+MAME2003;Mame
+MAME2003+;Mame
+MAME2010;Mame
+'Mame Hack';Mame Hack
+HBMAME;Mame Hack
+Mame Hack;Mame Hack
+mameh;Mame Hack
+'Mattel Intellivision';Mattel Intellivision
+intellivision;Mattel Intellivision
+Intellivision;Mattel Intellivision
+Intellivision Official;Mattel Intellivision
+Mattel Intellivision;Mattel Intellivision
+'MGT Sam Coupe';MGT Sam Coupe
+MGT Sam Coupe;MGT Sam Coupe
+samcoupe;MGT Sam Coupe
+'Microsoft MS-DOS';Microsoft MS-DOS
+Microsoft - DOS;Microsoft MS-DOS
+dos;Microsoft MS-DOS
+DOS;Microsoft MS-DOS
+DOSBox;Microsoft MS-DOS
+Microsoft MS-DOS;Microsoft MS-DOS
+msdos;Microsoft MS-DOS
+'Microsoft MSX';Microsoft MSX
+Microsoft MSX;Microsoft MSX
+msx;Microsoft MSX
+MSX;Microsoft MSX
+MSX Mame Official;Microsoft MSX
+MSX/SVI/ColecoVision/SG-1000;Microsoft MSX
+msx1;Microsoft MSX
+'Microsoft MSX Turbo-R';Microsoft MSX Turbo-R
+Microsoft MSX Turbo-R;Microsoft MSX Turbo-R
+MSX Turbo-R;Microsoft MSX Turbo-R
+msxturbor;Microsoft MSX Turbo-R
+'Microsoft MSX2';Microsoft MSX2
+Microsoft MSX2;Microsoft MSX2
+msx2;Microsoft MSX2
+'Microsoft MSX2+';Microsoft MSX2+
+Microsoft MSX2+;Microsoft MSX2+
+Microsoft - MSX2+;Microsoft MSX2+
+Microsoft - MSX;Microsoft MSX
+msx2+;Microsoft MSX2+
+'Microsoft Xbox';Microsoft Xbox
+Microsoft Xbox;Microsoft Xbox
+Microsoft - XBOX;Microsoft Xbox
+xbox;Microsoft Xbox
+'Microsoft Xbox 360';Microsoft Xbox 360
+Microsoft - XBOX 360;Microsoft Xbox 360
+Microsoft Xbox 360;Microsoft Xbox 360
+xbox360;Microsoft Xbox 360
+Microsoft Xbox One;Microsoft Xbox One
+'Mugen';Mugen
+mugen;Mugen
+Mugen;Mugen
+Music Player;Music Player
+'NEC PC Engine';NEC PC Engine
+NEC - PC Engine - JAP;NEC PC Engine
+NEC - PC Engine;NEC PC Engine
+NEC PC Engine;NEC PC Engine
+PC Engine;NEC PC Engine
+PC Engine Official;NEC PC Engine
+pcengine;NEC PC Engine
+pce;NEC PC Engine
+'NEC PC Engine-CD';NEC PC Engine-CD
+NEC PC Engine-CD;NEC PC Engine-CD
+PC Engine CD Official;NEC PC Engine-CD
+PC Engine/CD;NEC PC Engine-CD
+pce-cd;NEC PC Engine-CD
+PCE-CD;NEC PC Engine-CD
+pcenginecd;NEC PC Engine-CD
+'NEC PC-8801';NEC PC-8801
+NEC PC-8801;NEC PC-8801
+pc88;NEC PC-8801
+'NEC PC-9801';NEC PC-9801
+NEC PC-9801;NEC PC-9801
+PC-98;NEC PC-9801
+pc98;NEC PC-9801
+NEC - PC98;NEC PC-9801
+'NEC PC-FX';NEC PC-FX
+NEC PC-FX;NEC PC-FX
+NEC PCFX;NEC PC-FX
+PC-FX;NEC PC-FX
+pcfx;NEC PC-FX
+'NEC SuperGrafx';NEC SuperGrafx
+NEC SuperGrafx;NEC SuperGrafx
+PC Engine Supergrafx;NEC SuperGrafx
+PCE SuperGrafx;NEC SuperGrafx
+SuperGrafx;NEC SuperGrafx
+SuperGfx;NEC SuperGrafx
+Superfx;NEC SuperGrafx
+Gfx;NEC SuperGrafx
+supergrafx;NEC SuperGrafx
+'NEC TurboGrafx-16';NEC TurboGrafx-16
+NEC TurboGrafx-16;NEC TurboGrafx-16
+NEC - PC Engine - TurboGrafx 16;NEC TurboGrafx-16
+NEC - TurboGrafx 16;NEC TurboGrafx-16
+tg16;NEC TurboGrafx-16
+'NEC Turbografx-CD';NEC Turbografx-CD
+NEC - PC Engine CD - TurboGrafx CD;NEC Turbografx-CD
+TurboGrafx CD;NEC Turbografx-CD
+NEC - TurboGrafx CD;NEC Turbografx-CD
+NEC Turbo Duo;NEC Turbografx-CD
+NEC TurboGrafx-CD;NEC TurboGrafx-CD
+tg16cd;NEC Turbografx-CD
+'NEC TurboGrafx-Express';NEC TurboGrafx-Express
+NEC TurboGrafx-Express;NEC TurboGrafx-Express
+tg-express;NEC TurboGrafx-Express
+'NESiCAxLive';NESiCAxLive
+NESiCAxLive;NESiCAxLive
+Taito NESiCAxLive;NESiCAxLive
+'Nintendo 3DS';Nintendo 3DS
+Nintendo - Nintendo 3DS;Nintendo 3DS
+3ds;Nintendo 3DS
+n3ds;Nintendo 3DS
+Nintendo 3DS;Nintendo 3DS
+'Nintendo 3DS Brazil Games Translated';Nintendo 3DS Brazil Games Translated
+3DS Br;Nintendo 3DS Brazil Games Translated
+3DS Brazil;Nintendo 3DS Brazil Games Translated
+3dsbr;Nintendo 3DS Brazil Games Translated
+n3dsbr;Nintendo 3DS Brazil Games Translated
+Nintendo 3DS Brazil Games Translated;Nintendo 3DS Brazil Games Translated
+'Nintendo 64';Nintendo 64
+Nintendo - Nintendo 64;Nintendo 64
+n64;Nintendo 64
+Nintendo 4;Nintendo 64
+Nintendo 6;Nintendo 64
+Nintendo 60;Nintendo 64
+Nintendo 6444;Nintendo 64
+Nintendo 64;Nintendo 64
+Nintendo 64 Official;Nintendo 64
+Nintendo 65;Nintendo 64
+Nintendo 66;Nintendo 64
+Nintendo64;Nintendo 64
+Project64;Nintendo 64
+'Nintendo 64 Brazil Games Translated';Nintendo 64 Brazil Games Translated
+n64br;Nintendo 64 Brazil Games Translated
+Nintendo 64 Brazil Games Translated;Nintendo 64 Brazil Games Translated
+'Nintendo 64 HD';Nintendo 64 HD
+n64h;Nintendo 64 HD
+Nintendo 64 HD;Nintendo 64 HD
+'Nintendo 64DD';Nintendo 64DD
+64dd;Nintendo 64DD
+n64dd;Nintendo 64DD
+Nintendo 64DD;Nintendo 64DD
+'Nintendo DS';Nintendo DS
+Nintendo - Nintendo DS;Nintendo DS
+DS;Nintendo DS
+nds;Nintendo DS
+ds;Nintendo DS
+Nintendo DS;Nintendo DS
+Nintendo DS Official;Nintendo DS
+'Nintendo DS Brazil Games Translated';Nintendo DS Brazil Games Translated
+ndsbr;Nintendo DS Brazil Games Translated
+Nintendo DS Brazil Games Translated;Nintendo DS Brazil Games Translated
+'Nintendo Entertainment System';Nintendo Entertainment System
+Nintendo - Nintendo Entertainment System;Nintendo Entertainment System
+nes;Nintendo Entertainment System
+NES;Nintendo Entertainment System
+NES/Famicom;Nintendo Entertainment System
+Nintendo 8 bits;Nintendo Entertainment System
+Nintendo Entertainment System;Nintendo Entertainment System
+Nintendo Entertainment System Official;Nintendo Entertainment System
+'Nintendo Entertainment System Brazil Games Translated';Nintendo Entertainment System Brazil Games Translated
+nesbr;Nintendo Entertainment System Brazil Games Translated
+Nintendo Entertainment System Brazil Games Translated;Nintendo Entertainment System Brazil Games Translated
+'Nintendo Entertainment System Hacks';Nintendo Entertainment System Hacks
+nesh;Nintendo Entertainment System Hacks
+Nintendo Entertainment System Hacks;Nintendo Entertainment System Hacks
+System Hacks - NES;Nintendo Entertainment System Hacks
+'Nintendo Entertainment System Homebrew';Nintendo Entertainment System Homebrew
+Nintendo Entertainment System Homebrew;Nintendo Entertainment System Homebrew
+System Homebrew - NES;Nintendo Entertainment System Homebrew
+'Nintendo Entertainment System Homebrews';Nintendo Entertainment System Homebrews
+NES Homebrew Collection;Nintendo Entertainment System Homebrews
+Nintendo Entertainment System Homebrews;Nintendo Entertainment System Homebrews
+Nintendo NES Homebrew;Nintendo Entertainment System Homebrews
+System Homebrews - NES;Nintendo Entertainment System Homebrews
+'Nintendo Entertainment System Mini';Nintendo Entertainment System Mini
+nesmini;Nintendo Entertainment System Mini
+Nintendo Entertainment System Mini;Nintendo Entertainment System Mini
+'Nintendo Famicom';Nintendo Famicom
+famicom;Nintendo Famicom
+Famicom;Nintendo Famicom
+Nintendo Famicom;Nintendo Famicom
+'Nintendo Famicom Disk System';Nintendo Famicom Disk System
+fds;Nintendo Famicom Disk System
+Nintendo Famicom Disk System;Nintendo Famicom Disk System
+'Nintendo Game & Watch';Nintendo Game & Watch
+Game & Watch;Nintendo Game & Watch
+Game and Watch Official;Nintendo Game & Watch
+gameandwatch;Nintendo Game & Watch
+gw;Nintendo Game & Watch
+Nintendo Game & Watch;Nintendo Game & Watch
+'Nintendo Game Boy';Nintendo Game Boy
+Nintendo - Game Boy;Nintendo Game Boy
+Game Boy;Nintendo Game Boy
+Game Boy Official;Nintendo Game Boy
+GameBoy;Nintendo Game Boy
+GAMEBOY;Nintendo Game Boy
+gb;Nintendo Game Boy
+Gboy;Nintendo Game Boy
+Nintendo Game Boy;Nintendo Game Boy
+'Nintendo Game Boy 2p';Nintendo Game Boy 2p
+'Nintendo Game Boy 2P';Nintendo Game Boy 2P
+Game Boy Official 2P;Nintendo Game Boy 2p
+gb2players;Nintendo Game Boy 2P
+Nintendo Game Boy 2P;Nintendo Game Boy 2P
+'Nintendo Game Boy Advance';Nintendo Game Boy Advance
+G Boy Advance;Nintendo Game Boy Advance
+Game Boy Adv;Nintendo Game Boy Advance
+Game Boy Advance;Nintendo Game Boy Advance
+Game Boy Advance Official;Nintendo Game Boy Advance
+Game BoyAdvance;Nintendo Game Boy Advance
+GameBoy Advance;Nintendo Game Boy Advance
+GameBoyAdvance;Nintendo Game Boy Advance
+gba;Nintendo Game Boy Advance
+MyZoom;Nintendo Game Boy Advance
+Nintendo Game Boy Advance;Nintendo Game Boy Advance
+vba;Nintendo Game Boy Advance
+Nintendo vba;Nintendo Game Boy Advance
+VBA;Nintendo Game Boy Advance
+No$GBA;Nintendo Game Boy Advance
+'Nintendo Game Boy Advance Brazil Games Translated';Nintendo Game Boy Advance Brazil Games Translated
+gbabr;Nintendo Game Boy Advance Brazil Games Translated
+Nintendo Game Boy Advance Brazil Games Translated;Nintendo Game Boy Advance Brazil Games Translated
+'Nintendo Game Boy Brazil Games Translated';Nintendo Game Boy Brazil Games Translated
+gbbr;Nintendo Game Boy Brazil Games Translated
+Nintendo Game Boy Brazil Games Translated;Nintendo Game Boy Brazil Games Translated
+'Nintendo Game Boy Color';Nintendo Game Boy Color
+Nintendo - Game Boy Color;Nintendo Game Boy Color
+Game Boy Color;Nintendo Game Boy Color
+Game Boy Color Official;Nintendo Game Boy Color
+GameBoy Color;Nintendo Game Boy Color
+GameBoyColor;Nintendo Game Boy Color
+gbc;Nintendo Game Boy Color
+Nintendo Game Boy Color;Nintendo Game Boy Color
+'Nintendo Game Boy Color 2p';Nintendo Game Boy Color 2p
+'Nintendo Game Boy Color 2P';Nintendo Game Boy Color 2P
+Game Boy Color Official 2P;Nintendo Game Boy Color 2p
+gbc2players;Nintendo Game Boy Color 2P
+Nintendo Game Boy Color 2p;Nintendo Game Boy Color 2p
+'Nintendo Game Boy Color Brazil Games Translated';Nintendo Game Boy Color Brazil Games Translated
+gbcbr;Nintendo Game Boy Color Brazil Games Translated
+Nintendo Game Boy Color Brazil Games Translated;Nintendo Game Boy Color Brazil Games Translated
+'Nintendo GameCube';Nintendo GameCube
+Nintendo - GameCube;Nintendo GameCube
+gamecube;Nintendo GameCube
+GameCube;Nintendo GameCube
+GameCube Official;Nintendo GameCube
+Gamecube Wii;Nintendo GameCube
+gc;Nintendo GameCube
+Nintendo GameCube;Nintendo GameCube
+Nintendo Pokemon Mini;Nintendo Pokemon Mini
+'Nintendo Satellaview';Nintendo Satellaview
+Nintendo Satellaview;Nintendo Satellaview
+satellaview;Nintendo Satellaview
+'Nintendo Sufami Turbo';Nintendo Sufami Turbo
+Nintendo Sufami Turbo;Nintendo Sufami Turbo
+sufami;Nintendo Sufami Turbo
+'Nintendo Super Famicom';Nintendo Super Famicom
+Nintendo 'Nintendo Super Famicom';Nintendo Super Famicom
+Nintendo Nintendo Nintendo 'Nintendo Super Famicom';Nintendo Super Famicom
+Nintendo Nintendo Nintendo Nintendo Nintendo Super Famicom;Nintendo Super Famicom
+Nintendo Super Famicom;Nintendo Super Famicom
+sfc;Nintendo Super Famicom
+snesj;Nintendo Super Famicom
+Super Famicom;Nintendo Super Famicom
+Nintendo Super Game Boy;Nintendo Super Game Boy
+'Nintendo Switch';Nintendo Switch
+Nintendo Switch;Nintendo Switch
+Switch;Nintendo Switch
+switch;Nintendo Switch
+'Nintendo Virtual Boy';Nintendo Virtual Boy
+Nintendo Virtual Boy;Nintendo Virtual Boy
+Virtual Boy;Nintendo Virtual Boy
+Virtual Boy Official;Nintendo Virtual Boy
+virtualboy;Nintendo Virtual Boy
+'Nintendo Wii';Nintendo Wii
+Nintendo - Wii;Nintendo Wii
+Dolphin;Nintendo Wii
+Nintendo Wii;Nintendo Wii
+wii;Nintendo Wii
+Wii Official;Nintendo Wii
+'Nintendo Wii Brazil Games Translated';Nintendo Wii Brazil Games Translated
+Nintendo Wii Brazil Games Translated;Nintendo Wii Brazil Games Translated
+wiibr;Nintendo Wii Brazil Games Translated
+'Nintendo Wii Hacks';Nintendo Wii Hacks
+Nintendo Wii Hacks;Nintendo Wii Hacks
+System Hacks - Wii;Nintendo Wii Hacks
+'Nintendo Wii Homebrew';Nintendo Wii Homebrew
+Nintendo Wii Homebrew;Nintendo Wii Homebrew
+System Homebrew - Wii;Nintendo Wii Homebrew
+'Nintendo Wii U';Nintendo Wii U
+wiiu;Nintendo Wii U
+Nintendo - Wii U;Nintendo Wii U
+Nintendo Wii U;Nintendo Wii U
+Nintendo Wii_U;Nintendo Wii U
+Nintendo WiiWare;Nintendo WiiWare
+WiiWare;Nintendo WiiWare
+Nokia N-Gage;Nokia N-Gage
+'OpenBor';OpenBor
+openbor;OpenBor
+OpenBor;OpenBor
+OpenBOR Official;OpenBor
+'Othello Multivision';Othello Multivision
+multivision;Othello Multivision
+Othello Multivision;Othello Multivision
+OUYA;OUYA
+'Palm';Palm
+palm;Palm
+Palm;Palm
+'PC Games';PC Games
+GamesForWindows;PC Games
+Windows - Games;PC Games
+Windows Games;PC Games
+Games Windows;PC Games
+Microsoft PC Games 3.x;PC Games
+pc;PC Games
+PC Games;PC Games
+PCGAME;PC Games
+Windows;PC Games
+'Phantom System';Phantom System
+nesbr1;Phantom System
+Phantom System;Phantom System
+Philips CD-i;Philips CD-i
+'Pinball Arcade';Pinball Arcade
+Pinball Arcade;Pinball Arcade
+The Pinball Arcade;Pinball Arcade
+Visual Pinball;Pinball Arcade
+vpinball;Pinball Arcade
+Pinball FX2;Pinball FX2
+Pinball FX3;Pinball FX3
+'Pioneer Palcom Laserdisc';Pioneer Palcom Laserdisc
+Laser Disc Official;American Laser Games
+ALG - American Laser Games;American Laser Games
+Pioneer Palcom Laserdisc;Pioneer Palcom Laserdisc
+'Pokemon Mini';Pokemon Mini
+pokemini;Pokemon Mini
+Pokemon Mini;Pokemon Mini
+Pokï¿½mon Mini;Pokemon Mini
+RCA Studio II;RCA Studio II
+'Sammy Atomiswave';Sammy Atomiswave
+atomiswave;Sammy Atomiswave
+Sammy - Atomiswave;Sammy Atomiswave
+Atomiswave Official;Sammy Atomiswave
+sammy;Sammy Atomiswave
+Sammy Atomiswave;Sammy Atomiswave
+'ScummVM';ScummVM
+Scumm;ScummVM
+scummvm;ScummVM
+ScummVM;ScummVM
+ScummVM Official;ScummVM
+'Sega 32X';Sega 32X
+32X;Sega 32X
+Sega 32;Sega 32X
+Sega 32X;Sega 32X
+Sega 32X Official;Sega 32X
+Sega-32X;Sega 32X
+sega32;Sega 32X
+Sega32X;Sega 32X
+sega32x;Sega 32X
+Sega - PICO; Sega PICO
+'Sega CD';Sega CD
+Sega - Mega-CD - Sega CD;Sega CD
+Sega - Sega CD;Sega CD
+Sega - Sega-CD;Sega CD
+Sega - Mega-CD;Sega Mega CD
+Sega - Mega CD;Sega Mega CD
+Sega CD;Sega CD
+Sega CD Official;Sega CD
+segacd;Sega CD
+'Sega Chihiro';Sega Chihiro
+chihiro;Sega Chihiro
+Sega Chihiro;Sega Chihiro
+'Sega Dreamcast';Sega Dreamcast
+dc;Sega Dreamcast
+DC;Sega Dreamcast
+Sega - Dreamcast;Sega Dreamcast
+Chankast;Sega Dreamcast
+dream;Sega Dreamcast
+Dream;Sega Dreamcast
+dream cast;Sega Dreamcast
+Dream_cast;Sega Dreamcast
+dreamcast;Sega Dreamcast
+Dreamcast;Sega Dreamcast
+Dreamcast Official;Sega Dreamcast
+Reicast;Sega Dreamcast
+dc;Sega Dreamcast
+Sega Dream_cast;Sega Dreamcast
+sega dream_cast;Sega Dreamcast
+Sega Dreamcast;Sega Dreamcast
+sega dreamcast;Sega Dreamcast
+Sega_Dream_cast;Sega Dreamcast
+Sega_Dreamcast;Sega Dreamcast
+'Sega Game Gear';Sega Game Gear
+Sega - Game Gear;Sega Game Gear
+game gear;Sega Game Gear
+Game Gear Official;Sega Game Gear
+gamegear;Sega Game Gear
+Sega Game Gear;Sega Game Gear
+Sega GG;Sega Game Gear
+gg;Sega Game Gear
+'Sega Genesis';Sega Genesis
+Sega - Mega Drive - Genesis;Sega Genesis
+Sega - Mega Drive;Sega Mega Drive
+Sega - Genesis;Sega Genesis
+genesis;Sega Genesis
+Genesis Official;Sega Genesis
+gens;Sega Genesis
+Sega Genesis;Sega Genesis
+Sega GeNintendo Entertainment Systemis;Sega Genesis
+'Sega Hikaru';Sega Hikaru
+hikaru;Sega Hikaru
+Sega Hikaru;Sega Hikaru
+Sega Mark III;Sega Mark III
+'Sega Master System';Sega Master System
+Sega - Master System - Mark III;Sega Master System
+Sega - Master System;Sega Master System
+Sega - Mark III;Sega Mark III
+master;Sega Master System
+Master System;Sega Master System
+mastersystem;Sega Master System
+MS;Sega Master System
+Sega Master System;Sega Master System
+Sega Master System Official;Sega Master System
+Sega MS;Sega Master System
+sms;Sega Master System
+SMS;Sega Master System
+SMS Plus GX;Sega Master System
+'Sega Master System Brazil Games Translated';Sega Master System Brazil Games Translated
+masterbr;Sega Master System Brazil Games Translated
+mastersystembr;Sega Master System Brazil Games Translated
+Sega Master System Brazil Games Translated;Sega Master System Brazil Games Translated
+smsbr;Sega Master System Brazil Games Translated
+'Sega Master System Hacks';Sega Master System Hacks
+masterh;Sega Master System Hacks
+mastersystemh;Sega Master System Hacks
+Sega Master System Hacks;Sega Master System Hacks
+smsh;Sega Master System Hacks
+'Sega Master System TecToy';Sega Master System TecToy
+Master System (TecToy);Sega Master System TecToy
+Master System TecToy;Sega Master System TecToy
+Sega Master System TecToy;Sega Master System TecToy
+SMS (TecToy);Sega Master System TecToy
+SMS TecToy;Sega Master System TecToy
+tectoy;Sega Master System TecToy
+MD CD;Sega Mega CD
+MDCD;Sega Mega CD
+Sega CD;Sega CD
+Sega MD CD;Sega Mega CD
+Sega MDCD;Sega Mega CD
+Sega Mega-CD;Sega Mega CD
+smdcd;Sega Mega CD
+'Sega Mega Drive';Sega Mega Drive
+MD;Sega Mega Drive
+md;Sega Mega Drive
+megadrive;Sega Mega Drive
+MEGADRIVE;Sega Mega Drive
+Sega MD;Sega Mega Drive
+Sega Mega Drive;Sega Mega Drive
+'Sega Mega Drive Brazil Games Translated';Sega Mega Drive Brazil Games Translated
+megadrivebr;Sega Mega Drive Brazil Games Translated
+Sega Mega Drive Brazil Games Translated;Sega Mega Drive Brazil Games Translated
+'Sega Mega Drive Hacks';Sega Mega Drive Hacks
+genh;Sega Mega Drive Hacks
+megadriveh;Sega Mega Drive Hacks
+Sega Mega Drive Hacks;Sega Mega Drive Hacks
+System Hacks - Genesis;Sega Mega Drive Hacks
+'Sega Mega Drive Homebrew';Sega Mega Drive Homebrew
+Sega Mega Drive Homebrew;Sega Mega Drive Homebrew
+System Homebrew - Genesis;Sega Mega Drive Homebrew
+'Sega Mega Drive Japan';Sega Mega Drive Japan
+megadrive-japan;Sega Mega Drive Japan
+megadrivej;Sega Mega Drive Japan
+megadriveji;Sega Mega Drive Japan
+Sega Mega Drive Japan;Sega Mega Drive Japan
+Sega Model 1;Sega Model 1
+'Sega Model 2';Sega Model 2
+Sega - Model 2;Sega Model 2
+Model 2 Official;Sega Model 2
+model2;Sega Model 2
+Sega Model 2;Sega Model 2
+'Sega Model 3';Sega Model 3
+Sega - Model 3;Sega Model 3
+Model 3 Official;Sega Model 3
+MODEL2;Sega Model 3
+model3;Sega Model 3
+Sega Model 3;Sega Model 3
+'Sega Naomi';Sega Naomi
+Sega - NAOMI;Sega Naomi
+naomi;Sega Naomi
+Naomi Official;Sega Naomi
+Sega Naomi;Sega Naomi
+Sega Ringedge;Sega Ringedge
+Sega RinNintendo Game & Watchide;Sega Ringedge
+'Sega Saturn';Sega Saturn
+Sega - Saturn;Sega Saturn
+Beetle Saturn;Sega Saturn
+saturn;Sega Saturn
+Saturn Official;Sega Saturn
+Sega Saturn;Sega Saturn
+ss;Sega Saturn
+Ss;Sega Saturn
+SS;Sega Saturn
+Yabause;Sega Saturn
+'Sega SC-3000';Sega SC-3000
+sc-3000;Sega SC-3000
+Sega SC-3000;Sega SC-3000
+'Sega SG-1000';Sega SG-1000
+Sega SG-1000;Sega SG-1000
+Sega SG-1000 Official;Sega SG-1000
+sg-1000;Sega SG-1000
+SG-1000;Sega SG-1000
+sg1000;Sega SG-1000
+Sega ST-V;Sega ST-V
+Sega System 16;Sega System 16
+Sega System 24;Sega System 24
+'Sega Triforce';Sega Triforce
+Mario Kart Arcade GP Triforce Official;Sega Triforce
+Sega Triforce;Sega Triforce
+triforce;Sega Triforce
+Sega VMU;Sega VMU
+Sega X Board;Sega X Board
+Sega Y Board;Sega Y Board
+'Sharp X1';Sharp X1
+Sharp X1;Sharp X1
+x1;Sharp X1
+'Sharp X68000';Sharp X68000
+Sharp - X68000;Sharp X68000
+Sharp X68000;Sharp X68000
+x68000;Sharp X68000
+X68000 Official;Sharp X68000
+'Sinclair ZX Spectrum';Sinclair ZX Spectrum
+Sinclair ZX Spectrum;Sinclair ZX Spectrum
+Spectrum Official;Sinclair ZX Spectrum
+Sinclair - ZX Spectrum +3;Sinclair ZX Spectrum
+ZX Spectrum +3;Sinclair ZX Spectrum
+t81;Sinclair ZX Spectrum
+tzx;Sinclair ZX Spectrum
+ZX Spectrum;Sinclair ZX Spectrum
+zxspectrum;Sinclair ZX Spectrum
+'Sinclair ZX81';Sinclair ZX81
+Sinclair ZX81;Sinclair ZX81
+zx81;Sinclair ZX81
+ZX81;Sinclair ZX81
+'SNK Neo Geo AES Hacks';SNK Neo Geo AES Hacks
+neogeoh;SNK Neo Geo AES Hacks
+SNK Neo Geo AES Hacks;SNK Neo Geo AES Hacks
+'SNK Neo Geo CD';SNK Neo Geo CD
+SNK - Neo Geo CD;SNK Neo Geo CD
+'SNK Neo Geo MVS' CD;SNK Neo Geo CD
+'SNK Neo Geo MVS' MVS MVS MVS CD;SNK Neo Geo CD
+neogeocd;SNK Neo Geo CD
+SNK Neo Geo CD;SNK Neo Geo CD
+SNK Neo Geo MVS MVS MVS MVS MVS CD;SNK Neo Geo CD
+'SNK Neo Geo Hack';SNK Neo Geo Hack
+SNK Neo Geo Hack;SNK Neo Geo Hack
+'SNK Neo Geo MVS';- Sub_Systems - SNK Neo Geo MVS
+SNK - Neo Geo MVS;- Sub_Systems - SNK Neo Geo MVS
+'SNK Neo Geo MVS' MVS;- Sub_Systems - SNK Neo Geo MVS
+'SNK Neo Geo MVS' MVS MVS MVS AES;- Sub_Systems - SNK Neo Geo MVS
+9 Neo-Geo;- Sub_Systems - SNK Neo Geo MVS
+snk;- Sub_Systems - SNK Neo Geo MVS
+SNK Neo Geo;- Sub_Systems - SNK Neo Geo MVS
+SNK Neo Geo MVS;- Sub_Systems - SNK Neo Geo MVS
+SNK Neo Geo MVS MVS MVS MVS MVS AES;- Sub_Systems - SNK Neo Geo MVS
+Capcom Home Arcade;- Sub_Systems - Capcom Classics
+Capcom Classics;- Sub_Systems - Capcom Classics
+'SNK Neo Geo MVS' Pocket;SNK Neo Geo Pocket
+SNK - Neo Geo Pocket;SNK Neo Geo Pocket
+'SNK Neo Geo Pocket';SNK Neo Geo Pocket
+Neo Geo Pocket;SNK Neo Geo Pocket
+ngpc;SNK Neo Geo Pocket
+SNK Neo Geo Pocket;SNK Neo Geo Pocket
+'SNK Neo Geo MVS' MVS MVS MVS Pocket Color;SNK Neo Geo Pocket Color
+'SNK Neo Geo MVS' Pocket Color;SNK Neo Geo Pocket Color
+SNK - Neo Geo Pocket Color;SNK Neo Geo Pocket Color
+'SNK Neo Geo Pocket Color';SNK Neo Geo Pocket Color
+Neo Geo Pocket Color;SNK Neo Geo Pocket Color
+ngp;SNK Neo Geo Pocket Color
+SNK Neo Geo MVS MVS MVS MVS MVS Pocket Color;SNK Neo Geo Pocket Color
+SNK Neo Geo Pocket Color;SNK Neo Geo Pocket Color
+'Sony PlayStation';Sony PlayStation
+Sony PlayStation 1;Sony PlayStation
+Beetle PSX;Sony PlayStation
+Beetle PSX HW;Sony PlayStation
+ePSXe;Sony PlayStation
+PCSX ReARMed;Sony PlayStation
+Play 1;Sony PlayStation
+Play_1;Sony PlayStation
+Play1;Sony PlayStation
+PlayStation;Sony PlayStation
+PLAYSTATION;Sony PlayStation
+playStation;Sony PlayStation
+PlayStation 1;Sony PlayStation
+PlayStation 1 Official;Sony PlayStation
+Playstation1;Sony PlayStation
+PlayX;Sony PlayStation
+ps1;Sony PlayStation
+PS1;Sony PlayStation
+psx;Sony PlayStation
+PSX;Sony PlayStation
+Sony Play1;Sony PlayStation
+Sony PlayStation;Sony PlayStation
+Sony - Playstation;Sony PlayStation
+'Sony PlayStation 2';Sony PlayStation 2
+Sony - Playstation 2;Sony PlayStation 2
+PCSX2;Sony PlayStation 2
+Play_2;Sony PlayStation 2
+Play2;Sony PlayStation 2
+PlayStation 2 Official;Sony PlayStation 2
+PlayX;Sony PlayStation 2
+ps2;Sony PlayStation 2
+PS2;Sony PlayStation 2
+Sony Play2;Sony PlayStation 2
+Sony PlayStation 2;Sony PlayStation 2
+'Sony PlayStation 2 Brazil Games Translated';Sony PlayStation 2 Brazil Games Translated
+ps2br;Sony PlayStation 2 Brazil Games Translated
+Sony PlayStation 2 Brazil Games Translated;Sony PlayStation 2 Brazil Games Translated
+'Sony PlayStation 3';Sony PlayStation 3
+Sony - Playstation 3;Sony PlayStation 3
+PlayStation 3 Official;Sony PlayStation 3
+ps3;Sony PlayStation 3
+PS3;Sony PlayStation 3
+Sony PlayStation 3;Sony PlayStation 3
+Sony PlayStation 4;Sony PlayStation 4
+'Sony PlayStation Brazil Games Translated';Sony PlayStation Brazil Games Translated
+psxbr;Sony PlayStation Brazil Games Translated
+Sony PlayStation Brazil Games Translated;Sony PlayStation Brazil Games Translated
+'Sony PlayStation Minis';Sony PlayStation Minis
+pspmini;Sony PlayStation Minis
+pspminis;Sony PlayStation Minis
+Sony PlayStation Minis;Sony PlayStation Minis
+'Sony PlayStation Portable';Sony PlayStation Portable
+Sony - Playstation Portable;Sony PlayStation Portable
+PlayStation Portable Official;Sony PlayStation Portable
+psp;Sony PlayStation Portable
+PSP;Sony PlayStation Portable
+PSP Remote Play;Sony PlayStation Portable
+Sony PlayStation Portable;Sony PlayStation Portable
+Sony PSP;Sony PlayStation Portable
+Sony PlayStation Vita;Sony PlayStation Vita
+Sony - Playstation Vita;Sony PlayStation Vita
+Sony PocketStation;Sony PocketStation
+'Spectravideo';Spectravideo
+spectravideo;Spectravideo
+'Steam';Steam
+Steam;Steam
+Valve Steam;Steam
+'Super Nintendo Entertainment System';Super Nintendo Entertainment System
+Nintendo - Super Nintendo Entertainment System;Super Nintendo Entertainment System
+bsnes C++98 v0.85;Super Nintendo Entertainment System
+bsnes Performance;Super Nintendo Entertainment System
+bsnes-mercury Accuracy;Super Nintendo Entertainment System
+bsnes-mercury Balanced;Super Nintendo Entertainment System
+bsnes-mercury Performance;Super Nintendo Entertainment System
+snes;Super Nintendo Entertainment System
+SNES;Super Nintendo Entertainment System
+Snes 9X;Super Nintendo Entertainment System
+snes9x 2005;Super Nintendo Entertainment System
+snes9x 2010;Super Nintendo Entertainment System
+Super Nintendo Entertainment System;Super Nintendo Entertainment System
+Super Nintendo Official;Super Nintendo Entertainment System
+SUPERNES;Super Nintendo Entertainment System
+'Super Nintendo Entertainment System Brazil Games Translated';Super Nintendo Entertainment System Brazil Games Translated
+snesbr;Super Nintendo Entertainment System Brazil Games Translated
+Super Nintendo Entertainment System Brazil Games Translated;Super Nintendo Entertainment System Brazil Games Translated
+'Super Nintendo Entertainment System Hack';Super Nintendo Entertainment System Hack
+snesh;Super Nintendo Entertainment System Hack
+sneshack;Super Nintendo Entertainment System Hack
+'Super Nintendo Entertainment System Hacks';Super Nintendo Entertainment System Hacks
+Super Nintendo Entertainment System Hacks;Super Nintendo Entertainment System Hacks
+System Hacks - SNES;Super Nintendo Entertainment System Hacks
+'Super Nintendo Entertainment System Homebrew';Super Nintendo Entertainment System Homebrew
+Super Nintendo Entertainment System Homebrew;Super Nintendo Entertainment System Homebrew
+System Homebrew - SNES;Super Nintendo Entertainment System Homebrew
+'Super Nintendo MSU-1';Super Nintendo MSU-1
+Nintendo SNES MSU-1;Super Nintendo MSU-1
+snes-msu;Super Nintendo MSU-1
+snescd;Super Nintendo MSU-1
+snesmsu1;Super Nintendo MSU-1
+Super Nintendo MSU-1;Super Nintendo MSU-1
+Taito Type X;Taito Type X
+Taito - Taito Type X2;Taito Type X2
+'Tandy TRS-80';Tandy TRS-80
+Tandy TRS-80;Tandy TRS-80
+tic80;Tandy TRS-80
+to8;Tandy TRS-80
+'TeknoParrot';TeknoParrot
+TeknoParrot;TeknoParrot
+Teknoparrot Collection Metal Edition;TeknoParrot
+'Touhou Project';Touhou Project
+Touhou - Touhou;Touhou Project
+TouHou Project;Touhou Project
+VTech CreatiVision;VTech CreatiVision
+Watara Supervision;Watara Supervision
+Watara - SuperVision;Watara Supervision
+WoW Action Max;WoW Action Max
+ZINC;ZINC
+zinc;ZINC
+Zinc;ZINC
+ZINC3D;ZINC
+Acorn - Archimedes;Acorn Archimedes
+Acorn - Atom;Acorn Atom
+Acorn - Electron;Acorn Electron
+Acorn - BBC Micro;Acorn BBC Micro
+Adobe - Flash;Adobe Flash 
+Amstrad CPC;Amstrad – CPC
+Amstrad GX4000;Amstrad – GX4000
+Apple - II;Apple II
+Apple - IIe;Apple IIe
+Apple - IIGS;Apple IIGS
+Apple - IOS;Apple IOS
+Apple - Mac OS;Apple Mac OS
+Atari – 2600;Atari 2600
+Atari - 2600;Atari 2600
+Atari - 5200;Atari 5200
+Atari - 7800;Atari 7800
+Atari - 800;Atari 800
+Atari - Jaguar;Atari Jaguar
+Atari - Jaguar - CD;Atari Jaguar CD
+Atari - Jaguar CD;Atari Jaguar CD
+Atari - Lynx;Atari Lynx
+Atari - ST;Atari ST
+Atari - STE;Atari STE
+Atari - TT;Atari TT
+Atari - XEGS;Atari XEGS
+Bally - Astrocade;Bally Astrocade
+Bandai - WonderSwan;Bandai WonderSwan
+Bandai - WonderSwan - Color;Bandai WonderSwan Color
+Bandai - Wonderswan - Color;Bandai Wonderswan Color
+Commodore - 128;Commodore 128
+Commodore - 16 - & - Plus4;Commodore 16 & Plus4
+Commodore - 20;Commodore 20
+Commodore - Amiga - 1200;Commodore Amiga 1200
+Commodore - Amiga - 500;Commodore Amiga 500
+Commodore - Amiga - 600;Commodore Amiga 600
+Commodore - Amiga - CD32;Commodore Amiga CD32
+Commodore - Amiga - CDTV;Commodore Amiga CDTV
+Commodore - CDTV;Commodore CDTV
+Commodore - PET;Commodore PET
+Commodore - VIC-20;Commodore VIC-20
+EG2000 - Colour - Genie;EG2000 Colour Genie
+Emerson - Arcadia - 2001;Emerson Arcadia 2001
+Entex - Adventure - Vision;Entex Adventure Vision
+Fairchild - Channel - F;Fairchild Channel F
+Fujitsu - FM - Towns;Fujitsu FM Towns
+Fujitsu - FM-7;Fujitsu FM-7
+Future - Pinball;Future Pinball
+Memotech - MTX;Memotech MTX
+GamePark - GP32;GamePark GP32
+GCE - Vectrex;GCE Vectrex
+Mattel - Aquarius;Mattel Aquarius
+GOG.com;GOG.com
+Interton - VC - 4000;Interton VC 4000
+Interon - Interon VC 4000;Interton VC 4000
+Java - Games;Java Games
+Magnavox - Odyssey;Magnavox Odyssey
+Magnavox - Odyssey - 2;Magnavox Odyssey 2
+Magnavox - Odyssey2;Magnavox Odyssey2
+Mame - Hack;Mame Hack
+Mattel - Intellivision;Mattel Intellivision
+MGT - Sam - Coupe;MGT Sam Coupe
+MGT - Sam Coupe;MGT Sam Coupe
+Microsoft - MS-DOS;Microsoft MS-DOS
+Microsoft - MSX - Turbo-R;Microsoft MSX Turbo-R
+Microsoft - MSX2;Microsoft MSX2
+Microsoft - Xbox;Microsoft Xbox
+Microsoft - Xbox - 360;Microsoft Xbox 360
+Microsoft - Xbox - One;Microsoft Xbox One
+Music - Player;Music Player
+NEC - PC - Engine;NEC PC Engine
+NEC - PC - Engine-CD;NEC PC Engine-CD
+NEC - PC-8801;NEC PC-8801
+NEC - PC-9801;NEC PC-9801
+NEC - PC-FX;NEC PC-FX
+NEC - SuperGrafx;NEC SuperGrafx
+NEC - PC Engine SuperGrafx;NEC SuperGrafx
+NEC - TurboGrafx-16;NEC TurboGrafx-16
+NEC - Turbografx-CD;NEC Turbografx-CD
+NEC - TurboGrafx-CD;NEC TurboGrafx-CD
+NEC - TurboGrafx-Express;NEC TurboGrafx-Express
+Nintendo - 3DS;Nintendo 3DS
+Nintendo - 3DS - Brazil - Games - Translated;Nintendo 3DS Brazil Games Translated
+Nintendo - 64;Nintendo 64
+Nintendo - 64 - Brazil - Games - Translated;Nintendo 64 Brazil Games Translated
+Nintendo - 64 - HD;Nintendo 64 HD
+Nintendo - 64DD;Nintendo 64DD
+Nintendo - DS;Nintendo DS
+Nintendo - DS - Brazil - Games - Translated;Nintendo DS Brazil Games Translated
+Nintendo - Entertainment - System;Nintendo Entertainment System
+Nintendo - Entertainment - System - Brazil - Games - Translated;Nintendo Entertainment System Brazil Games Translated
+Nintendo - Entertainment - System - Hacks;Nintendo Entertainment System Hacks
+Nintendo - Entertainment - System - Homebrew;Nintendo Entertainment System Homebrew
+Nintendo - Entertainment - System - Homebrews;Nintendo Entertainment System Homebrews
+Nintendo - Entertainment - System - Mini;Nintendo Entertainment System Mini
+Nintendo - Famicom;Nintendo Famicom
+Nintendo - Famicom - Disk - System;Nintendo Famicom Disk System
+Nintendo - Game - & - Watch;Nintendo Game & Watch
+Nintendo - Game - Boy;Nintendo Game Boy
+Nintendo - Game - Boy - 2p;Nintendo Game Boy 2p
+Nintendo - Game - Boy - 2P;Nintendo Game Boy 2P
+Nintendo - Game - Boy - Advance;Nintendo Game Boy Advance
+Nintendo - Game Boy Advance;Nintendo Game Boy Advance
+Nintendo - Game - Boy - Advance - Brazil - Games - Translated;Nintendo Game Boy Advance Brazil Games Translated
+Nintendo - Game - Boy - Brazil - Games - Translated;Nintendo Game Boy Brazil Games Translated
+Nintendo - Game - Boy - Color;Nintendo Game Boy Color
+Nintendo - Game - Boy - Color - 2p;Nintendo Game Boy Color 2p
+Nintendo - Game - Boy - Color - 2P;Nintendo Game Boy Color 2P
+Nintendo - Game - Boy - Color - Brazil - Games - Translated;Nintendo Game Boy Color Brazil Games Translated
+Nintendo - Pokemon - Mini;Nintendo Pokemon Mini
+Nintendo - Satellaview;Nintendo Satellaview
+Nintendo - Sufami - Turbo;Nintendo Sufami Turbo
+Nintendo - Super - Famicom;Nintendo Super Famicom
+Nintendo - Super Famicom;Nintendo Super Famicom
+Nintendo - Super - Game - Boy;Nintendo Super Game Boy
+Nintendo - Switch;Nintendo Switch
+Nintendo - Virtual - Boy;Nintendo Virtual Boy
+Nintendo - Wii - Brazil - Games - Translated;Nintendo Wii Brazil Games Translated
+Nintendo - Wii - Hacks;Nintendo Wii Hacks
+Nintendo - Wii - Homebrew;Nintendo Wii Homebrew
+Nintendo - Wii - U;Nintendo Wii U
+wii u;Nintendo Wii U
+Nintendo - WiiWare;Nintendo WiiWare
+Nokia - N-Gage;Nokia N-Gage
+Othello - Multivision;Othello Multivision
+PC - Games;PC Games
+Phantom - System;Phantom System
+Philips - CD-i;Philips CD-i
+Philips - CD-I;Philips CD-i
+Pinball - Arcade;Pinball Arcade
+Pinball - FX2;Pinball FX2
+Pinball - FX3;Pinball FX3
+Sord - M5;Sord M5
+Pioneer - Palcom - Laserdisc;Pioneer Palcom Laserdisc
+PopCap - PopCap;PopCap
+Pokemon - Mini;Pokemon Mini
+RCA - Studio - II;RCA Studio II
+Sega - 32X;Sega 32X
+Sega - CD;Sega CD
+Sega - Mega - CD;Sega Mega CD
+Sega - Chihiro;Sega Chihiro
+Sega - Game - Gear;Sega Game Gear
+Sega - Mega - Drive;Sega Mega Drive
+Sega - Hikaru;Sega Hikaru
+Sega - Mark - III;Sega Mark III
+Sega - Master - System;Sega Master System
+Sega – Master System;Sega Master System
+Sega – Master System - Brazil - Games - Translated;Sega Master System Brazil Games Translated
+Sega - Master - System - Brazil - Games - Translated;Sega Master System Brazil Games Translated
+Sega – Master System - Hacks;Sega Master System Hacks
+Sega - Master - System - Hacks;Sega Master System Hacks
+Sega - Master - System - TecToy;Sega Master System TecToy
+Sega – Master System - TecToy;Sega Master System TecToy
+Sega – Mega CD;Sega Mega CD
+Sega – Mega Drive;Sega Mega Drive
+Sega - Mega - Drive - Brazil - Games - Translated;Sega Mega Drive Brazil Games Translated
+Sega – Mega Drive - Brazil - Games - Translated;Sega Mega Drive Brazil Games Translated
+Sega - Mega - Drive - Hacks;Sega Mega Drive Hacks
+Sega – Mega Drive - Hacks;Sega Mega Drive Hacks
+Sega - Mega - Drive - Homebrew;Sega Mega Drive Homebrew
+Sega - Mega - Drive - Japan;Sega Mega Drive Japan
+Sega - Model - 1;Sega Model 1
+Sega - Model - 2;Sega Model 2
+Sega – Model 1;Sega Model 1
+Sega – Model 3;Sega Model 3
+Sega - Model - 3;Sega Model 3
+Sega - Naomi;Sega Naomi
+Sega - Ringedge;Sega Ringedge
+Sega - SC-3000;Sega SC-3000
+Sega - SG-1000;Sega SG-1000
+Sega - ST-V;Sega ST-V
+Sega - System - 16;Sega System 16
+Sega - System - 24;Sega System 24
+Sega – System 16;Sega System 16
+Sega – System 24;Sega System 24
+Sega - Triforce;Sega Triforce
+Sega - VMU;Sega VMU
+Sega - X - Board;Sega X Board
+Sega - Y - Board;Sega Y Board
+Sharp - X1;Sharp X1
+Sinclair - ZX - Spectrum;Sinclair ZX Spectrum
+Sinclair - ZX81;Sinclair ZX81
+SNK – Neo Geo AES - Hacks;SNK Neo Geo AES Hacks
+SNK – Neo Geo AES Hacks;SNK Neo Geo AES Hacks
+SNK - Neo - Geo - AES - Hacks;SNK Neo Geo AES Hacks
+SNK – Neo Geo - CD;SNK Neo Geo CD
+SNK – Neo Geo CD;SNK Neo Geo CD
+SNK – NeoGeo - CD;SNK Neo Geo CD
+SNK – NeoGeoCD;SNK Neo Geo CD
+SNK - Neo - Geo - CD;SNK Neo Geo CD
+SNK – Neo Geo - Hack;SNK Neo Geo Hack
+SNK – Neo Geo Hack;SNK Neo Geo Hack
+SNK - Neo - Geo - MVS;- Sub_Systems - SNK Neo Geo MVS
+SNK – Neo Geo - MVS;- Sub_Systems - SNK Neo Geo MVS
+SNK – Neo Geo MVS;- Sub_Systems - SNK Neo Geo MVS
+SNK – Neo Geo - Pocket;SNK Neo Geo Pocket
+SNK – Neo Geo Pocket;SNK Neo Geo Pocket
+SNK - Neo - Geo - Pocket;SNK Neo Geo Pocket
+SNK – Neo Geo Pocket - Color;SNK Neo Geo Pocket Color
+SNK – Neo Geo – Pocket Color;SNK Neo Geo Pocket Color
+SNK - Neo - Geo - Pocket - Color;SNK Neo Geo Pocket Color
+Sony - PlayStation;Sony PlayStation
+Sony – PlayStation 2;Sony PlayStation 2
+Sony - PlayStation - 2;Sony PlayStation 2
+Sony – PlayStation 2 - Brazil - Games - Translated;Sony PlayStation 2 Brazil Games Translated
+Sony - PlayStation - 2 - Brazil - Games - Translated;Sony PlayStation 2 Brazil Games Translated
+Sony – PlayStation 2 Brazil - Games - Translated;Sony PlayStation 2 Brazil Games Translated
+Sony - PlayStation - 3;Sony PlayStation 3
+Sony – PlayStation 3;Sony PlayStation 3
+Sony - PlayStation - 4;Sony PlayStation 4
+Sony - PlayStation - Brazil - Games - Translated;Sony PlayStation Brazil Games Translated
+Sony – PlayStation Minis;Sony PlayStation Minis
+Sony - PlayStation - Minis;Sony PlayStation Minis
+Sony - PlayStation - Portable;Sony PlayStation Portable
+Sony – PlayStation Portable;Sony PlayStation Portable
+Sony – PlayStation Vita;Sony PlayStation Vita
+Sony - PocketStation;Sony PocketStation
+Spectravideo;Spectravideo
+Nintendo – Super Nintendo Entertainment System;Super Nintendo Entertainment System
+Super - Nintendo - Entertainment - System;Super Nintendo Entertainment System
+Super - Nintendo - Entertainment - System - Brazil - Games - Translated;Super Nintendo Entertainment System Brazil Games Translated
+Super - Nintendo - Entertainment - System - Hack;Super Nintendo Entertainment System Hack
+Super - Nintendo - Entertainment - System - Hacks;Super Nintendo Entertainment System Hacks
+Super - Nintendo - Entertainment - System - Homebrew;Super Nintendo Entertainment System Homebrew
+Nintendo - Super Nintendo MSU-1;Super Nintendo MSU-1
+Super - Nintendo - MSU-1;Super Nintendo MSU-1
+Nintendo – Super - Nintendo - MSU-1;Super Nintendo MSU-1
+Taito - Type - X;Taito Type X
+Tandy - TRS-80;Tandy TRS-80
+Touhou - Project;Touhou Project
+VTech - CreatiVision;VTech CreatiVision
+Watara - Supervision;Watara Supervision
+WoW - Action - Max;WoW Action Max
+- SubCol - Cavestory Collection;- Sub_Selection - Cavestory Collection
+- SubCol - Clone Hero;- Sub_Selection - Clone Hero
+- SubCol - Contra Collection;- Sub_Selection - Contra Collection
+- SubCol - Crash Bandicoot Collection;- Sub_Selection - Crash Bandicoot Collection
+- SubCol - Disney Collection;- Sub_Selection - Disney Collection
+- SubCol - Donkey kong Collection;- Sub_Selection - Donkey kong Collection
+- SubCol - Doom;- Sub_Selection - Doom Collection
+- SubCol - Doom Collection;- Sub_Selection - Doom Collection
+- SubCol - Double Dragon Collection;- Sub_Selection - Double Dragon Collection
+- SubCol - Dragon Ball Z Collection;- Sub_Selection - Dragon Ball Z Collection
+- SubCol - F-Zero Collection;- Sub_Selection - F-Zero Collection
+- SubCol - Far Cry Collection;- Sub_Selection - Far Cry Collection
+- SubCol - Fatal Fury Collection;- Sub_Selection - Fatal Fury Collection
+- SubCol - Final Fantasy Collection;- Sub_Selection - Final Fantasy Collection
+- SubCol - Final Figth Collection;- Sub_Selection - Final Figth Collection
+- SubCol - Hitman Collection;- Sub_Selection - Hitman Collection
+- SubCol - Kids Platform Games Collection;- Sub_Selection - Kids Platform Games Collection
+- SubCol - Killer Instinct Collection;- Sub_Selection - Killer Instinct Collection
+- SubCol - Kirby Collection;- Sub_Selection - Kirby Collection
+- SubCol - Lego Collection;- Sub_Selection - Lego Collection
+- SubCol - Locomalito Collection;- Sub_Selection - Locomalito Collection
+- SubCol - Looney Tunes Collection;- Sub_Selection - Looney Tunes Collection
+- SubCol - Medal of Honor Collection;- Sub_Selection - Medal of Honor Collection
+- SubCol - Mega Man Collection;- Sub_Selection - Mega Man Collection
+- SubCol - Metal Slug Collection;- Sub_Selection - Metal Slug Collection
+- SubCol - Metroid Collection;- Sub_Selection - Metroid Collection
+- SubCol - Mortal Kombat Collection;- Sub_Selection - Mortal Kombat Collection
+- SubCol - Need For Speed Collection;- Sub_Selection - Need For Speed Collection
+- SubCol - Outrun Collection;- Sub_Selection - Outrun Collection
+- SubCol - PacMan Collection;- Sub_Selection - PacMan Collection
+- SubCol - Pokemon Collection;- Sub_Selection - Pokemon Collection
+- SubCol - Prince of Persia Collection;- Sub_Selection - Prince of Persia Collection
+- SubCol - Raiden Collection;- Sub_Selection - Raiden Collection
+- SubCol - Rayman Collection;- Sub_Selection - Rayman Collection
+- SubCol - Resident Evil Collection;- Sub_Selection - Resident Evil Collection
+- SubCol - Samurai Shodown Collection;- Sub_Selection - Samurai Shodown Collection
+- SubCol - Scooby-Doo Collection;- Sub_Selection - Scooby-Doo Collection
+- SubCol - Sega Ages 2500;- Sub_Selection - Sega Ages 2500
+- SubCol - Silent Hill Collection;- Sub_Selection - Silent Hill Collection
+- SubCol - Simpsons Collection;- Sub_Selection - Simpsons Collection
+- SubCol - Solarus Collection;- Sub_Selection - Solarus Collection
+- SubCol - Sonic Collection;- Sub_Selection - Sonic Collection
+- SubCol - Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
+- SubCol - Spider-Man Collectio;- Sub_Selection - Spider-Man Collectio
+- SubCol - Spider-Man Collection;- Sub_Selection - Spider-Man Collection
+- SubCol - Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
+- SubCol - Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
+- SubCol - Star Wars Collection;- Sub_Selection - Star Wars Collection
+- SubCol - Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+- SubCol - Streets of Rage Collection;- Sub_Selection - Streets of Rage Collection
+- SubCol - Super mario bros Collection;- Sub_Selection - Super mario bros Collection
+- SubCol - Teenage Mutant Ninja Turtles Collection;- Sub_Selection - Teenage Mutant Ninja Turtles Collection
+- SubCol - Tekken Collection;- Sub_Selection - Tekken Collection
+- SubCol - Telltale Games Collection;- Sub_Selection - Telltale Games Collection
+- SubCol - The King of Fighters Collection;- Sub_Selection - The King of Fighters Collection
+- SubCol - Tomb Raider Collection;- Sub_Selection - Tomb Raider Collection
+- SubCol - Wolfenstein Collection;- Sub_Selection - Wolfenstein Collection
+- SubCol - Zelda Collection;- Sub_Selection - Zelda Collection
+- SubMenu_Genres - Action;- Menu - Sub_Genres - Action
+- SubMenu_Genres - Adventure;- Menu - Sub_Genres - Adventure
+- SubMenu_Genres - Beat em Ups;- Menu - Sub_Genres - Beat em Ups
+- SubMenu_Genres - Fighting;- Menu - Sub_Genres - Fighting
+- SubMenu_Genres - Flying;- Menu - Sub_Genres - Flying
+- SubMenu_Genres - Light Gun Games;- Menu - Sub_Genres - Light Gun Games
+- SubMenu_Genres - Old School;- Menu - Sub_Genres - Old School
+- SubMenu_Genres - Platform;- Menu - Sub_Genres - Platform
+Platform;- Menu - Sub_Genres - Platform
+- SubMenu_Genres - Ports;- Menu - Sub_Genres - Ports
+- SubMenu_Genres - Puzzle;- Menu - Sub_Genres - Puzzle
+Puzzle;- Menu - Sub_Genres - Puzzle
+- SubMenu_Genres - Racing;- Menu - Sub_Genres - Racing
+- SubMenu_Genres - Role-Playing;- Menu - Sub_Genres - Role-Playing
+- SubMenu_Genres - Run and Gun;- Menu - Sub_Genres - Run and Gun
+- SubMenu_Genres - Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+- SubMenu_Genres - Shooter;- Menu - Sub_Genres - Shooter
+- SubMenu_Genres - Sports;- Menu - Sub_Genres - Sports
+- SubMenu_Manufacturer - Atari;- Menu - Sub_Manufacturer - Atari
+- SubMenu_Manufacturer - Commodore;- Menu - Sub_Manufacturer - Commodore
+- SubMenu_Manufacturer - Microsoft;- Menu - Sub_Manufacturer - Microsoft
+- SubMenu_Manufacturer - Nec;- Menu - Sub_Manufacturer - Nec
+- SubMenu_Manufacturer - Nintendo;- Menu - Sub_Manufacturer - Nintendo
+- SubMenu_Manufacturer - Sega;- Menu - Sub_Manufacturer - Sega
+- SubMenu_Manufacturer - Snk;- Menu - Sub_Manufacturer - Snk
+- SubMenu_Manufacturer - Sony;- Menu - Sub_Manufacturer - Sony
+- SubSystems - Arcade Classics;- Sub_Systems - Arcade Classics
+- SubSystems - Atari Classics;- Sub_Systems - Atari Classics
+- SubSystems - Banpresto Classics;- Sub_Systems - Banpresto Classics
+- SubSystems - Capcom Classics;- Sub_Systems - Capcom Classics
+- SubSystems - Capcom Play System;- Sub_Systems - Capcom Play System
+Capcom Play System - CPS;- Sub_Systems - Capcom Play System
+Sega - STV;- Sub_Systems - Sega Titan Video game system
+- SubSystems - Capcom Play System II;- Sub_Systems - Capcom Play System II
+Capcom Play System - CPS II;- Sub_Systems - Capcom Play System II
+- SubSystems - Capcom Play System III;- Sub_Systems - Capcom Play System III
+Capcom Play System - CPS III;- Sub_Systems - Capcom Play System III
+- SubSystems - Cave Classics;- Sub_Systems - Cave Classics
+Cave;- Sub_Systems - Cave Classics
+- SubSystems - Data East Classics;- Sub_Systems - Data East Classics
+Data East Classics;- Sub_Systems - Data East Classics
+- SubSystems - favorites;- Sub_Systems - favorites
+- SubSystems - Gaelco;- Sub_Systems - Gaelco
+- SubSystems - Irem Classics;- Sub_Systems - Irem Classics
+- SubSystems - Jaleco Classics;- Sub_Systems - Jaleco Classics
+- SubSystems - Kaneko Classics;- Sub_Systems - Kaneko Classics
+- SubSystems - Konami Classics;- Sub_Systems - Konami Classics
+- SubSystems - Microsoft MS-DOS Joystick;- Sub_Systems - Microsoft MS-DOS Joystick
+- SubSystems - Microsoft MS-DOS Mouse;- Sub_Systems - Microsoft MS-DOS Mouse
+- SubSystems - Midway Classics;- Sub_Systems - Midway Classics
+- SubSystems - Namco Classics;- Sub_Systems - Namco Classics
+- SubSystems - Namco NA-1;- Sub_Systems - Namco NA-1
+- SubSystems - Namco NB-1;- Sub_Systems - Namco NB-1
+- SubSystems - Namco System 22;- Sub_Systems - Namco System 22
+- SubSystems - Nichibutsu Classics;- Sub_Systems - Nichibutsu Classics
+- SubSystems - Nintendo Classics;- Sub_Systems - Nintendo Classics
+- SubSystems - Poly Game Master;- Sub_Systems - Poly Game Master
+- SubSystems - Psikyo Classics;- Sub_Systems - Psikyo Classics
+- SubSystems - Raizing Classics;- Sub_Systems - Raizing Classics
+- SubSystems - Sega Classics;- Sub_Systems - Sega Classics
+- SubSystems - Sega Naomi 2;- Sub_Systems - Sega Naomi 2
+- SubSystems - Seibu Kaihatsu;- Sub_Systems - Seibu Kaihatsu
+- SubSystems - Seibu Kaihatsu Classics;- Sub_Systems - Seibu Kaihatsu Classics
+- SubSystems - Seta Classics;- Sub_Systems - Seta Classics
+- SubSystems - SNK Classics;- Sub_Systems - SNK Classics
+- SubSystems - SNK Neo Geo AES;SNK Neo Geo AES
+- SubSystems - Taito Classics;- Sub_Systems - Taito Classics
+- SubSystems - Technos Classics;- Sub_Systems - Technos Classics
+- SubSystems - Toaplan Classics;- Sub_Systems - Toaplan Classics
+- SubSystems - Unico Classics;- Sub_Systems - Unico Classics
+- SubSystems - Video System Co;- Sub_Systems - Video System Co
+- SubSystems - Visco Games;- Sub_Systems - Visco Games
+- SubSystems - Williams Classics;- Sub_Systems - Williams Classics
+main;Main
+-Sub- Poly Game Master;- Sub_Systems - Poly Game Master
+gd-rom;Sega Dreamcast
+naomi gd-rom;Sega Dreamcast
+neogeo mvs;- Sub_Systems - SNK Neo Geo MVS
+neogeo aes;SNK Neo Geo AES
+cps i;- Sub_Systems - Capcom Play System
+cps ii;- Sub_Systems - Capcom Play System II
+cps iii;- Sub_Systems - Capcom Play System III

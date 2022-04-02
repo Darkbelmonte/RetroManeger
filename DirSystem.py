@@ -3,9 +3,12 @@
 from operator import index
 import os
 import pandas as pd
-import numpy as np
-from tqdm import tqdm  
-from time import sleep 
+import numpy as np 
+from tqdm import tqdm  # barra de progresso
+import shutil # copiar arquivos
+import shutil, tempfile # carregar informações do CSV FILE_CSV_FIX_NAME_SYSTEM
+from shutil import move # move arquivos
+import re # regular expression
 # retorna uma lista das pastas da estrutura do sistema
 # ---------------------- DEFINIÇÃO DE CORES ---------------------- #
 reset_color = "\033[0m"
@@ -29,6 +32,61 @@ FILE_CSV_FIX_NAME_SYSTEM = ROOT + '\\core\\maneger\\Data\\Fix_NameSystem.csv'
 FILE_CSV_FIX_NAME_SYSTEM_TMP = ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv'
 FILE_CSV_FIX_NAME_CLEAN = ROOT + '\\core\\maneger\\Data\\Fix_NameClean.csv'
 FILE_CSV_FIX_NAME_CLEAN_TMP = ROOT + '\\core\\maneger\\Data\\Fix_NameClean_Tmp.csv'
+# carregar informações do CSV FILE_CSV_FIX_NAME_SYSTEM
+#verificar aquivo existe
+def file_backup(file_a):
+    file_temp = str(file_a).replace('.csv', '_Tmp.csv')
+    if os.path.isfile(file_temp):
+        try:
+            os.remove(file_temp)
+        except IOError:
+            print(u'Arquivo Base CSV não encontrado!', file_temp, '\n','Vamos fazer a partir do original :', file_a)
+            #print(FILE_CSV_FIX_NAME_SYSTEM_TMP)
+    if not os.path.isfile(file_temp):
+        try:
+            shutil.copyfile(file_a, file_temp)
+        except IOError:
+            print(u'Arquivo  Base CSV não encontrado!')
+# carregar informações do CSV FILE_CSV_FIX_NAME_SYSTEM
+file_backup(FILE_CSV_FIX_NAME_SYSTEM)
+df = pd.read_csv(FILE_CSV_FIX_NAME_SYSTEM_TMP, encoding='utf-8', sep=';')
+df.dropna(subset=['official_name'])
+wrongmName = list(set(df['wrong_name'].tolist()))
+systemName = list(set(df['official_name'].tolist()))
+# ------- FUNÇÃO PARA LER AS INFORMAÇÕES NOS DIRETÓRIOS ---------- #
+# ler informações dos arquivos .conf , .txt e .bat 
+def ler_arquivos_TXT(caminho_arquivo):
+    if os.path.isfile(str(caminho_arquivo)) == True:
+        arquivo = open(str(caminho_arquivo), 'r')
+        linhas = arquivo.readlines()
+        arquivo.close()
+        return linhas
+
+# Localizar informações especificas nas linhas dos arquivos de texto
+def ler_arquivos_TXT_linhas(caminho_arquivo, Criterio):
+    for erroName, offialName in zip(df['wrong_name'], df['official_name']):
+        if os.path.isfile(str(caminho_arquivo)) == True:
+            arquivo = open(str(caminho_arquivo), 'r')           
+        
+            Dir, Nome = os.path.split(caminho_arquivo)
+            Dir, Nome = os.path.split(Dir) # Separa o diretório e o nome do arquivo
+            for linha in arquivo:
+                    if linha == "":
+                        pass
+                    if '#' + Criterio in linha:
+                        #SettingsRomPath = "collections\\" + str(systemName[0]) + '\\roms'
+                        pass
+                    elif Criterio in linha:
+                        Valor_Criterio = linha.split('=')[1].replace('\n', '')
+                        return Nome + ':' + Valor_Criterio 
+            
+            
+            arquivo.close()
+
+        #linhas = arquivo.readlines()
+        #arquivo.close()
+        #return linhas[linha_inicial:linha_final]
+
 # --------- DEFINIÇÃO DAS LISTAS DOS OUTROS DIRETÓRIOS ------------ #
 print(blue + '| Definindo os diretórios...' + reset_color)
 print(blue + '| Diretório ROOT : ' + reset_color, yellow + ROOT + reset_color)
@@ -128,6 +186,58 @@ ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_AVI = list(set([o
 ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_MOV = list(set([os.path.join(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_ROCKETLAUNCHER_MEDIA_NAME  for file2 in ITEMS_ROCKETLAUNCHER_MEDIA_SYSTEM_NAME if os.path.exists(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) for file4 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) if os.path.isfile(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.mov')]))
 ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_PDF = list(set([os.path.join(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_ROCKETLAUNCHER_MEDIA_NAME  for file2 in ITEMS_ROCKETLAUNCHER_MEDIA_SYSTEM_NAME if os.path.exists(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) for file4 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) if os.path.isfile(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.pdf')]))
 ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_TXT = list(set([os.path.join(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_ROCKETLAUNCHER_MEDIA_NAME  for file2 in ITEMS_ROCKETLAUNCHER_MEDIA_SYSTEM_NAME if os.path.exists(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) for file4 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) if os.path.isfile(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.txt')]))
+ITEMS_COLLECTION_FILE_BAT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\', file3) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3) if file3.endswith('.bat')]))
+ITEMS_COLLECTION_FILE_CONTENT_BAT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.bat')]))
+ITEMS_EMULATORS_FILE_BAT = list(set([os.path.join(ROOT + '\\emulators\\' + file + '\\' + file2) for file in ITEMS_EMULATORS_NAME if os.path.exists(ROOT + '\\emulators\\' + file) for file2 in os.listdir(ROOT + '\\emulators\\' + file) if file2.endswith('.bat')]))
+
+print(blue + '| Lendo informações dos arquivos de texto...' + reset_color)
+
+#SETTINGS_GERAL_SYSTEM = [ler_arquivos_TXT(linha) for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]
+SETTINGS_RETORFE_INF_ROM = list(set([ler_arquivos_TXT_linhas(linha, 'list.path = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_GAMES_INCLUDE_TXT = list(set([ler_arquivos_TXT_linhas(linha, 'list.includeMissingItems = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_LIST_EXTENSIONS = list(set([ler_arquivos_TXT_linhas(linha, 'list.extensions = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_SORTED_ALPHABETICALLY = list(set([ler_arquivos_TXT_linhas(linha, 'list.menuSort = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_SEARCHED_ROM = list(set([ler_arquivos_TXT_linhas(linha, 'list.romHierarchy = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_SEARCHED_ROM_TRURIP = list(set([ler_arquivos_TXT_linhas(linha, 'list.truRIP = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_LAUCHER = list(set([ler_arquivos_TXT_linhas(linha, 'launcher = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_META_TYPE = list(set([ler_arquivos_TXT_linhas(linha, 'metadata.type = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_SCREENSHOT = list(set([ler_arquivos_TXT_linhas(linha, 'media.screenshot = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_SCREENTITLE = list(set([ler_arquivos_TXT_linhas(linha, 'media.screentitle = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_ARTWORK_BACK = list(set([ler_arquivos_TXT_linhas(linha, 'media.artwork_back = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_ARTWORK_FRONT = list(set([ler_arquivos_TXT_linhas(linha, 'media.artwork_front = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_MEDIUM_BACK = list(set([ler_arquivos_TXT_linhas(linha, 'media.medium_back = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_MEDIUM_FRONT = list(set([ler_arquivos_TXT_linhas(linha, 'media.medium_front = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_LOGO = list(set([ler_arquivos_TXT_linhas(linha, 'media.logo = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_LOGO2 = list(set([ler_arquivos_TXT_linhas(linha, 'media.logo2 = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_VIDEO = list(set([ler_arquivos_TXT_linhas(linha, 'media.video = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_DEVICE = list(set([ler_arquivos_TXT_linhas(linha, 'media.device = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_STORY = list(set([ler_arquivos_TXT_linhas(linha, 'media.story = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_STORY1 = list(set([ler_arquivos_TXT_linhas(linha, 'media.story1 = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BEZEL = list(set([ler_arquivos_TXT_linhas(linha, 'media.bezel = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BANNER = list(set([ler_arquivos_TXT_linhas(linha, 'media.banner = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_FANART = list(set([ler_arquivos_TXT_linhas(linha, 'media.fanart = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_COVER = list(set([ler_arquivos_TXT_linhas(linha, 'media.cover = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_COVER2 = list(set([ler_arquivos_TXT_linhas(linha, 'media.cover2 = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_FANARTLEFT = list(set([ler_arquivos_TXT_linhas(linha, 'media.fanartleft = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_FANARTSYS = list(set([ler_arquivos_TXT_linhas(linha, 'media.fanartsys = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CONTROLLER = list(set([ler_arquivos_TXT_linhas(linha, 'media.controller = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_POINTER = list(set([ler_arquivos_TXT_linhas(linha, 'media.pointer = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CHARACTER = list(set([ler_arquivos_TXT_linhas(linha, 'media.character = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CHARACTER_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.character_a = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CHARACTER_B = list(set([ler_arquivos_TXT_linhas(linha, 'media.character_b = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CHARACTER_C = list(set([ler_arquivos_TXT_linhas(linha, 'media.character_c = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BACKGROUND = list(set([ler_arquivos_TXT_linhas(linha, 'media.background = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BORDER = list(set([ler_arquivos_TXT_linhas(linha, 'media.Border = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BACKGROUND_SYSTEM = list(set([ler_arquivos_TXT_linhas(linha, 'media.backgroundsystem = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_COLOR = list(set([ler_arquivos_TXT_linhas(linha, 'media.color = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_COLOR_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.color_a = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_COLOR_B = list(set([ler_arquivos_TXT_linhas(linha, 'media.color_b = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_CONSOLE = list(set([ler_arquivos_TXT_linhas(linha, 'media.console = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BACKGROUND_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.background_a = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BRAND = list(set([ler_arquivos_TXT_linhas(linha, 'media.brand = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+
+
+
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
 print(blue + '| Criando DataFrame com as inforações : ' + reset_color, yellow + DATA_MANEGER_DATA + 'DirSystem.csv' + reset_color)
 s1=pd.Series(ITEMS_COLLECTION_NAME,name='ITEMS_COLLECTION_NAME')
@@ -224,6 +334,54 @@ s88=pd.Series(ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_AVI
 s89=pd.Series(ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_MOV,name='ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_MOV')
 s90=pd.Series(ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_PDF,name='ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_PDF')
 s91=pd.Series(ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_TXT,name='ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_TXT')
+s92=pd.Series(ITEMS_COLLECTION_FILE_BAT,name='ITEMS_COLLECTION_FILE_BAT')
+s93=pd.Series(ITEMS_COLLECTION_FILE_CONTENT_BAT,name='ITEMS_COLLECTION_FILE_CONTENT_BAT')
+s94=pd.Series(ITEMS_EMULATORS_FILE_BAT,name='ITEMS_EMULATORS_FILE_BAT')
+
+s95=pd.Series(SETTINGS_RETORFE_INF_ROM,name='SETTINGS_RETORFE_INF_ROM')
+s96=pd.Series(SETTINGS_RETORFE_GAMES_INCLUDE_TXT,name='SETTINGS_RETORFE_GAMES_INCLUDE_TXT')
+s97=pd.Series(SETTINGS_RETORFE_LIST_EXTENSIONS,name='SETTINGS_RETORFE_LIST_EXTENSIONS')
+s98=pd.Series(SETTINGS_RETORFE_SORTED_ALPHABETICALLY,name='SETTINGS_RETORFE_SORTED_ALPHABETICALLY')
+s99=pd.Series(SETTINGS_RETORFE_SEARCHED_ROM,name='SETTINGS_RETORFE_SEARCHED_ROM')
+s100=pd.Series(SETTINGS_RETORFE_SEARCHED_ROM_TRURIP,name='SETTINGS_RETORFE_SEARCHED_ROM_TRURIP')
+s101=pd.Series(SETTINGS_RETORFE_LAUCHER,name='SETTINGS_RETORFE_LAUCHER')
+s102=pd.Series(SETTINGS_RETORFE_META_TYPE,name='SETTINGS_RETORFE_META_TYPE')
+s103=pd.Series(SETTINGS_RETORFE_SCREENSHOT,name='SETTINGS_RETORFE_SCREENSHOT')
+s104=pd.Series(SETTINGS_RETORFE_SCREENTITLE,name='SETTINGS_RETORFE_SCREENTITLE')
+s105=pd.Series(SETTINGS_RETORFE_ARTWORK_BACK,name='SETTINGS_RETORFE_ARTWORK_BACK')
+s106=pd.Series(SETTINGS_RETORFE_ARTWORK_FRONT,name='SETTINGS_RETORFE_ARTWORK_FRONT')
+s107=pd.Series(SETTINGS_RETORFE_MEDIUM_BACK,name='SETTINGS_RETORFE_MEDIUM_BACK')
+s108=pd.Series(SETTINGS_RETORFE_MEDIUM_FRONT,name='SETTINGS_RETORFE_MEDIUM_FRONT')
+s109=pd.Series(SETTINGS_RETORFE_LOGO,name='SETTINGS_RETORFE_LOGO')
+s110=pd.Series(SETTINGS_RETORFE_LOGO2,name='SETTINGS_RETORFE_LOGO2')
+s111=pd.Series(SETTINGS_RETORFE_VIDEO,name='SETTINGS_RETORFE_VIDEO')
+s112=pd.Series(SETTINGS_RETORFE_DEVICE,name='SETTINGS_RETORFE_DEVICE')
+
+s113=pd.Series(SETTINGS_RETORFE_STORY,name='SETTINGS_RETORFE_STORY')
+s114=pd.Series(SETTINGS_RETORFE_STORY1,name='SETTINGS_RETORFE_STORY1')
+s115=pd.Series(SETTINGS_RETORFE_BEZEL,name='SETTINGS_RETORFE_BEZEL')
+s116=pd.Series(SETTINGS_RETORFE_BANNER,name='SETTINGS_RETORFE_BANNER')
+s117=pd.Series(SETTINGS_RETORFE_FANART,name='SETTINGS_RETORFE_FANART')
+s118=pd.Series(SETTINGS_RETORFE_COVER,name='SETTINGS_RETORFE_COVER')
+s119=pd.Series(SETTINGS_RETORFE_COVER2,name='SETTINGS_RETORFE_COVER2')
+s120=pd.Series(SETTINGS_RETORFE_FANARTLEFT,name='SETTINGS_RETORFE_FANARTLEFT')
+s121=pd.Series(SETTINGS_RETORFE_FANARTSYS,name='SETTINGS_RETORFE_FANARTSYS')
+s122=pd.Series(SETTINGS_RETORFE_CONTROLLER,name='SETTINGS_RETORFE_CONTROLLER')
+s123=pd.Series(SETTINGS_RETORFE_POINTER,name='SETTINGS_RETORFE_POINTER')
+s124=pd.Series(SETTINGS_RETORFE_CHARACTER,name='SETTINGS_RETORFE_CHARACTER')
+s125=pd.Series(SETTINGS_RETORFE_CHARACTER_A,name='SETTINGS_RETORFE_CHARACTER_A')
+s126=pd.Series(SETTINGS_RETORFE_CHARACTER_B,name='SETTINGS_RETORFE_CHARACTER_B')
+s127=pd.Series(SETTINGS_RETORFE_CHARACTER_C,name='SETTINGS_RETORFE_CHARACTER_C')
+s128=pd.Series(SETTINGS_RETORFE_BACKGROUND,name='SETTINGS_RETORFE_BACKGROUND')
+s129=pd.Series(SETTINGS_RETORFE_BORDER,name='SETTINGS_RETORFE_BORDER')
+s130=pd.Series(SETTINGS_RETORFE_BACKGROUND_SYSTEM,name='SETTINGS_RETORFE_BACKGROUND_SYSTEM')
+s131=pd.Series(SETTINGS_RETORFE_COLOR,name='SETTINGS_RETORFE_COLOR')
+s132=pd.Series(SETTINGS_RETORFE_COLOR_A,name='SETTINGS_RETORFE_COLOR_A')
+s133=pd.Series(SETTINGS_RETORFE_COLOR_B,name='SETTINGS_RETORFE_COLOR_B')
+s134=pd.Series(SETTINGS_RETORFE_CONSOLE,name='SETTINGS_RETORFE_CONSOLE')
+s135=pd.Series(SETTINGS_RETORFE_BACKGROUND_A,name='SETTINGS_RETORFE_BACKGROUND_A')
+s136=pd.Series(SETTINGS_RETORFE_BRAND,name='SETTINGS_RETORFE_BRAND')
+
 # --------- CONSTRUÇÃO DO DATAFRAME E ARQUIVO CSV ------------ #
 # verificar se tem o arquivo DATA_MANEGER_DATA + 'DirSystem.csv' e deletar se tiver
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
@@ -232,7 +390,9 @@ print(blue + '| Manipulando aquivo para salvar CSV : ' + reset_color, yellow + D
 if os.path.exists(DATA_MANEGER_DATA + 'DirSystem.csv'):
     os.remove(DATA_MANEGER_DATA + 'DirSystem.csv')
 # salvar o arquivo CSV   
-DirSystem_df = pd.concat([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,s41,s42,s43,s44,s45,s46,s47,s48,s49,s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,s60,s71,s72,s73,s74,s75,s76,s77,s78,s79,s60,s61,s62,s63,s64,s65,s66,s67,s68,s69,s70,s71,s72,s73,s74,s75,s76,s77,s78,s79,s80,s81,s82,s83,s84,s85,s86,s87,s88,s89,s90,s91], axis=1)
+DirSystem_df = pd.concat([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,s41,s42,s43,s44,s45,s46,s47,s48,s49,s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,s60,s71,s72,s73,s74,s75,s76,s77,s78,s79,s60,s61,s62,s63,s64,s65,s66,s67,s68,s69,s70,s71,s72,s73,s74,s75,s76,s77,s78,s79,s80,s81,s82,s83,s84,s85,s86,s87,s88,s89,s90,s91,s92,s93,s94,s95,s96,s97,s98,s99,s100,s101,s102,s103,s104,s105,s106,s107,s108,s109,s110,s111,s112,s113,s114,s115,s116,s117,s118,s119,s120,s121,s122,s123,s124,s125,s126,s127,s128,s129,s130,s131,s132,s133,s134,s135,s136], axis=1)
 DirSystem_df.to_csv(DATA_MANEGER_DATA + 'DirSystem.csv', encoding='utf-8', sep=';', index=False)
 print(blue + '|Processo de criação finalizado ' + reset_color, yellow + DATA_MANEGER_DATA + 'DirSystem.csv' + reset_color)
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
+
+print(INFO_SETTINGS_SYSTEM, 'INFO_SETTINGS_SYSTEM_ROM')

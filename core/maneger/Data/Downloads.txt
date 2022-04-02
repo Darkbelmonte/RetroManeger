@@ -1,0 +1,3 @@
+https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch.7z
+https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_cores.7z
+https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_update.7z
