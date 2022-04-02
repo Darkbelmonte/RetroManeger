@@ -190,7 +190,7 @@ ITEMS_COLLECTION_FILE_BAT = list(set([os.path.join(ROOT + '\\collections\\' + fi
 ITEMS_COLLECTION_FILE_CONTENT_BAT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.bat')]))
 ITEMS_EMULATORS_FILE_BAT = list(set([os.path.join(ROOT + '\\emulators\\' + file + '\\' + file2) for file in ITEMS_EMULATORS_NAME if os.path.exists(ROOT + '\\emulators\\' + file) for file2 in os.listdir(ROOT + '\\emulators\\' + file) if file2.endswith('.bat')]))
 
-print(blue + '| Lendo informações dos arquivos de texto...' + reset_color)
+print(blue + '| Lendo informações dos arquivos de Settings no RetroFE...' + reset_color)
 
 #SETTINGS_GERAL_SYSTEM = [ler_arquivos_TXT(linha) for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]
 SETTINGS_RETORFE_INF_ROM = list(set([ler_arquivos_TXT_linhas(linha, 'list.path = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
@@ -234,6 +234,9 @@ SETTINGS_RETORFE_COLOR_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.color
 SETTINGS_RETORFE_COLOR_B = list(set([ler_arquivos_TXT_linhas(linha, 'media.color_b = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 SETTINGS_RETORFE_CONSOLE = list(set([ler_arquivos_TXT_linhas(linha, 'media.console = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 SETTINGS_RETORFE_BACKGROUND_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.background_a = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_BRAND = list(set([ler_arquivos_TXT_linhas(linha, 'media.brand = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+
+print(blue + '| Lendo informações dos arquivos de Bat no RetroFE...' + reset_color)
 SETTINGS_RETORFE_BRAND = list(set([ler_arquivos_TXT_linhas(linha, 'media.brand = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 
 
@@ -394,5 +397,3 @@ DirSystem_df = pd.concat([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16
 DirSystem_df.to_csv(DATA_MANEGER_DATA + 'DirSystem.csv', encoding='utf-8', sep=';', index=False)
 print(blue + '|Processo de criação finalizado ' + reset_color, yellow + DATA_MANEGER_DATA + 'DirSystem.csv' + reset_color)
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
-
-print(INFO_SETTINGS_SYSTEM, 'INFO_SETTINGS_SYSTEM_ROM')
