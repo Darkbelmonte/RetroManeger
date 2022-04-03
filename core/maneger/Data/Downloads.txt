@@ -5,3 +5,11 @@ RetroArch_update;https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_
 Nintendo Switch;https://github.com/pineappleEA/pineapple-src/releases/download/EA-2637/Windows-Yuzu-EA-2637.7z
 Nintendo Switch;https://github.com/pineappleEA/pineapple-src/releases/tag/EA-2637
 Nintendo Switch (Ryujinx);https://github.com/Ryujinx/release-channel-master/releases/download/1.1.85/ryujinx-1.1.85-win_x64.zip
+Sony Playstation 2;https://github.com/PCSX2/pcsx2/releases/download/v1.6.0/pcsx2-1.6.0-binaries.7z
+Sony Playstation 2;https://github.com/PCSX2/pcsx2/releases/download/v1.7.2554/pcsx2-v1.7.2554-windows-64bit-AVX2.7z
+Sony Playstation 2;https://github.com/PCSX2/pcsx2/releases/download/v1.7.2554/pcsx2-v1.7.2554-windows-64bit-SSE4.7z
+Nintendo GameCube;https://dl.dolphin-emu.org/builds/c0/39/dolphin-master-5.0-16101-x64.7z
+Nintendo Wii;https://dl.dolphin-emu.org/builds/c0/39/dolphin-master-5.0-16101-x64.7z
+Microsoft Xbox 360;https://github.com/xenia-project/release-builds-windows/releases/latest/download/xenia_master.zip
+Microsoft Xbox;https://github.com/mborgerson/xemu/releases/download/gh-release%2F0.6.2-90-g6f507c80af/xemu-win-release.zip
+Nintendo 3DS;https://github.com/citra-emu/citra-nightly/releases/download/nightly-1758/citra-windows-mingw-20220402-b5ac9e4.7z
