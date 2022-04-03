@@ -76,6 +76,10 @@ def ler_arquivos_TXT_linhas(caminho_arquivo, Criterio):
                     if '#' + Criterio in linha:
                         #SettingsRomPath = "collections\\" + str(systemName[0]) + '\\roms'
                         pass
+                    if Criterio in linha == 'copy ':
+                        Valor_Criterio = linha.replace('\n', '')
+                    if Criterio in linha == 'xcopy ':
+                        Valor_Criterio = linha.replace('\n', '')
                     elif Criterio in linha:
                         Valor_Criterio = linha.split('=')[1].replace('\n', '')
                         return Nome + ':' + Valor_Criterio 

@@ -1,3 +1,7 @@
-https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch.7z
-https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_cores.7z
-https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_update.7z
+Emulador;link_for_download
+RetroArch;https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch.7z
+RetroArch_core;https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_cores.7z
+RetroArch_update;https://buildbot.libretro.com/nightly/windows/x86_64/RetroArch_update.7z
+Nintendo Switch;https://github.com/pineappleEA/pineapple-src/releases/download/EA-2637/Windows-Yuzu-EA-2637.7z
+Nintendo Switch;https://github.com/pineappleEA/pineapple-src/releases/tag/EA-2637
+Nintendo Switch (Ryujinx);https://github.com/Ryujinx/release-channel-master/releases/download/1.1.85/ryujinx-1.1.85-win_x64.zip
