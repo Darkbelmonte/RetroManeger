@@ -188,8 +188,7 @@ ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_PDF = list(set([o
 ITEMS_ROCKETLAUNCHER_DIR_MEDIA_ROM_DIR_CONTENT_ROMNAME_CONTENT_TXT = list(set([os.path.join(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_ROCKETLAUNCHER_MEDIA_NAME  for file2 in ITEMS_ROCKETLAUNCHER_MEDIA_SYSTEM_NAME if os.path.exists(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) for file4 in os.listdir(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3) if os.path.isfile(ROOT + '\\RocketLauncher\\Media\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.txt')]))
 ITEMS_COLLECTION_FILE_BAT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\', file3) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3) if file3.endswith('.bat')]))
 ITEMS_COLLECTION_FILE_CONTENT_BAT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.bat')]))
-ITEMS_EMULATORS_FILE_BAT = list(set([os.path.join(ROOT + '\\emulators\\' + file + '\\' + file2) for file in ITEMS_EMULATORS_NAME if os.path.exists(ROOT + '\\emulators\\' + file) for file2 in os.listdir(ROOT + '\\emulators\\' + file) if file2.endswith('.bat')]))
-
+ITEMS_EMULATORS_FILE_BAT = list(set([os.path.join(ROOT + '\\emulators\\' + file + '\\' + file2) for file in ITEMS_EMULATORS_NAME if os.path.exists(ROOT + '\\emulators\\' + file) for file2 in os.listdir(ROOT + '\\emulators\\' + file) if file2.endswith('.bat')])) 
 print(blue + '| Lendo informações dos arquivos de Settings no RetroFE...' + reset_color)
 
 #SETTINGS_GERAL_SYSTEM = [ler_arquivos_TXT(linha) for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]
@@ -235,10 +234,20 @@ SETTINGS_RETORFE_COLOR_B = list(set([ler_arquivos_TXT_linhas(linha, 'media.color
 SETTINGS_RETORFE_CONSOLE = list(set([ler_arquivos_TXT_linhas(linha, 'media.console = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 SETTINGS_RETORFE_BACKGROUND_A = list(set([ler_arquivos_TXT_linhas(linha, 'media.background_a = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 SETTINGS_RETORFE_BRAND = list(set([ler_arquivos_TXT_linhas(linha, 'media.brand = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
-
-print(blue + '| Lendo informações dos arquivos de Bat no RetroFE...' + reset_color)
+SETTINGS_RETORFE_VERTX = list(set([ler_arquivos_TXT_linhas(linha, 'media.vertx = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
+SETTINGS_RETORFE_FIRSTLETTER = list(set([ler_arquivos_TXT_linhas(linha, 'media.firstLetter = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 SETTINGS_RETORFE_BRAND = list(set([ler_arquivos_TXT_linhas(linha, 'media.brand = ') for linha in ITEMS_COLLECTION_FILE_CONF if os.path.isfile(linha)]))
 
+
+print(blue + '| Lendo informações dos arquivos de Bat no RetroFE...' + reset_color)
+AUTOMACAO_THEME_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'copy ') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_THEME_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'xcopy ') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_SETTINGS_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'copy ') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_SETTINGS_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'xcopy ') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_PC_GAME_OUT_FOLDER_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'set "GAMENAME=') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_PC_GAME_OUT_FOLDER_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'set "GAMEPATH=') for linha in ITEMS_COLLECTION_FILE_BAT if os.path.isfile(linha)]))
+AUTOMACAO_PC_GAME_IN_FOLDER_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'set "GAMENAME=') for linha in ITEMS_COLLECTION_FILE_CONTENT_BAT if os.path.isfile(linha)]))
+AUTOMACAO_PC_GAME_IN_FOLDER_BAT = list(set([ler_arquivos_TXT_linhas(linha, 'set "GAMEPATH=') for linha in ITEMS_COLLECTION_FILE_CONTENT_BAT if os.path.isfile(linha)]))
 
 
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
@@ -385,6 +394,11 @@ s134=pd.Series(SETTINGS_RETORFE_CONSOLE,name='SETTINGS_RETORFE_CONSOLE')
 s135=pd.Series(SETTINGS_RETORFE_BACKGROUND_A,name='SETTINGS_RETORFE_BACKGROUND_A')
 s136=pd.Series(SETTINGS_RETORFE_BRAND,name='SETTINGS_RETORFE_BRAND')
 
+s137=pd.Series(AUTOMACAO_THEME_BAT,name='AUTOMACAO_THEME_BAT')
+s138=pd.Series(AUTOMACAO_SETTINGS_BAT,name='AUTOMACAO_SETTINGS_BAT')
+s139=pd.Series(AUTOMACAO_PC_GAME_OUT_FOLDER_BAT,name='AUTOMACAO_PC_GAME_OUT_FOLDER_BAT')
+s140=pd.Series(AUTOMACAO_PC_GAME_IN_FOLDER_BAT,name='AUTOMACAO_PC_GAME_IN_FOLDER_BAT')
+
 # --------- CONSTRUÇÃO DO DATAFRAME E ARQUIVO CSV ------------ #
 # verificar se tem o arquivo DATA_MANEGER_DATA + 'DirSystem.csv' e deletar se tiver
 print(cyan + '*---------------------------------------------------------------*' + reset_color)
@@ -393,7 +407,7 @@ print(blue + '| Manipulando aquivo para salvar CSV : ' + reset_color, yellow + D
 if os.path.exists(DATA_MANEGER_DATA + 'DirSystem.csv'):
     os.remove(DATA_MANEGER_DATA + 'DirSystem.csv')
 # salvar o arquivo CSV   
-DirSystem_df = pd.concat([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,s41,s42,s43,s44,s45,s46,s47,s48,s49,s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,s60,s71,s72,s73,s74,s75,s76,s77,s78,s79,s60,s61,s62,s63,s64,s65,s66,s67,s68,s69,s70,s71,s72,s73,s74,s75,s76,s77,s78,s79,s80,s81,s82,s83,s84,s85,s86,s87,s88,s89,s90,s91,s92,s93,s94,s95,s96,s97,s98,s99,s100,s101,s102,s103,s104,s105,s106,s107,s108,s109,s110,s111,s112,s113,s114,s115,s116,s117,s118,s119,s120,s121,s122,s123,s124,s125,s126,s127,s128,s129,s130,s131,s132,s133,s134,s135,s136], axis=1)
+DirSystem_df = pd.concat([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30,s41,s42,s43,s44,s45,s46,s47,s48,s49,s50,s51,s52,s53,s54,s55,s56,s57,s58,s59,s60,s71,s72,s73,s74,s75,s76,s77,s78,s79,s60,s61,s62,s63,s64,s65,s66,s67,s68,s69,s70,s71,s72,s73,s74,s75,s76,s77,s78,s79,s80,s81,s82,s83,s84,s85,s86,s87,s88,s89,s90,s91,s92,s93,s94,s95,s96,s97,s98,s99,s100,s101,s102,s103,s104,s105,s106,s107,s108,s109,s110,s111,s112,s113,s114,s115,s116,s117,s118,s119,s120,s121,s122,s123,s124,s125,s126,s127,s128,s129,s130,s131,s132,s133,s134,s135,s136,s137,s138,s139,s140], axis=1)
 DirSystem_df.to_csv(DATA_MANEGER_DATA + 'DirSystem.csv', encoding='utf-8', sep=';', index=False)
 print(blue + '|Processo de criação finalizado ' + reset_color, yellow + DATA_MANEGER_DATA + 'DirSystem.csv' + reset_color)
 print(cyan + '*---------------------------------------------------------------*' + reset_color)

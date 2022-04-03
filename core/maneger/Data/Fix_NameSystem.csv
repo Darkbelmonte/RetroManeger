@@ -76,6 +76,7 @@ _Menu -Pinball;- Menu - Pinball
 - SubMenu ? Arcade All?;- MenuSub - Arcade All
 '- SubMenu ? Arcade All?';- MenuSub - Arcade All
 02 ARCADE ALL;- MenuSub - Arcade All
+0 Arcade;- MenuSub - Arcade All
 - SubMenu - Arcade Collections;- SubMenu - Arcade Collections
 - SubMenu – Arcade Collections;- SubMenu - Arcade Collections
 - SubMenu ? Arcade Collections;- SubMenu - Arcade Collections
@@ -440,6 +441,8 @@ Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection
 Star Wars Collection;- Sub_Selection - Star Wars Collection
 starwars;- Sub_Selection - Star Wars Collection
 - Sub ?  Street Fighter Collection;- Sub_Selection - Street Fighter Collection
+3 Street Fighter;- Sub_Selection - Street Fighter Collection
+3 Capcom Fighters;- Sub_Selection - Capcom Fighter Collection
 -Sub-Street Fighter Collection;- Sub_Selection - Street Fighter Collection
 -SubCol-  -SubCol-  -SubCol-Street Fighter Collection';- Sub_Selection - Street Fighter Collection
 -SubCol- Street Fighter Collection;- Sub_Selection - Street Fighter Collection
@@ -565,8 +568,10 @@ Role-Playing;- Menu - Sub_Genres - Role-Playing
 -SubMenu_G?  Run and Gun;- Menu - Sub_Genres - Run and Gun
 '- SubMenu_G ?  Run and Gun';- Menu - Sub_Genres - Run and Gun
 3 Run n Gun;- Menu - Sub_Genres - Run and Gun
+Vert3 Run n Gun;- Menu - Sub_Genres - Run and Gun Vertical
 6 Run and Gun;- Menu - Sub_Genres - Run and Gun
 - SubMenu_G -  Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
+Vert5 Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups Vertical
 - SubMenu_G - Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
 -SubMenu_G?  Shoot em Ups;- Menu - Sub_Genres - Shoot em Ups
 '- SubMenu_G ?  Shoot em Ups';- Menu - Sub_Genres - Shoot em Ups
@@ -627,6 +632,9 @@ sega;- Menu - Sub_Manufacturer - Sega
 '- SubMenu_M ?  Sony';- Menu - Sub_Manufacturer - Sony
 2 SONY;- Menu - Sub_Manufacturer - Sony
 - Sub ?  - Sub ?  Arcade Classics;- Sub_Systems - Arcade Classics
+Vert0 Arcade;- MenuSub - Arcade Vertical
+Vert0 Arcade Classics;- Sub_Systems - Arcade Classics Vertical
+0 Arcade Classics;- Sub_Systems - Arcade Classics
 -Sub-Arcade Classics;- Sub_Systems - Arcade Classics
 '- Sub ?Arcade Classics';- Sub_Systems - Arcade Classics
 Arcade Classics;- Sub_Systems - Arcade Classics
@@ -2068,6 +2076,7 @@ WoW - Action - Max;WoW Action Max
 - SubMenu_Genres - Flying;- Menu - Sub_Genres - Flying
 - SubMenu_Genres - Light Gun Games;- Menu - Sub_Genres - Light Gun Games
 - SubMenu_Genres - Old School;- Menu - Sub_Genres - Old School
+Vert1 Old School;- Menu - Sub_Genres - Old School Vertical
 - SubMenu_Genres - Platform;- Menu - Sub_Genres - Platform
 Platform;- Menu - Sub_Genres - Platform
 - SubMenu_Genres - Ports;- Menu - Sub_Genres - Ports
