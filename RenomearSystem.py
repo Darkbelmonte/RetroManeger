@@ -55,34 +55,25 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # -----------------    CAMINHOS   ------------------ #
 # _________   DEFINIR LOCAIS DE ACESSO  ____________ #
-currentdir = os.getcwd()
-
-VALIDAR_ROOT = [f for f in os.listdir(currentdir) if os.path.isdir(currentdir + '\\' + f) if f == 'core' ]
-chck_root = __file__.split('\\')
-contador = 0
-print(VALIDAR_ROOT, 'VALIDAR_ROOT')
-print(chck_root, 'chck_root')
-
-if VALIDAR_ROOT == 'core':
-    global ROOT
-    ROOT = currentdir
-    print(ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv', '1º teste')
-if (os.path.join(file + '\\core') for file in __file__.split('\\', -1)) == (currentdir + '\\core'):
-    ROOT = currentdir
-    print(ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv', '2º teste')
-#elif contador <= len(chck_root) and chck_root[-contador] + '\\core' != (currentdir + '\\core'):  
-#    while (chck_root[-contador] != 'core'):      
-#        ROOT = '\\'.join(chck_root[0:-((contador + 1))])
-#        contador   = contador + 1
-#        if contador == len(chck_root) and chck_root[-contador] + '\\core' == (currentdir + '\\core'):
-#            break
-        #if os.path.isfile(ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv') and os.path.exists(ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv'):
-        #ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv'
-                
-        #    ROOT = ROOT
-
-
-ROOT = currentdir
+# Localização do diretório ROOT
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 7)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 7)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 6)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 6)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 5)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 5)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 4)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 4)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 3)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 3)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 2)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 2)[0:-1]))
+elif str(os.path.exists(os.path.realpath(__file__))) + '\\core':
+    ROOT = os.path.dirname(os.path.abspath(__file__))
+else:
+    print(u'Diretório ROOT não encontrado!')
+    exit()
+print(red + "ROOT : ", ROOT + reset_color)
 os.chdir(ROOT)
 # -----------------    CAMINHOS   ------------------ #
 # _________   DEFINIR LOCAIS DE ACESSO  ____________ #
@@ -204,9 +195,9 @@ def renameDir(caminho):
 
                                     if old_file != new_file:
                                         try:
-                                            if not os.path.exists(new_file):
-                                                os.rename(old_file, new_file)
-                                                print(f'folder index {indice} = {old_file}  >> name index = {official_indice} | {new_file}')
+                                            #if not os.path.exists(new_file):
+                                            #    os.rename(old_file, new_file)
+                                            #    print(f'folder index {indice} = {old_file}  >> name index = {official_indice} | {new_file}')
                                             if os.path.exists(new_file):
                                                 move(old_file, new_file)
                                                 print(f'folder index {indice} = {old_file}  >SOBREPONDO> name index = {official_indice} | {new_file}')
