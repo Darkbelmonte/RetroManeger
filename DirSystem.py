@@ -26,7 +26,26 @@ print(cyan + '*---------------------------------------------------------------*'
 
 # ----------------- DEFINIÇÃO DO DIRETÓRIO ROOT ------------------ #
 # idenfificar o diretório do projeto e definir que o diretório ROOT sempre será o root + '/core'
-ROOT = os.path.dirname(os.path.abspath(__file__)) if 'core' in os.listdir(os.path.dirname(os.path.abspath(__file__))) else "\\".join(((os.path.realpath(__file__)).split('\\', -1)[0:3]))
+#ROOT = os.path.dirname(os.path.abspath(__file__)) if 'core' in os.listdir(os.path.dirname(os.path.abspath(__file__))) else "\\".join(((os.path.realpath(__file__)).split('\\', -1)[0:3]))
+# Localização do diretório ROOT
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 7)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 7)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 6)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 6)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 5)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 5)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 4)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 4)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 3)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 3)[0:-1]))
+if os.path.exists("\\".join(((os.path.realpath(__file__)).split('\\', 2)[0:-1])) + '\\core'):
+    ROOT = "\\".join(((os.path.realpath(__file__)).split('\\', 2)[0:-1]))
+elif str(os.path.exists(os.path.realpath(__file__))) + '\\core':
+    ROOT = os.path.dirname(os.path.abspath(__file__))
+else:
+    print(u'Diretório ROOT não encontrado!')
+    exit()
+print(red + "ROOT : ", ROOT + reset_color)
 DATA_MANEGER_DATA = ROOT + '\\core\\maneger\\' + 'Data\\'
 FILE_CSV_FIX_NAME_SYSTEM = ROOT + '\\core\\maneger\\Data\\Fix_NameSystem.csv'
 FILE_CSV_FIX_NAME_SYSTEM_TMP = ROOT + '\\core\\maneger\\Data\\Fix_NameSystem_Tmp.csv'
@@ -118,6 +137,10 @@ ITEMS_COLLECTION_FILE_AVI = list(set([os.path.join(ROOT + '\\collections\\' + fi
 ITEMS_COLLECTION_FILE_OGG = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\', file3) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3) if file3.endswith('.ogg')])) 
 ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT = list(set([(file3) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3)]))
 ITEMS_COLLECTION_DIR__CONTENT_IN_CONTENT = list(set([(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3)]))
+
+ITEMS_COLLECTION_NAME_FILE_CONTENT_FILE = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4)]))
+ITEMS_COLLECTION_DIR_FILE_CONTENT_FILE = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4)]))
+
 ITEMS_COLLECTION_FILE_CONTENT_TXT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.txt')]))
 ITEMS_COLLECTION_FILE_CONTENT_PNG = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3)   for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.png')]))
 ITEMS_COLLECTION_FILE_CONTENT_JPG = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\', file4) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in ITEMS_COLLECTION_NAME__CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2) for file3 in ITEMS_COLLECTION_NAME__CONTENT_IN_CONTENT if os.path.exists(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3)   for file4 in os.listdir(ROOT + '\\collections\\' + file + '\\' + file2  + '\\' + file3) if os.path.isfile(ROOT + '\\collections\\' + file + '\\' + file2 + '\\' + file3 + '\\' + file4) if file4.endswith('.jpg')]))
@@ -411,6 +434,8 @@ s139=pd.Series(AUTOMACAO_PC_GAME_OUT_FOLDER_BAT,name='AUTOMACAO_PC_GAME_OUT_FOLD
 s140=pd.Series(AUTOMACAO_PC_GAME_IN_FOLDER_BAT,name='AUTOMACAO_PC_GAME_IN_FOLDER_BAT')
 
 s141=pd.Series(ITEMS_COLLECTION_DIR__CONTENT_IN_CONTENT,name='ITEMS_COLLECTION_DIR__CONTENT_IN_CONTENT')
+s142=pd.Series(ITEMS_COLLECTION_NAME_FILE_CONTENT_FILE,name='ITEMS_COLLECTION_NAME_FILE_CONTENT_FILE')
+s143=pd.Series(ITEMS_COLLECTION_DIR_FILE_CONTENT_FILE,name='ITEMS_COLLECTION_DIR_FILE_CONTENT_FILE')
 
 # --------- CONSTRUÇÃO DO DATAFRAME E ARQUIVO CSV ------------ #
 # verificar se tem o arquivo DATA_MANEGER_DATA + 'DirSystem.csv' e deletar se tiver

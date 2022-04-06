@@ -581,6 +581,7 @@ Shoot-'Em-Up;- Menu - Sub_Genres - Shoot em Ups
 - SubMenu_G - Shooter;- Menu - Sub_Genres - Shooter
 Shooter;- Menu - Sub_Genres - Shooter
 - SubMenu_G - Sports;- Menu - Sub_Genres - Sports
+Sports;- Menu - Sub_Genres - Sports
 '- SubMenu_G ?  Sports';- Menu - Sub_Genres - Sports
 7 Sports;- Menu - Sub_Genres - Sports
 8 Sports;- Menu - Sub_Genres - Sports
@@ -1323,6 +1324,8 @@ gbcbr;Nintendo Game Boy Color Brazil Games Translated
 Nintendo Game Boy Color Brazil Games Translated;Nintendo Game Boy Color Brazil Games Translated
 'Nintendo GameCube';Nintendo GameCube
 Nintendo - GameCube;Nintendo GameCube
+game cube;Nintendo GameCube
+gamecube;Nintendo GameCube
 gamecube;Nintendo GameCube
 GameCube;Nintendo GameCube
 GameCube Official;Nintendo GameCube
@@ -1560,6 +1563,7 @@ Model 2 Official;Sega Model 2
 model2;Sega Model 2
 Sega Model 2;Sega Model 2
 'Sega Model 3';Sega Model 3
+Sega Model 3;Sega Model 3
 Sega - Model 3;Sega Model 3
 Model 3 Official;Sega Model 3
 MODEL2;Sega Model 3
@@ -1572,6 +1576,8 @@ Naomi Official;Sega Naomi
 Sega Naomi;Sega Naomi
 Sega Ringedge;Sega Ringedge
 Sega RinNintendo Game & Watchide;Sega Ringedge
+RetroArch;RetroArch
+Nintendo Switch (ryujinx);Nintendo Switch (ryujinx)
 'Sega Saturn';Sega Saturn
 Sega - Saturn;Sega Saturn
 Beetle Saturn;Sega Saturn
@@ -2054,7 +2060,7 @@ WoW - Action - Max;WoW Action Max
 - SubCol - Solarus Collection;- Sub_Selection - Solarus Collection
 - SubCol - Sonic Collection;- Sub_Selection - Sonic Collection
 - SubCol - Soul Calibur Collection;- Sub_Selection - Soul Calibur Collection
-- SubCol - Spider-Man Collectio;- Sub_Selection - Spider-Man Collectio
+- SubCol - Spider-Man Collectio;- Sub_Selection - Spider-Man Collection
 - SubCol - Spider-Man Collection;- Sub_Selection - Spider-Man Collection
 - SubCol - Spongebob Squarepants Collection;- Sub_Selection - Spongebob Squarepants Collection
 - SubCol - Spyro the Dragon Collection;- Sub_Selection - Spyro the Dragon Collection

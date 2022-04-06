@@ -18,18 +18,6 @@ from pathlib import Path
 from collections import OrderedDict
 import importlib.util
 
-import sys
-sys.path  #executar um script python de um diretório dentro de outro script que está em outro diretório?
-# SCRIPT
-MODULE_DIR_SYSTEM = 'core\\maneger\\Lib\\'
-MODULE_DIR_SYSTEM_NAME = 'DirSystem.py'
-
-spec = importlib.util.spec_from_file_location(MODULE_DIR_SYSTEM_NAME, MODULE_DIR_SYSTEM + MODULE_DIR_SYSTEM_NAME)
-modulevar = importlib.util.module_from_spec(spec)
-spec.loader.exec_module(modulevar)
-#modulevar.printingstatement()
-#...
-
 # -----------------    CAMINHOS   ------------------ #
 # _________  DEFINIR CONFIGURAÇÕES INICIAIS________ #
 # Formatação de cores para o Print no terminal 
@@ -84,6 +72,19 @@ FILE_CSV_FIX_NAME_CLEAN = ROOT + '\\core\\maneger\\Data\\Fix_NameClean.csv'
 FILE_CSV_FIX_NAME_CLEAN_TMP = ROOT + '\\core\\maneger\\Data\\Fix_NameClean_Tmp.csv'
 FILE_CSV_DIRSYSTEM = ROOT + '\\core\\maneger\\Data\\DirSystem.csv'
 FILE_CSV_DIRSYSTEM_TMP = ROOT + '\\core\\maneger\\Data\\DirSystem_Tmp.csv'
+# ------------    OUTROS PROCESSOS   ---------------- #
+# _________   DEFINIR LOCAIS DE ACESSO  ____________ #
+import sys
+sys.path  #executar um script python de um diretório dentro de outro script que está em outro diretório?
+# SCRIPT
+MODULE_DIR_SYSTEM = 'core\\maneger\\Lib\\'
+MODULE_DIR_SYSTEM_NAME = 'DirSystem.py'
+
+spec = importlib.util.spec_from_file_location(MODULE_DIR_SYSTEM_NAME, MODULE_DIR_SYSTEM + MODULE_DIR_SYSTEM_NAME)
+modulevar = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(modulevar)
+#modulevar.printingstatement()
+#...
 
 # -------------------   FUNÇÃO   ------------------- #
 # ----------------- Manipular CSV ------------------ #

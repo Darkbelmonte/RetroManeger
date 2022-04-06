@@ -13,3 +13,4 @@ Nintendo Wii;https://dl.dolphin-emu.org/builds/c0/39/dolphin-master-5.0-16101-x6
 Microsoft Xbox 360;https://github.com/xenia-project/release-builds-windows/releases/latest/download/xenia_master.zip
 Microsoft Xbox;https://github.com/mborgerson/xemu/releases/download/gh-release%2F0.6.2-90-g6f507c80af/xemu-win-release.zip
 Nintendo 3DS;https://github.com/citra-emu/citra-nightly/releases/download/nightly-1758/citra-windows-mingw-20220402-b5ac9e4.7z
+Sony PlayStation Portable;https://www.ppsspp.org/files/1_12_3/ppsspp_win.zip
