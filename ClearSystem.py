@@ -10,6 +10,7 @@ import os.path
 from datetime import date
 from datetime import datetime
 import numpy as np 
+import xml.etree.ElementTree as ET
 # -----------------    CAMINHOS   ------------------ #
 # _________  DEFINIR CONFIGURAÇÕES INICIAIS________ #
 # Formatação de cores para o Print no terminal 
@@ -90,9 +91,13 @@ ITEMS_COLLECTION_DIR__CONTENT = list(set([os.path.join(ROOT + '\\collections\\' 
 ITEMS_COLLECTION_NAME__CONTENT = list(set([(file2) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in os.listdir(ROOT + '\\collections\\' + file) if os.path.isdir(ROOT + '\\collections\\' + file + '\\' + file2)]))
 ITEMS_EMULATORS_NAME = list(set([f for f in os.listdir(ROOT + '\\emulators\\') if os.path.exists(ROOT + '\\emulators\\') if os.path.isdir(ROOT + '\\emulators\\')]))
 ITEMS_EMULATORS_DIR_NAME = list(set([os.path.join(ROOT + '\\emulators\\', file) for file in os.listdir(ROOT + '\\emulators\\') if os.path.isdir(ROOT + '\\emulators\\' + file)]))
-ITEMS_LAYOUTS_NAME = [f for f in os.listdir(ROOT + '\\layouts\\') if os.path.exists(ROOT + '\\layouts\\') if os.path.isdir(ROOT + '\\layouts\\')]
-ITEMS_LAYOUTS_DIR_COLLECTION = list(set([os.path.join(ROOT + '\\layouts\\' + file + '\\collections') for file in ITEMS_LAYOUTS_NAME if os.path.exists(ROOT + '\\layouts\\' + file + '\\collections') if os.path.isdir(ROOT + '\\layouts\\' + file + '\\collections')]))
-
+#ITEMS_LAYOUTS_NAME = [f for f in os.listdir(ROOT + '\\layouts\\') if os.path.exists(ROOT + '\\layouts\\') if os.path.isdir(ROOT + '\\layouts\\')]
+#ITEMS_LAYOUTS_DIR_COLLECTION = list(set([os.path.join(ROOT + '\\layouts\\' + file + '\\collections') for file in ITEMS_LAYOUTS_NAME if os.path.exists(ROOT + '\\layouts\\' + file + '\\collections') if os.path.isdir(ROOT + '\\layouts\\' + file + '\\collections')]))
+ITEMS_COLLECTION_FILE_CONF = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in os.listdir(ROOT + '\\collections\\' + file) if file2.endswith('.conf')]))
+ITEMS_META_NAME = [f for f in os.listdir(ROOT + '\\meta\\') if os.path.exists(ROOT + '\\meta\\') if os.path.isdir(ROOT + '\\meta\\')]
+ITEMS_META_DIR_NAME = list(set([os.path.join(ROOT + '\\meta\\', file) for file in ITEMS_META_NAME if os.path.exists(ROOT + '\\meta\\' + file) if os.path.isdir(ROOT + '\\meta\\' + file)]))
+ITEMS_META_FILE_XML = list(set([os.path.join(ROOT + '\\meta\\' + file + '\\', file2) for file in ITEMS_META_NAME if os.path.exists(ROOT + '\\meta\\' + file) if os.path.isdir(ROOT + '\\meta\\' + file) for file2 in os.listdir(ROOT + '\\meta\\' + file) if file2.endswith('.xml')]))
+ROMS_NAME_REAL_LIST = []
 EMPTY = []
 
 # _________   CRIAÇÃO DO DATAFRAME  ________________ #
@@ -194,6 +199,27 @@ def Backup_OutOftheSystema(list_caminhos):
                 move(nome_remove, new_end)
             pass
 
+def Identificar_Dir_ROM_in_Settings(lista_caminho_arquivo, Criterio):
+    for dir_linha in ITEMS_COLLECTION_FILE_CONF:
+
+        # ler arquivos settings e retornar linhas com o criterio informado ex: '#'
+        for erroName, offialName in zip(df['wrong_name'], df['official_name']):
+            if os.path.isfile(str(dir_linha)) == True:
+                arquivo = open(str(dir_linha), 'r')           
+            
+                Dir, Nome = os.path.split(dir_linha)
+                Dir, Nome = os.path.split(Dir) # Separa o diretório e o nome do arquivo
+                for linha in arquivo:
+                    if linha == "":
+                        pass
+                    if '#' + Criterio in linha:
+                        #SettingsRomPath = "collections\\" + str(systemName[0]) + '\\roms'
+                        pass
+                    elif Criterio in linha :
+                        ROM_DIR_NO_SETTINGS_LST = linha.split('=')[1].replace('\n', '').lstrip()
+                        return ROOT + '\\' + ROM_DIR_NO_SETTINGS_LST                 
+                arquivo.close()
+
 
 
 # função para renomear os nomes com base na verificação se existe o nome no wrongmName para o systemName
@@ -201,12 +227,75 @@ def clean_list():
     for dirremove, remove, emul, systema in zip(dirclean, limpar, emulador, categoria):
         Backup_default(str(dirremove))
 
+# Coletar nomes das ROMs e informações adicionais do sistema no arquivo XML
+for systemXML in ITEMS_META_FILE_XML:
+    for systemNameInstalado in ITEMS_COLLECTION_NAME:
+        Dir, FileXml = os.path.split(systemXML)
+        FileXmlnoExt, ext = os.path.splitext(FileXml)
+        if FileXmlnoExt == systemNameInstalado:
+            print(f'{systemNameInstalado}  >Fazendo Back_Up> name = {systemXML}')
 
-# excutar funções de limpeza do sistema
+            tree = ET.parse(systemXML)
+            root = tree.getroot()
+            [(x.tag, x.attrib) for x in root] # Lista os elementos filhos: nome e atributos
+            [x.attrib for x in root.iter('game')] # Lista elementos descendentes: atributos
+            # for catogoria in categorias:
+            # Todos_elementos = [inf.text for inf in root.findall("./game/{catogoria}".format(catogoria=catogoria))]
+                #print(G)
+
+            categorias = list(set([elem.tag for elem in root.iter()]))
+            ROMS_XML_LIST = [game.attrib['name'] for game in root.findall("./game")]
+            DESCRIPTION_XML_LIST = [inf.text for inf in root.findall("./game/description")]
+            RATING_XML_LIST = [inf.text for inf in root.findall("./game/rating")]
+            CRC_XML_LIST = [inf.text for inf in root.findall("./game/crc")]            
+            CLONEOF_XML_LIST = [inf.text for inf in root.findall("./game/cloneof")]
+            PLAYERS_XML_LIST = [inf.text for inf in root.findall("./game/players")]
+            SCORE_XML_LIST = [inf.text for inf in root.findall("./game/score")]
+            YEAR_XML_LIST = [inf.text for inf in root.findall("./game/year")]
+            GENRE_XML_LIST = [inf.text for inf in root.findall("./game/genre")]
+            PLAYERS_XML_LIST = [inf.text for inf in root.findall("./game/players")]
+            CTRLTYPE_XML_LIST = [inf.text for inf in root.findall("./game/ctrltype")]
+            BUTTONS_XML_LIST = [inf.text for inf in root.findall("./game/buttons")]
+            JOYWAYS_XML_LIST = [inf.text for inf in root.findall("./game/joyways")]
+            MANUFACTURER_XML_LIST = [inf.text for inf in root.findall("./game/manufacturer")]
+# excutar funções de limpeza do sistema 
+# ----------------------------------------------------------------------------- #
+# localizar quais ROMS estão no XML e quais estão no Dir do SETTINGS e remover
+# as não officiais #
+
+for NameRom in ROMS_XML_LIST:
+    for Rom_real in os.listdir(Identificar_Dir_ROM_in_Settings(ITEMS_COLLECTION_FILE_CONF, 'list.path =')):
+        # criando lista ROMS sem EXT
+        Rom_Name_real, ext = os.path.splitext(Rom_real)
+        ROMS_NAME_REAL_LIST.append(Rom_Name_real)
+
+        # verificando se o nome do arquivo existe na lista de nomes a serão ignorados
+        tmpw = np.array(ROMS_NAME_REAL_LIST)
+        tmpz = np.array(ROMS_XML_LIST)
+        ROM_REMOVE_LST = list(set(np.setdiff1d(tmpw, tmpz)))
+        # removendo nomes não officiais 
+        
+        for nome_remove in ROM_REMOVE_LST:
+        # montando nome com o camiho e nome do arquivo
+            old_end = Identificar_Dir_ROM_in_Settings(ITEMS_COLLECTION_FILE_CONF, 'list.path =') + '\\' + nome_remove + ext
+            new_end = old_end.replace(ROOT, (BACKUP_DIR + '\\' + DATA_HORA_ATUAIS_FORMATADO))
+            try:
+                os.makedirs(new_end)
+                shutil.move(nome_remove, new_end, copy_function=new_end)
+                print(f'folder {nome_remove}  >Fazendo Back_Up> name = {new_end}')
+            except IOError:
+                print(f'folder {nome_remove}  >Erro e forçando Back_Up> name = {new_end}')
+                move(nome_remove, new_end)
+            pass
+            
+
+
+
+
 
 clean_list()
 Backup_OutOftheSystema(ITEMS_COLLECTION_DIR_NAME)
 Backup_OutOftheSystema(ITEMS_EMULATORS_DIR_NAME)
-Backup_OutOftheSystema(ITEMS_LAYOUTS_DIR_COLLECTION)
+#Backup_OutOftheSystema(ITEMS_LAYOUTS_DIR_COLLECTION)
 Backup_EmptyFolders()
 
