@@ -95,7 +95,7 @@ def get_game_xml(path_xml):
     # identificar o game em xml no diretório meta
     tree = ET.parse(path_xml)
     root = tree.getroot()
-    game = root.find('description')
+    game = root.find('game')
     return game
 
 

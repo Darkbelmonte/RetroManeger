@@ -14,3 +14,4 @@ Microsoft Xbox 360;https://github.com/xenia-project/release-builds-windows/relea
 Microsoft Xbox;https://github.com/mborgerson/xemu/releases/download/gh-release%2F0.6.2-90-g6f507c80af/xemu-win-release.zip
 Nintendo 3DS;https://github.com/citra-emu/citra-nightly/releases/download/nightly-1758/citra-windows-mingw-20220402-b5ac9e4.7z
 Sony PlayStation Portable;https://www.ppsspp.org/files/1_12_3/ppsspp_win.zip
+Retroarch BIOS Pack (2020-01-03);https://archive.org/download/retroarchbiospack1.0312020/Retroarch%20BIOS%20Pack%20%2804-04-2022%29.zip

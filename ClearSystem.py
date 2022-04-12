@@ -1,6 +1,9 @@
 # Programa para limpar a estrutura do RetroFe
 # Retirada de arquivos não uteis
 # declarando libs
+from ast import Return
+from genericpath import exists
+from importlib.resources import path
 import os
 import shutil
 from shutil import move
@@ -97,10 +100,12 @@ ITEMS_COLLECTION_FILE_CONF = list(set([os.path.join(ROOT + '\\collections\\' + f
 ITEMS_META_NAME = [f for f in os.listdir(ROOT + '\\meta\\') if os.path.exists(ROOT + '\\meta\\') if os.path.isdir(ROOT + '\\meta\\')]
 ITEMS_META_DIR_NAME = list(set([os.path.join(ROOT + '\\meta\\', file) for file in ITEMS_META_NAME if os.path.exists(ROOT + '\\meta\\' + file) if os.path.isdir(ROOT + '\\meta\\' + file)]))
 ITEMS_META_FILE_XML = list(set([os.path.join(ROOT + '\\meta\\' + file + '\\', file2) for file in ITEMS_META_NAME if os.path.exists(ROOT + '\\meta\\' + file) if os.path.isdir(ROOT + '\\meta\\' + file) for file2 in os.listdir(ROOT + '\\meta\\' + file) if file2.endswith('.xml')]))
+ITEMS_COLLECTION_FILE_TXT = list(set([os.path.join(ROOT + '\\collections\\' + file + '\\' + file2) for file in ITEMS_COLLECTION_NAME if os.path.exists(ROOT + '\\collections\\' + file) for file2 in os.listdir(ROOT + '\\collections\\' + file) if file2.endswith('.txt')]))
 ROMS_NAME_REAL_LIST = []
 EMPTY = []
 
-# _________   CRIAÇÃO DO DATAFRAME  ________________ #
+# -----------------    CAMINHOS   ------------------ #
+# _________     CRIAÇÃO DO DATAFRAME    ____________ #
 # Pd de nomes errados x officiais
 file_backup(FILE_CSV_FIX_NAME_SYSTEM)
 df = pd.read_csv(FILE_CSV_FIX_NAME_SYSTEM_TMP, encoding='utf-8', sep=';')
@@ -117,7 +122,11 @@ limpar = clean_df['clean'].tolist()
 emulador = clean_df['emulador'].tolist()
 categoria = clean_df['categoria'].tolist()
 
+# -----   INICIO DAS DEFINIÇÃO DAS FUNÇÕES   ------- #
+# _________     CRIAÇÃO DO DATAFRAME    ____________ #
 # verificar se todos os arquivos old_file foram movidos para new_file, caso não tenha sido movido, mover para pasta de BACKUP
+# --------   BACKUP - NOMES NA LISTA NEGRA    -------- #
+# RETIRAR TODAS AS PASTAS DE ACORDO COM CLEANLIST      #
 def Backup_default(caminho):
     if os.path.isfile(ROOT + '\\' + caminho) and os.path.exists(ROOT + '\\' + caminho):
         old_end = ROOT + '\\' + caminho
@@ -126,13 +135,11 @@ def Backup_default(caminho):
         try:
             os.makedirs(new_end)
             shutil.move(old_end, new_end, copy_function=new_end)
-            print(f'folder {old_end}  >Fazendo Back_Up> name = {new_end}')
+            print(f'folder {old_end}  >Fazendo Back_Up> CleanList = {new_end}')
         except IOError:
-            print(f'folder {old_end}  >Erro e forçando Back_Up> name = {new_end}')
             move(old_end, new_end)
+            print(f'folder {old_end}  >Erro e forçando Back_Up> CleanList = {new_end}')            
         pass
-
-
     elif os.path.isdir(caminho) and os.path.exists(caminho):
         old_end = caminho 
         dir_tmp = caminho.split('\\', 0)[-1] 
@@ -140,13 +147,13 @@ def Backup_default(caminho):
         try:
             os.makedirs(new_end)
             shutil.move(old_end, new_end, copy_function=new_end)
-            #print(f'folder {old_end}  >Fazendo Back_Up> name = {new_end}')
+            print(f'folder {old_end}  >Fazendo Back_Up> Unofficialname = {new_end}')
         except IOError:
-            #print(f'folder {old_end}  >Erro e dorçando Back_Up> name = {new_end}')
             move(old_end, new_end)
+            print(f'folder {old_end}  >Erro e forçando Back_Up> Unofficialname = {new_end}')            
         pass
-
-
+# --------   BACKUP - PASTAS VAZIAS    -------- #
+# RETIRAR TODAS AS PASTAS VAZIAS DO DIRETÓRIO   #
 def Backup_EmptyFolders():
     for root, dirs, files in os.walk(ROOT): 
         if not len(dirs) and not len(files): 
@@ -159,10 +166,10 @@ def Backup_EmptyFolders():
             print(f'folder {emptydir}  >Fazendo Back_Up de Pasta Vazia> name = {emptybackupDir}')
         except OSError as error:
             print('remover vazia para backup -> ', error)
-            #print('remover pasta para backup -> ', error)
         pass
-        # print(emptybackupDir, 'emptybackupDir')
 
+# --------   BACKUP - NOMES NÃO CONHECIDOS    -------- #
+# RETIRAR TODAS AS PASTAS QUE NÃO TEM NOME RECONHECIDO #
 lst_Nome_Cam = []
 def Backup_OutOftheSystema(list_caminhos):
     # Retirando nomes errados em collection list_unofficial
@@ -193,109 +200,266 @@ def Backup_OutOftheSystema(list_caminhos):
             try:
                 os.makedirs(new_end)
                 shutil.move(nome_remove, new_end, copy_function=new_end)
-                print(f'folder {nome_remove}  >Fazendo Back_Up> name = {new_end}')
+                print(f'folder {nome_remove}  >Fazendo Back_Up> Unofficialname = {new_end}')
             except IOError:
-                print(f'folder {nome_remove}  >Erro e forçando Back_Up> name = {new_end}')
                 move(nome_remove, new_end)
+                print(f'folder {nome_remove}  >Forçando Back_Up> Unofficialname = {new_end}')                
             pass
 
-def Identificar_Dir_ROM_in_Settings(lista_caminho_arquivo, Criterio):
-    for dir_linha in ITEMS_COLLECTION_FILE_CONF:
+# substituir os padrões combinados com os padrões de nomes
+# %BASE_MEDIA_PATH% = ROOT
+# %ITEM_COLLECTION_NAME% = ITEM_COLLECTION_NAME
+# %ITEM_FILEPATH% = Retorne_ROM_do_XML(NomeDoArquivoSistemaXML)
+def ConverterNomes(linhadotexto, systema):
+    if '%RETROFE_PATH%' or '%BASE_MEDIA_PATH%' or '%ITEM_COLLECTION_NAME%' in linhadotexto:
+        linhadotexto = '%RETROFE_PATH%'.replace('%RETROFE_PATH%', ROOT)
+        linhadotexto = '%BASE_MEDIA_PATH%'.replace('%BASE_MEDIA_PATH%', ROOT + '\\collections\\' + systema + '\\medium_artwork\\')
+        linhadotexto = '%ITEM_COLLECTION_NAME%'.replace('%ITEM_COLLECTION_NAME%', ROOT + '\\collections\\' + systema)     
+    
+    return linhadotexto
 
-        # ler arquivos settings e retornar linhas com o criterio informado ex: '#'
-        for erroName, offialName in zip(df['wrong_name'], df['official_name']):
-            if os.path.isfile(str(dir_linha)) == True:
-                arquivo = open(str(dir_linha), 'r')           
-            
-                Dir, Nome = os.path.split(dir_linha)
-                Dir, Nome = os.path.split(Dir) # Separa o diretório e o nome do arquivo
+# ---------   CAMINHOS CONTIDOS NO SETTINGS    ---------- #
+# RETORNAR OS CAMINHOS ARMAZENADOS NO SETTINGS DO RETROFE #
+
+global LINHA_SETTINGS_LST
+RETURN_SETTING = []
+def Texto_InSettings(NomeDoSystema, texto, tipoArquivo):
+    dir_pre_system, nome_system = os.path.split(NomeDoSystema)   # separando nome do systema
+    INF_SETTINGS = ROOT + '\\collections\\' + nome_system + '\\' + tipoArquivo
+    #print(NomeDoSystema, '>', tipoArquivo, '>', INF_SETTINGS)
+    if os.path.isfile(str(INF_SETTINGS)) == True:
+
+        if tipoArquivo == 'settings.conf':
+            try:
+                arquivo = open(str(INF_SETTINGS), 'r')
                 for linha in arquivo:
                     if linha == "":
-                        pass
-                    if '#' + Criterio in linha:
-                        #SettingsRomPath = "collections\\" + str(systemName[0]) + '\\roms'
-                        pass
-                    elif Criterio in linha :
-                        ROM_DIR_NO_SETTINGS_LST = linha.split('=')[1].replace('\n', '').lstrip()
-                        return ROOT + '\\' + ROM_DIR_NO_SETTINGS_LST                 
+                        LINHA_SETTINGS_LST = ROOT + '\\collections\\' + nome_system + '\\medium_artwork\\' + str(texto).replace('=', '').lstrip()
+                        Inf_texto_proc = ""
+                    if '#' + texto in linha:
+                        LINHA_SETTINGS_LST = ROOT + '\\collections\\' + nome_system + '\\medium_artwork\\' + str(texto).replace('=', '').lstrip()
+                        Inf_texto_proc = "#"
+                    if texto + '= %ITEM_COLLECTION_NAME%' in linha:
+                        LINHA_SETTINGS_LST = nome_system + str(texto).replace('=', '').lstrip()
+                        Inf_texto_proc = "#"
+                    elif texto in linha :
+                        LINHA_SETTINGS_LST = ROOT + '\\' + linha.split('=')[1].replace('\n', '').lstrip() 
+                        Inf_texto_proc = texto
+                        #RETURN_SETTING.append(ROM_DIR_NO_SETTINGS_LST)
+            except IOError:
+                print('Erro ao ler arquivo de settings')
+            finally:
                 arquivo.close()
 
+        if tipoArquivo == 'exclude.txt' or tipoArquivo == 'include.txt' or tipoArquivo == 'menu.txt':
+            try:
+                arquivo = open(str(INF_SETTINGS), 'r')
+                LINHA_SETTINGS_TMP = arquivo.readlines()
+                LINHA_SETTINGS_TMP = [LINHA_SETTINGS_TMP[i].replace('\n', '') for i in range(len(LINHA_SETTINGS_TMP))]
+                LINHA_SETTINGS_LST = LINHA_SETTINGS_TMP[0:-1]
+                #Inf_texto_proc = texto
+                #for linha in LINHA_SETTINGS_LST_TMP:
+                #    LINHA_SETTINGS_LST = linha.replace('\n', '').lstrip() 
+                        #RETURN_SETTING.append(ROM_DIR_NO_SETTINGS_LST)
+            except IOError:
+                print('Erro ao ler arquivo de settings')
+            finally:
+                arquivo.close()
+    else:   
+        return 'Não existe arquivo de settings'
+    return LINHA_SETTINGS_LST
+    #print(LINHA_SETTINGS_LST, '>', texto, '<<< teste LINHA_SETTINGS_LST :', nome_system, '>', tipoArquivo )
 
 
-# função para renomear os nomes com base na verificação se existe o nome no wrongmName para o systemName
+
+# ---------   LIMPAR ARQUIVOS PRE DEFINIDOS    ---------- #
+#             LIMPAR ARQUIVOS DESNECESSÁRIOS              #
 def clean_list():
     for dirremove, remove, emul, systema in zip(dirclean, limpar, emulador, categoria):
         Backup_default(str(dirremove))
 
-# Coletar nomes das ROMs e informações adicionais do sistema no arquivo XML
-for systemXML in ITEMS_META_FILE_XML:
-    for systemNameInstalado in ITEMS_COLLECTION_NAME:
-        Dir, FileXml = os.path.split(systemXML)
-        FileXmlnoExt, ext = os.path.splitext(FileXml)
-        if FileXmlnoExt == systemNameInstalado:
-            print(f'{systemNameInstalado}  >Fazendo Back_Up> name = {systemXML}')
+# ---------   LER ARQUIVO XML    ---------- #
+# ---- BUSCAR NOMES DAS ROMS NO ARQUIVO --- #
+def Retorne_ROM_do_XML(NomeDoArquivoSistemaXML):
+# Coletar nomes das ROMs e informações adicionais do sistema no arquivo XML 
+    systemXML = os.path.join(ROOT + '\\meta\\hyperlist\\', str(NomeDoArquivoSistemaXML) + '.xml')
+    #print(ITEMS_META_FILE_XML)
+    for systemXMLReal in ITEMS_META_FILE_XML:
+        if systemXML == systemXMLReal:
+            for systemNameInstalado in ITEMS_COLLECTION_NAME:
+                Dir, FileXml = os.path.split(systemXML)
+                FileXmlnoExt, ext = os.path.splitext(FileXml)
+                if FileXmlnoExt == systemNameInstalado:
+                #print(f'Infor de {systemNameInstalado} > esta send lido nos arquivos no Dir = {systemXML}', ' <-linha 284')
 
-            tree = ET.parse(systemXML)
-            root = tree.getroot()
-            [(x.tag, x.attrib) for x in root] # Lista os elementos filhos: nome e atributos
-            [x.attrib for x in root.iter('game')] # Lista elementos descendentes: atributos
-            # for catogoria in categorias:
-            # Todos_elementos = [inf.text for inf in root.findall("./game/{catogoria}".format(catogoria=catogoria))]
-                #print(G)
+                    tree = ET.parse(systemXML)
+                    root = tree.getroot()
+                    categorias = list(set([elem.tag for elem in root.iter()]))
+                    ROMS_XML_LIST = [game.attrib['name'] for game in root.findall("./game")]
+                        #DESCRIPTION_XML_LIST = [inf.text for inf in root.findall("./game/description")]
+            return ROMS_XML_LIST
 
-            categorias = list(set([elem.tag for elem in root.iter()]))
-            ROMS_XML_LIST = [game.attrib['name'] for game in root.findall("./game")]
-            DESCRIPTION_XML_LIST = [inf.text for inf in root.findall("./game/description")]
-            RATING_XML_LIST = [inf.text for inf in root.findall("./game/rating")]
-            CRC_XML_LIST = [inf.text for inf in root.findall("./game/crc")]            
-            CLONEOF_XML_LIST = [inf.text for inf in root.findall("./game/cloneof")]
-            PLAYERS_XML_LIST = [inf.text for inf in root.findall("./game/players")]
-            SCORE_XML_LIST = [inf.text for inf in root.findall("./game/score")]
-            YEAR_XML_LIST = [inf.text for inf in root.findall("./game/year")]
-            GENRE_XML_LIST = [inf.text for inf in root.findall("./game/genre")]
-            PLAYERS_XML_LIST = [inf.text for inf in root.findall("./game/players")]
-            CTRLTYPE_XML_LIST = [inf.text for inf in root.findall("./game/ctrltype")]
-            BUTTONS_XML_LIST = [inf.text for inf in root.findall("./game/buttons")]
-            JOYWAYS_XML_LIST = [inf.text for inf in root.findall("./game/joyways")]
-            MANUFACTURER_XML_LIST = [inf.text for inf in root.findall("./game/manufacturer")]
-# excutar funções de limpeza do sistema 
 # ----------------------------------------------------------------------------- #
 # localizar quais ROMS estão no XML e quais estão no Dir do SETTINGS e remover
 # as não officiais #
+#Retorne_ROM_do_XML(NomeDoArquivoSistemaXML)
+# 1 - verificar se existe XML do sistema com o nome das ROMS
+# 2 - verificar se existe Dir da ROMs do SETTINGS
+# 3 - verificar se existe Dir da ROMs do SETTINGS
 
-for NameRom in ROMS_XML_LIST:
-    for Rom_real in os.listdir(Identificar_Dir_ROM_in_Settings(ITEMS_COLLECTION_FILE_CONF, 'list.path =')):
-        # criando lista ROMS sem EXT
-        Rom_Name_real, ext = os.path.splitext(Rom_real)
-        ROMS_NAME_REAL_LIST.append(Rom_Name_real)
-
-        # verificando se o nome do arquivo existe na lista de nomes a serão ignorados
-        tmpw = np.array(ROMS_NAME_REAL_LIST)
-        tmpz = np.array(ROMS_XML_LIST)
-        ROM_REMOVE_LST = list(set(np.setdiff1d(tmpw, tmpz)))
-        # removendo nomes não officiais 
-        
-        for nome_remove in ROM_REMOVE_LST:
-        # montando nome com o camiho e nome do arquivo
-            old_end = Identificar_Dir_ROM_in_Settings(ITEMS_COLLECTION_FILE_CONF, 'list.path =') + '\\' + nome_remove + ext
-            new_end = old_end.replace(ROOT, (BACKUP_DIR + '\\' + DATA_HORA_ATUAIS_FORMATADO))
-            try:
-                os.makedirs(new_end)
-                shutil.move(nome_remove, new_end, copy_function=new_end)
-                print(f'folder {nome_remove}  >Fazendo Back_Up> name = {new_end}')
-            except IOError:
-                print(f'folder {nome_remove}  >Erro e forçando Back_Up> name = {new_end}')
-                move(nome_remove, new_end)
-            pass
+listNoRomReal = []
+listRomexclude = []
+listRominclude = []
+def Backup_OutOftheROMPath(ListaDeSistemas, Termo_a_ser_procurado):
+    for systemNameInstalado in ListaDeSistemas:
+        # 1 ) verificar XML
+        systemXML2 = ROOT + '\\meta\\hyperlist\\' + systemNameInstalado + '.xml' 
+        if os.path.isfile(systemXML2) == True:
+        # 2 ) verificar Dir do SETTINGS
+            #Termo_a_ser_procurado = 'list.path ='
+            DirROMSettings = Texto_InSettings(systemNameInstalado, Termo_a_ser_procurado,'settings.conf')
+            #DirROMSettings = Texto_InSettings(systemNameInstalado, 'list.path =','settings.conf')
+            #DirROMSettings = ConverterNomes(DirROMSettings, systemNameInstalado)
             
+            if os.path.exists(DirROMSettings):
+                DirCam, Folder = os.path.splitext(DirROMSettings)
+                # 3 ) verificar se existe ROMS no Dir do SETTINGS
+                listRomReal = os.listdir(DirROMSettings)
+                for RomReal in listRomReal:
+                    NoRomReal, ExtRom = os.path.splitext(RomReal)
+                    listNoRomReal.append(NoRomReal)
+                    #listNoRomReal = listNoRomReal[0:-1]
 
+                    # verificar se existe exclude.txt ou include.txt
+            if os.path.isfile(ROOT + '\\collections\\' + systemNameInstalado + '\\exclude.txt') == True:
+                for Romexclude in Texto_InSettings(systemNameInstalado, '','exclude.txt'):
+                    listRomexclude.append(Romexclude)
 
+            if os.path.isfile(ROOT + '\\collections\\' + systemNameInstalado + '\\include.txt') == True:
+                for Rominclude in Texto_InSettings(systemNameInstalado, '','include.txt'):
+                    listRominclude.append(Rominclude)
 
+                listRomIgnorar = ['default'] + listRomexclude + listRominclude
+                listRomIgnorar = list(set(listRomIgnorar))
+                listRomIgnorar = [x for x in listRomIgnorar if x != '']
 
+                listRomIgnorarXML = Retorne_ROM_do_XML(systemNameInstalado)
+                    
+                listRomIgnorarAll = listRomIgnorarXML + listRomIgnorar
+                # verificando se o nome do arquivo existe na lista de nomes a serão ignorados
+                tmpw = np.array(listNoRomReal)
+                tmpz = np.array(listRomIgnorarAll)
+                lst_final_remove = list(set(np.setdiff1d(tmpw, tmpz)))
+                
+                print(DirROMSettings, ' << DirROMSettings e as ROMs >>' , lst_final_remove)
+                print(DirROMSettings, '>', Termo_a_ser_procurado, '<<< teste DirROMSettings :', systemNameInstalado)
+                print(yellow + 'Varrendo o systema instlado:'+ reset_color, systemNameInstalado)
+                print(yellow + 'Caminho do Settings A:'+ reset_color, DirROMSettings)
+                DirROMSettings = ConverterNomes(DirROMSettings, systemNameInstalado)
+                print(yellow + 'Caminho do Settings B:'+ reset_color, DirROMSettings)
+                print(yellow + 'Arquivos encontrados no caminho:'+ reset_color, listNoRomReal)
+                    # adicionando caminho ao item a ser removido do sistema
+                Dir_lst_final_remove = [DirCam + '\\' + nome + ExtRom for nome in lst_final_remove]
+                for RomRemove in lst_final_remove:
+                    DirRomRemove = DirCam + '\\' + RomRemove + ExtRom
+                    DirRomRemove_dir = DirCam + '\\' + RomRemove
+                    if os.path.isfile(DirRomRemove) == True:
+                        Dir, nome = os.path.split(str(DirRomRemove))
+                        old_end = DirRomRemove
+                        new_tmp_end = Dir.replace(ROOT, (BACKUP_DIR + '\\' + DATA_HORA_ATUAIS_FORMATADO))
+                        new_end = new_tmp_end
+                        try:
+                            os.makedirs(new_end)
+                            shutil.move(old_end, new_end, copy_function=new_end)
+                            print(f'folder {old_end}  >Fazendo Back_Up> ROM Unofficialname = {new_end}')
+                        except IOError:
+                            move(old_end, new_end)
+                            print(f'folder {old_end}  >Forçando Back_Up> ROM Unofficialname = {new_end}')                
+                            pass
+                    elif os.path.isdir(DirRomRemove_dir) == True:
+                        Dir, nome = os.path.split(str(DirRomRemove_dir))
+                        old_end = DirRomRemove_dir
+                        new_tmp_end = Dir.replace(ROOT, (BACKUP_DIR + '\\' + DATA_HORA_ATUAIS_FORMATADO))
+                        new_end = new_tmp_end
+                        try:
+                            os.makedirs(new_end)
+                            shutil.move(old_end, new_end, copy_function=new_end)
+                            print(f'folder {old_end}  >Fazendo Back_Up> ROM Folder Unofficialname = {new_end}')
+                        except IOError:
+                            move(old_end, new_end)
+                            print(f'folder {old_end}  >Forçando Back_Up> ROM Folder Unofficialname = {new_end}')                
+                        pass
+        # ----------------------------------------------------------------------------- #
 
-clean_list()
-Backup_OutOftheSystema(ITEMS_COLLECTION_DIR_NAME)
-Backup_OutOftheSystema(ITEMS_EMULATORS_DIR_NAME)
-#Backup_OutOftheSystema(ITEMS_LAYOUTS_DIR_COLLECTION)
-Backup_EmptyFolders()
+        # ----------------------------------------------------------------------------- #
+
+# FUNÇÃO USADA PARA FAZER BACKUP DAS PASTAS ( CHAMADA NAS OUTRAS FUNÇÕES ) 
+# Backup_default(caminho):
+# RETIRAR TODAS AS PASTAS VAZIAS DO DIRETÓRIO   
+# Backup_EmptyFolders():
+#Backup_EmptyFolders()
+#print(Backup_EmptyFolders())
+#print('Backup_EmptyFolders')
+# ----------------------------------------------------------------------------- #
+# RETIRAR TODAS AS PASTAS QUE NÃO TEM NOME RECONHECIDO #
+# Backup_OutOftheSystema(list_caminhos): # ITEMS_COLLECTION_DIR_NAME
+#Backup_OutOftheSystema(ITEMS_COLLECTION_DIR_NAME)
+#print(Backup_OutOftheSystema())
+#print('Backup_OutOftheSystema')
+# RETORNAR OS CAMINHOS ARMAZENADOS NO SETTINGS DO RETROFE #
+# Texto_InSettings(list_caminhos, texto, tipoArquivo):
+#Texto_InSettings(ITEMS_COLLECTION_DIR_NAME, 'list.path =', 'settings.conf')
+#print(Texto_InSettings('Sega Master System', 'list.path =', 'settings.conf'), 'teste')
+#print(Texto_InSettings(ITEMS_COLLECTION_DIR_NAME, 'list.path =', 'settings.conf'))
+#print('Texto_InSettings', 'ok!!!!!!!!!!!!!!!!!!!!!!!!')
+# LIMPAR ARQUIVOS DESNECESSÁRIOS   
+# clean_list():
+#clean_list()
+#print(clean_list())
+#print('clean_list')
+# BUSCAR NOMES DAS ROMS NO ARQUIVO  #
+# Retorne_ROM_do_XML(NomeDoArquivoSistemaXML): # ITEMS_COLLECTION_FILE_TXT
+#Retorne_ROM_do_XML(ITEMS_COLLECTION_NAME)
+#print(Retorne_ROM_do_XML('Sega Master System'))
+#Retorne_ROM_do_XML(NomeDoArquivoSistemaXML)
+# Backup_OutOftheROMPath(ListaDeSistemas):
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME)
+#Backup_OutOftheROMPath(['Sega Master System'])
+#print(Backup_OutOftheROMPath(['Sega Master System']))
+#Backup_OutOftheArtwork_frontPath(['Sega Master System'])
+#Backup_OutOftheArtwork_backPath(['Sega Master System'])
+#Backup_OutOftheMedium_frontPath(['Sega Master System'])
+#Backup_OutOftheMedium_backPath(['Sega Master System'])
+#Backup_OutOftheScreenshotPath(['Sega Master System'])
+#Backup_OutOftheScreentitlePath(['Sega Master System'])
+#Backup_OutOftheFanartPath(['Sega Master System'])
+#Backup_OutOftheLogoPath(['Sega Master System'])
+#Backup_OutOftheVideoPath(['Sega Master System'])
+#Backup_OutOftheStoryPath(['Sega Master System'])
+#Backup_OutOftheAartwork_3dPath(['Sega Master System'])
+#Backup_OutOftheBannerPath(['Sega Master System'])
+#Backup_OutOftheBezelPath(['Sega Master System'])
+#Backup_OutOftheCoverPath(['Sega Master System'])
+
+#Backup_OutOftheROMPath(['Mame'])
+#Backup_OutOftheArtwork_frontPath(['Mame'])
+#Backup_OutOftheFanartPath(['Mame'])
+#Backup_OutOftheLogoPath(['Mame'])
+#Backup_OutOftheVideoPath(['Mame'])
+Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'list.path')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.artwork_back')
+Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.artwork_front')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.logo')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.medium_back')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.medium_front')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.screenshot')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.screentitle')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.video')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.system_artwork')
+Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.fanart')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.story')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.artwork_3d')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.banner')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.bezel')
+#Backup_OutOftheROMPath(ITEMS_COLLECTION_NAME, 'media.cover')
 
