@@ -15,3 +15,4 @@ Microsoft Xbox;https://github.com/mborgerson/xemu/releases/download/gh-release%2
 Nintendo 3DS;https://github.com/citra-emu/citra-nightly/releases/download/nightly-1758/citra-windows-mingw-20220402-b5ac9e4.7z
 Sony PlayStation Portable;https://www.ppsspp.org/files/1_12_3/ppsspp_win.zip
 Retroarch BIOS Pack (2020-01-03);https://archive.org/download/retroarchbiospack1.0312020/Retroarch%20BIOS%20Pack%20%2804-04-2022%29.zip
+www.rlauncher.com;https://mega.nz/file/nYtQ3LBC#F080cEgKRGfOGO-IyEvvozL4XhPVupbYrH1PRWv9yOs
