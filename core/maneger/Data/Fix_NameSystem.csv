@@ -2158,3 +2158,11 @@ neogeo aes;SNK Neo Geo AES
 cps i;- Sub_Systems - Capcom Play System
 cps ii;- Sub_Systems - Capcom Play System II
 cps iii;- Sub_Systems - Capcom Play System III
+Controller;controller
+Character;character
+Menuextra;menuextra
+menuextra1;menuextra_1
+menuextra2;menuextra_2
+menuextra3;menuextra_3
+menuextra4;menuextra_4
+menuextra;menuextra_5
