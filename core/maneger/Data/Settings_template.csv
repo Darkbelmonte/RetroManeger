@@ -8,7 +8,7 @@ list.truRIP;false;;;;Specifies which launcher is used when a game is selected fr
 launcher;collection_system;;;;Specifies which launcher is used when a game is selected from the menu (reads from launchers/<launcher name>.conf). This value can be overwritten per game by putting the launcher name in a single line .conf file in collections/<collection name>/launchers/<game name>.conf.;RocketLauncher;Mame;Mednafen;Automatic;
 metadata.type;collection_system;;;;Specifies the meta file used in the meta.db to pull additional information like manufacturer, year, genre, etc. from;;;;;
 meda.<filetype>;= collections\;collection_system;\medium_artwork\;<filetype>;Overwrites the path used to pull medium artwork from;;;;;
-media.system_artwork;= collections\;collection_system;\medium_artwork\;system_artwork;Overwrites the path used to pull system artwork from;;;;;
+media.system_artwork;= collections\;collection_system;;\system_artwork;Overwrites the path used to pull system artwork from;;;;;
 media.artwork_3d;= collections\;collection_system;\medium_artwork\;artwork_3d;;;;;;
 media.artwork_back;= collections\;collection_system;\medium_artwork\;artwork_back;;;;;;
 media.artwork_front;= collections\;collection_system;\medium_artwork\;artwork_front;;;;;;
