@@ -1,0 +1,361 @@
+
+<layout width="1920" height="1080" font="fonts/OpenSans.ttf" loadFontSize="36" fontColor="dedede">
+
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main Menu Mask  width="3840" height="2160" | width="1920" height="1080" -->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Under Music -->
+	<!-- Ambience -->
+	<!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main Menu Mask  width="3840" height="2160" | width="1920" height="1080" -->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Under Music -->
+	<!-- Ambience -->
+	<reloadableAudio type="music" volume="0.1"  alpha="0" layer="10">
+	</reloadableAudio>
+	
+	<image src="images/background.png" width="stretch" height ="stretch" layer="0"/>
+
+
+	<menu menuIndex="0" mode="system" type="custom" imageType="fanart" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults alpha="0" x="center" y="center"  xOrigin="center" yOrigin="center" width="1920" height="1080" containerX="0" containerY="0" containerWidth="1920" containerHeight="716" layer="1"/>
+	  <item />
+	  <item selected="true" alpha=".4">
+		<onEnter><set duration=".5"><animate type="width" from="2220" to="1920"/></set></onEnter>
+		<onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to=".25"/></set></onMenuExit>
+		<onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/></set></onMenuExit>
+	  </item>
+	  <item />
+	</menu>
+
+	<menu menuIndex="0" mode="system" type="custom" imageType="fanart" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults alpha="0" x="center" y="center"  xOrigin="center" yOrigin="center" width="1920" height="1080" containerX="0" containerY="716" containerWidth="1920" containerHeight="366" layer="4"/>
+	  <item />
+	  <item selected="true" alpha=".4">
+		<onEnter><set duration=".5"><animate type="width" from="2220" to="1920"/><animate type="containerY" from="636" to="716"/><animate type="containerHeight" from="446" to="366"/></set></onEnter>
+		<onMenuExit menuIndex="0"><set duration=".3"><animate type="alpha" to=".25"/></set></onMenuExit>
+		<onMenuExit menuIndex="1"><set duration=".3"><animate type="alpha" to=".4"/> </set></onMenuExit>
+	  </item>
+	  <item />
+	</menu>
+
+	<image src="images/reflection.png" alpha="1" y="716" width="1920" height="366" layer="4"/>
+
+	<image src="images/background.png" y="716" alpha="1" width="1920" height="400" layer="4">
+	  <onEnter><set duration=".5"><animate type="yOffset" from="-80" to="0"/></set><set duration=".2"><animate type="alpha" from="1" to="0"/></set></onEnter>
+	</image>
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- Index 0  -->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+	<!-- Menu One  -->
+	<!----------------------------------------------------------------------------------------------------------------------------------->
+	<!-- Cover Menu -->
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------->
+	<!-- color fundo menu (alternativa base)-->
+	<menu menuIndex="0" mode="system" type="custom" imageType="color" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" maxwidth="200" height="200" spacing="10" layer="4"/>
+	  <item xOffset="-357"/>
+	  <item selected="true" alpha="1" width="463" height="687">
+		  <onEnter><set duration=".45"><animate type="alpha" to="1"/><animate type="width" from="200" to="463"/><animate type="height" from="200" to="700"/></set>
+				   <set duration=".18"><animate type="width" from="510" to="463"/><animate type="height" from="700" to="687"/></set>
+		  </onEnter>
+		  <onMenuExit menuIndex="0"><set duration=".28"><animate type="x" to="285"/><animate type="alpha" to="1"/></set></onMenuExit>
+		  <onMenuExit menuIndex="1"><set duration=".28"><animate type="x" to="center"/><animate type="alpha" to="1"/></set></onMenuExit>
+	  </item>
+	  <item xOffset="357"/>
+	</menu>
+	<!-- logo principal fundo menu (alternativa base)-->
+	<menu menuIndex="0" mode="system" type="custom" imageType="logo" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="344" spacing="10" layer="4"/>
+	  <item xOffset="-357"/>
+	  <item selected="true" alpha="1" maxwidth="344" >
+		  <onEnter><set duration=".45"><animate type="alpha" to="1"/><animate type="maxwidth" from="284" to="344"/></set>
+				   <set duration=".18"><animate type="maxwidth" from="344" to="284"/></set>
+		  </onEnter>
+		  <onMenuExit menuIndex="0"><set duration=".28"><animate type="x" to="285"/><animate type="alpha" to="1"/></set></onMenuExit>
+		  <onMenuExit menuIndex="1"><set duration=".28"><animate type="x" to="center"/><animate type="alpha" to="1"/></set></onMenuExit>
+	  </item>
+	  <item xOffset="357"/>
+	</menu>
+	<!-- color fundo menu (alternativa base)-->
+	<menu menuIndex="0" type="custom" imageType="color" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+    <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha=".65" width="230" height="230" spacing="10" reflectionDistance="8" reflection="bottom" reflectionScale="1" reflectionAlpha=".5" layer="2"/>
+    <item xOffset="-1077" alpha="0"/>
+    <item xOffset="-837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-407" to="-837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-287" to="-597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-167" to="-357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item selected="true" alpha="0" width="465" height="688"/>
+    <item xOffset="357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="167" to="357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="287" to="597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="407" to="837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="1077" alpha="0"/>
+	</menu>
+	<!-- logo fundo menu (alternativa base)-->
+	<menu menuIndex="0" type="custom" imageType="logo" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+    <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha=".65" width="212" spacing="10" reflectionDistance="150" reflection="bottom" reflectionScale="1" reflectionAlpha=".5" layer="3"/>
+    <item xOffset="-1077" alpha="0"/>
+    <item xOffset="-837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="-407" to="-837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="-287" to="-597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="-167" to="-357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item selected="true" alpha="0" width="460"/>
+    <item xOffset="357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="167" to="357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="287" to="597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="212"/><animate type="xoffset" from="407" to="837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="1077" alpha="0"/>
+	</menu>
+
+<!----------------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------------------->	
+<!-- 	
+	<menu menuIndex="0" mode="system" type="custom" imageType="cover" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="232" spacing="10" layer="11"/>
+	  <item xOffset="-357"/>
+	  <item selected="true" alpha="1" width="460">
+		  <onEnter><set duration=".5"><animate type="alpha" to="1"/><animate type="width" from="240" to="520"/></set><set duration=".2"><animate type="width" from="520" to="460"/></set></onEnter>
+		  <onMenuExit menuIndex="0"><set duration=".3"><animate type="x" to="285"/></set></onMenuExit>
+		  <onMenuExit menuIndex="1"><set duration=".3"><animate type="x" to="center"/></set></onMenuExit>
+	  </item>
+	  <item xOffset="357"/>
+	</menu>
+
+ -->
+ 	<menu menuIndex="0" mode="system" type="custom" imageType="artwork_front" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="226" height="695" spacing="10" layer="11"/>
+	  <item xOffset="-357"/>
+	  <item selected="true" alpha="1" width="460">
+		  <onEnter><set duration=".5"><animate type="alpha" to="1"/><animate type="width" from="240" to="520"/></set><set duration=".2"><animate type="width" from="520" to="460"/></set></onEnter>
+		  <onMenuExit menuIndex="0"><set duration=".3"><animate type="x" to="285"/></set></onMenuExit>
+		  <onMenuExit menuIndex="1"><set duration=".3"><animate type="x" to="center"/></set></onMenuExit>
+	  </item>
+	  <item xOffset="357"/>
+	</menu>
+ 
+ 
+	<menu menuIndex="0" mode="commonlayout" type="custom" imageType="cristal" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+	<itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="0" width="232" spacing="10" layer="12"/>
+	<item xOffset="-357"/>
+	<item selected="true" alpha="1" width="466">
+      <onEnter><set duration=".5"><animate type="alpha" to="1"/><animate type="width" from="244" to="526"/></set><set duration=".2"><animate type="width" from="526" to="466"/></set></onEnter>
+      <onMenuExit menuIndex="0"><set duration=".3"><animate type="x" to="285"/><animate type="alpha" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".3"><animate type="x" to="center"/><animate type="alpha" to="1"/></set></onMenuExit>
+	</item>
+	<item xOffset="357"/>
+	</menu>
+
+<!-- 
+<menu menuIndex="0" type="custom" imageType="cover" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha=".65" width="232" spacing="10" reflectionDistance="8" reflection="bottom" reflectionScale="1" reflectionAlpha=".5" layer="3"/>
+    <item xOffset="-1077" alpha="0"/>
+    <item xOffset="-837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-407" to="-837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-287" to="-597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="-167" to="-357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item selected="true" alpha="0" width="460"/>
+    <item xOffset="357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="167" to="357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="287" to="597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to=".65"/><animate type="width" from="116" to="230"/><animate type="xoffset" from="407" to="837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".65"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".65" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="1077" alpha="0"/>
+	</menu>
+ -->
+ <menu menuIndex="0" type="custom" imageType="artwork_front" scrollTime=".30" scrollAcceleration=".1" orientation="horizontal">
+  <itemDefaults x="center" y="center"  xOrigin="center" yOrigin="center" alpha="1" width="226" height="318" spacing="10" reflectionDistance="8" reflection="bottom" reflectionScale="1" reflectionAlpha=".5" layer="3"/>
+    <item xOffset="-1077" alpha="0"/>
+    <item xOffset="-837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="-407" to="-837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="-287" to="-597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="-357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="-167" to="-357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item selected="true" alpha="0" width="460"/>
+    <item xOffset="357">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="167" to="357"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="597">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="287" to="597"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="837">
+      <onEnter><set duration=".5"><animate type="alpha" from="0" to="1"/><animate type="width" from="116" to="232"/><animate type="height" from="216" to="318"/><animate type="xoffset" from="407" to="837"/></set></onEnter>
+      <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to="1"/></set></onMenuExit>
+      <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from="1" to="0"/></set></onMenuExit>
+      <onMenuEnter menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+      <onMenuExit menuIndex="1"><set duration=".1"><animate type="alpha" from="0" to="0"/></set></onMenuExit>
+    </item>
+    <item xOffset="1077" alpha="0"/>
+	</menu>
+ 
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+    <!-- info -->
+    <!----------------------------------------------------------------------------------------------------------------------------------->
+ 
+ 
+ 
+	<reloadableText type="title" menuScrollReload="yes" x="1250" y="792" xOrigin="left" yOrigin="center" alpha="0" textFormat="uppercase" font="fonts/ScoutCond-Bold.otf" fontSize="50" loadFontSize="50" fontColor="000000" layer="13">
+	  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+	  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+	  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+	</reloadableText>
+
+	<reloadableImage mode="commonlayout" type="manufacturer" menuScrollReload="yes" x="1250" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+	  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+	  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+	  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+	</reloadableImage>
+
+	<reloadableImage mode="commonlayout" type="year" menuScrollReload="yes" x="1321" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+	  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+	  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+	  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+	</reloadableImage>
+
+	<reloadableImage mode="commonlayout" type="genre" menuScrollReload="yes" x="1438" y="823" xOrigin="left" yOrigin="center" alpha="0" height="20" layer="13">
+	  <onEnter menuIndex="0"><set duration=".4"><animate type="nop"/></set><set duration=".3"><animate type="alpha" from="0" to=".6"/><animate type="xoffset" from="20" to="0"/></set></onEnter>
+	  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".55"/><animate type="xoffset" from="20" to="0"/></set></onMenuExit>
+	  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" to="0"/></set></onMenuExit>
+	</reloadableImage>
+
+	<reloadableImage mode="commonlayout" type="firstLetter" menuScrollReload="yes" x="center" y="990" xOrigin="center" yOrigin="center" alpha="0" layer="13">
+	  <onEnter><set duration=".4"><animate type="alpha" from="0" to="0"/></set><set duration=".3"><animate type="alpha" from="0" to=".2"/><animate type="yoffset" from="20" to="0"/></set></>
+	  <onMenuEnter menuIndex="0"><set duration=".3"><animate type="alpha" from="0" to=".2"/></set></onMenuEnter>
+	  <onMenuExit menuIndex="0"><set duration=".15"><animate type="alpha" from=".2" to="0"/></set></onMenuExit>
+	</reloadableImage>
+	
+	<!-- MENU FALSO DE LA INFORMACION DEL JUEGO -->
+	<menu menuIndex="1" type="custom" imageType="null" scrollTime=".01" alpha="0" scrollAcceleration=".01" orientation="vertical">
+		<itemDefaults layer="1"/>
+		<item selected="true"/>
+	</menu>
+
+
+</layout>
